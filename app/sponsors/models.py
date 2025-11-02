@@ -3,6 +3,10 @@ from django.db import models
 
 class Sponsor(models.Model):
     class SponsorType(models.TextChoices):
+        ORGANIZER = "ORGANIZER"
+        INSTITUTIONAL = "INSTITUTIONAL"
+        COMMUNITY_PARTNER = "COMMUNITY_PARTNER"
+        WELLNESS_PARTNER = "WELLNESS_PARTNER"
         KEYSTONE = "KEYSTONE"
         PLATINUM = "PLATINUM"
         TITANIUM = "TITANIUM"
