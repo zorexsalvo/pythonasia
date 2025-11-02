@@ -3,8 +3,8 @@ from typing import Any
 
 from bakery.views import BuildableTemplateView
 
-from app.sponsors.models import Sponsor
 from app.speakers.models import Speaker
+from app.sponsors.models import Sponsor
 from config.constants import SPONSOR_TYPE_ORDER
 
 
