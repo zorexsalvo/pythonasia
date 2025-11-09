@@ -62,7 +62,7 @@ pythonasia/
    ```bash
    # Using uv (recommended)
    uv sync
-   
+
    # Or using pip
    pip install -e .
    ```
@@ -84,7 +84,7 @@ pythonasia/
    ```bash
    # With Tailwind watching for changes
    make run-server-tailwind
-   
+
    # Or just Django
    make run
    ```

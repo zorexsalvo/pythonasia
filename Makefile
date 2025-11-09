@@ -32,5 +32,3 @@ run-tailwind-config:
 
 run-tailwind-troubleshoot:
 	$(PYTHON) $(MANAGE) tailwind troubleshoot
-
-    
