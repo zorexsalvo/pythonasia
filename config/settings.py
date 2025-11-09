@@ -204,4 +204,4 @@ BAKERY_VIEWS = ("app.home.views.HomeView",)
 
 # Whitenoise Configuration
 # https://whitenoise.readthedocs.io/en/latest/
-WHITENOISE_MAX_AGE = 3600
+WHITENOISE_MAX_AGE = 86400
