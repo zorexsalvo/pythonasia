@@ -200,6 +200,8 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # Build directory for bakery
 BUILD_DIR = BASE_DIR / "build"
-BAKERY_VIEWS = (
-    "app.home.views.HomeView",
-)
+BAKERY_VIEWS = ("app.home.views.HomeView",)
+
+# Whitenoise Configuration
+# https://whitenoise.readthedocs.io/en/latest/
+WHITENOISE_MAX_AGE = 3600

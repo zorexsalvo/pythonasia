@@ -1,82 +1,79 @@
 {% load static %}
 {% if featured_speakers or speakers %}
-  <section id="speakers" class="bg-white px-[4%]">
-    <div class="flex flex-col gap-10 w-full max-w-[1160px] mx-auto">
-      <div class="px-6 flex flex-col gap-8 py-20">
-        <h2 class="font-td_pinoy text-6xl text-orange-2 text-center m-0">Keynote Speakers</h2>
-        <p class="text-4xl font-bold mb-0 font-bantayog text-brown-1 uppercase text-center">
-          Discover our keynote speakers
-          for PyCon Philippines 2025
-        </p>
-      </div>
-      <div class="keynote-speakers-wrapper flex justify-center items-center gap-[30px] flex-wrap">
-        {% for speaker in featured_speakers %}
-          <div class="rounded-[24px] {% cycle 'bg-cream-1' 'bg-cream-2' 'bg-cream-3' %} flex flex-col sm:flex-row gap-10 w-full max-w-[100%] lg:max-w-[48%] grow items-center"
-               style="padding: 30px">
-            <div class="overflow-hidden flex-shrink-0 w-[230px]">
-              {% if speaker.photo_url %}
-                <img src="{{ speaker.photo_url }}"
-                     class="w-full object-cover rounded-[85px]"
-                     alt="{{ speaker.full_name }} - Image">
-              {% else %}
-                <img src="{% static 'img/speakers/speakers-img-1.jpg' %}"
-                     class="w-full object-cover rounded-[85px]"
-                     alt="{{ speaker.full_name }} - Image">
-              {% endif %}
-            </div>
-            <div>
-              <h3 class="font-bantayog text-brown-1 text-2xl uppercase">{{ speaker.full_name }}</h3>
-              {% if speaker.title %}
-                <p class="font-nunito text-brown-2 font-semibold text-sm mb-2">{{ speaker.title }}</p>
-              {% endif %}
-              {% if speaker.introduction %}
-                <p class="font-nunito text-brown-2 text-[13px]">{{ speaker.introduction }}</p>
-              {% elif speaker.bio %}
-                <p class="font-nunito text-brown-2 text-[13px]">{{ speaker.bio }}</p>
-              {% endif %}
-            </div>
-          </div>
-        {% empty %}
-          <p class="text-center text-brown-2">No keynote speakers available yet.</p>
-        {% endfor %}
-      </div>
+<section id="speakers" class="bg-white px-[4%]">
+  <div class="flex flex-col gap-10 w-full max-w-[1160px] mx-auto">
+    <div class="px-6 flex flex-col gap-8 py-20">
+      <h2 class="font-td_pinoy text-6xl text-orange-2 text-center m-0">Keynote Speakers</h2>
+      <p class="text-4xl font-bold mb-0 font-bantayog text-brown-1 uppercase text-center">
+        Discover our keynote speakers
+        for PyCon Philippines 2025
+      </p>
     </div>
-    <div class="flex flex-col gap-10 w-full max-w-[1160px] mx-auto mt-[120px] pb-[90px]">
-      <div class="px-6 flex flex-col gap-8">
-        <h2 class="font-td_pinoy text-6xl text-orange-2 text-center m-0">Speakers</h2>
-        <p class="text-4xl font-bold mb-0 font-bantayog text-brown-1 uppercase text-center">
-          Discover our speakers for
-          PyCon Philippines 2024
-        </p>
+    <div class="keynote-speakers-wrapper flex justify-center items-center gap-[30px] flex-wrap">
+      {% for speaker in featured_speakers %}
+      <div
+        class="rounded-[24px] {% cycle 'bg-cream-1' 'bg-cream-2' 'bg-cream-3' %} flex flex-col sm:flex-row gap-10 w-full max-w-[100%] lg:max-w-[48%] grow items-center"
+        style="padding: 30px">
+        <div class="overflow-hidden flex-shrink-0 w-[230px]">
+          {% if speaker.photo_url %}
+          <img src="{{ speaker.photo_url }}" class="w-full object-cover rounded-[85px]"
+            alt="{{ speaker.full_name }} - Image" width="230" height="230">
+          {% else %}
+          <img src="{% static 'img/speakers/speakers-img-1.jpg' %}" class="w-full object-cover rounded-[85px]"
+            alt="{{ speaker.full_name }} - Image" width="230" height="230">
+          {% endif %}
+        </div>
+        <div>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">{{ speaker.full_name }}</h3>
+          {% if speaker.title %}
+          <p class="font-nunito text-brown-2 font-semibold text-sm mb-2">{{ speaker.title }}</p>
+          {% endif %}
+          {% if speaker.introduction %}
+          <p class="font-nunito text-brown-2 text-[13px]">{{ speaker.introduction }}</p>
+          {% elif speaker.bio %}
+          <p class="font-nunito text-brown-2 text-[13px]">{{ speaker.bio }}</p>
+          {% endif %}
+        </div>
       </div>
-      <div class="speakers-wrapper flex items-center gap-[30px] flex-row flex-wrap justify-between">
-        {% for speaker in speakers %}
-          <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
-            <div class="overflow-hidden flex-shrink-0 w-[250px]">
-              {% if speaker.photo_url %}
-                <img src="{{ speaker.photo_url }}"
-                     class="w-full object-cover rounded-[85px]"
-                     alt="{{ speaker.full_name }} - Image">
-              {% else %}
-                <img src="{% static 'img/speakers/speakers-img-1.jpg' %}"
-                     class="w-full object-cover rounded-[85px]"
-                     alt="{{ speaker.full_name }} - Image">
-              {% endif %}
-            </div>
-            <div>
-              <h3 class="font-bantayog text-brown-1 text-2xl uppercase">{{ speaker.full_name }}</h3>
-              {% if speaker.title %}<p class="font-nunito text-brown-2 text-[13px] mb-2">{{ speaker.title }}</p>{% endif %}
-              {% if speaker.introduction %}
-                <p class="font-nunito text-brown-2 text-[13px]">{{ speaker.introduction|truncatewords:30 }}</p>
-              {% elif speaker.bio %}
-                <p class="font-nunito text-brown-2 text-[13px]">{{ speaker.bio|truncatewords:30 }}</p>
-              {% endif %}
-            </div>
-          </div>
-        {% empty %}
-          <p class="text-center text-brown-2">No speakers available yet.</p>
-        {% endfor %}
-      </div>
+      {% empty %}
+      <p class="text-center text-brown-2">No keynote speakers available yet.</p>
+      {% endfor %}
     </div>
-  </section>
+  </div>
+  <div class="flex flex-col gap-10 w-full max-w-[1160px] mx-auto mt-[120px] pb-[90px]">
+    <div class="px-6 flex flex-col gap-8">
+      <h2 class="font-td_pinoy text-6xl text-orange-2 text-center m-0">Speakers</h2>
+      <p class="text-4xl font-bold mb-0 font-bantayog text-brown-1 uppercase text-center">
+        Discover our speakers for
+        PyCon Philippines 2024
+      </p>
+    </div>
+    <div class="speakers-wrapper flex items-center gap-[30px] flex-row flex-wrap justify-between">
+      {% for speaker in speakers %}
+      <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
+        <div class="overflow-hidden flex-shrink-0 w-[250px]">
+          {% if speaker.photo_url %}
+          <img src="{{ speaker.photo_url }}" class="w-full object-cover rounded-[85px]"
+            alt="{{ speaker.full_name }} - Image" width="250" height="250">
+          {% else %}
+          <img src="{% static 'img/speakers/speakers-img-1.jpg' %}" class="w-full object-cover rounded-[85px]"
+            alt="{{ speaker.full_name }} - Image" width="250" height="250">
+          {% endif %}
+        </div>
+        <div>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">{{ speaker.full_name }}</h3>
+          {% if speaker.title %}<p class="font-nunito text-brown-2 text-[13px] mb-2">{{ speaker.title }}</p>{% endif %}
+          {% if speaker.introduction %}
+          <p class="font-nunito text-brown-2 text-[13px]">{{ speaker.introduction|truncatewords:30 }}</p>
+          {% elif speaker.bio %}
+          <p class="font-nunito text-brown-2 text-[13px]">{{ speaker.bio|truncatewords:30 }}</p>
+          {% endif %}
+        </div>
+      </div>
+      {% empty %}
+      <p class="text-center text-brown-2">No speakers available yet.</p>
+      {% endfor %}
+    </div>
+  </div>
+</section>
 {% endif %}

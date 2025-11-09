@@ -1,9 +1,7 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 @plugin "daisyui";
-
 
 :root {
   --color-primary: #f26d1d;
@@ -160,10 +158,10 @@ body {
 /* START: Custom CSS Here */
 
 #hero {
-    background: url("../../static/img/python-asia-bg.png") bottom / 100% no-repeat;
+  background: url("../../static/img/python-asia-bg.png") bottom / 100% no-repeat;
 }
 
-.python-kalinga-pot{
+.python-kalinga-pot {
   width: 100%;
   max-width: 730px;
   margin-left: auto;
@@ -171,7 +169,7 @@ body {
   transform: translateY(-15vh);
 }
 
-.python-kalinga-pot .pot{
+.python-kalinga-pot .pot {
   width: 100%;
   max-width: 580px;
   margin-left: auto;
@@ -180,20 +178,21 @@ body {
   margin-bottom: 45px;
 }
 
-.bg_call-for-links{
-    background: url("../../static/img/call-for-links.png") center center / cover no-repeat;
+.bg_call-for-links {
+  background: url("../../static/img/call-for-links.png") center center / cover
+    no-repeat;
 }
 
 /* Media Query */
 
-@media screen and (max-width: 1570px){
-  .cstm_break.about-us_break{
+@media screen and (max-width: 1570px) {
+  .cstm_break.about-us_break {
     display: none;
   }
 }
 
-@media screen and (max-width: 1411px){
-  .cstm_break{
+@media screen and (max-width: 1411px) {
+  .cstm_break {
     display: none;
   }
 }
@@ -204,42 +203,39 @@ body {
   }
 }
 
-@media screen and (max-width: 1300px){
-  .python-kalinga-pot .pot{
+@media screen and (max-width: 1300px) {
+  .python-kalinga-pot .pot {
     width: 100%;
     max-width: 400px;
     transform: translateX(-3.5vw);
     margin-bottom: 45px;
   }
 
-  
-  #hero{
+  #hero {
     background-size: cover;
     background-position: center;
   }
-
 
   .python-kalinga-pot {
     transform: translateY(-8vh);
   }
 }
 
-@media screen and (max-width: 768px){
-  .python-kalinga-pot .pot{
+@media screen and (max-width: 768px) {
+  .python-kalinga-pot .pot {
     width: 100%;
     max-width: 280px;
     transform: translateX(-3.5vw);
     margin-bottom: 20px;
   }
-
 
   .python-kalinga-pot {
     transform: translateY(-5vh);
   }
 }
 
-@media screen and (max-width: 768px){
-  .python-kalinga-pot .pot{
+@media screen and (max-width: 768px) {
+  .python-kalinga-pot .pot {
     width: 100%;
     max-width: 280px;
     transform: translateX(-3.5vw);
@@ -250,21 +246,20 @@ body {
     transform: translateY(-5vh);
   }
 
-  
-  .python-kalinga-pot .co-organized{
+  .python-kalinga-pot .co-organized {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 18px
+    gap: 18px;
   }
-  
-  .python-kalinga-pot .co-organized img{
+
+  .python-kalinga-pot .co-organized img {
     width: 100%;
     max-height: 60px !important;
   }
 
-  .python-kalinga-pot .justify-self-end.self-center{
+  .python-kalinga-pot .justify-self-end.self-center {
     justify-self: unset;
   }
 }
