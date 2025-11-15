@@ -1,5 +1,5 @@
 {% load static %}
-<nav class="absolute w-full z-10">
+<nav class="absolute w-full z-10 px-4">
   <div class="relative flex flex-col">
     {% comment %}
     <!-- Ribbon CTA -->
@@ -107,9 +107,9 @@
         {% endcomment %}
       </div>
 
-      {% comment %}
-      <div class="flex justify-end items-center gap-7 w-full">
 
+      <div class="flex justify-end items-center gap-7 w-full">
+      {% comment %}
         <!-- Header Links -->
         <div class="hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
@@ -185,14 +185,15 @@
             </li>
           </ul>
         </div>
+        {% endcomment %}
         <!-- Ticket Button -->
         <div>
-          <a href="#" class="btn btn-primary btn-square lg:btn-wide">
-            <span class="lg:inline font-bantayog py-3.5 px-8 text-xl">Get Tickets</span>
+          <a href="https://ti.to/pythonph/pythonasia-2026/" target="_blank" class="btn btn-primary btn-wide py-2 px-4 sm:py-3.5 sm:px-8">
+            <span class="lg:inline font-bantayog text-base sm:text-xl">Get Tickets</span>
           </a>
         </div>
       </div>
-      {% endcomment %}
+
     </div>
   </div>
 </nav>

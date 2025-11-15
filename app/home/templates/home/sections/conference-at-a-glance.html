@@ -1,6 +1,6 @@
 {% load static %}
 <section id="conference-at-a-glance"
-    class="py-20 bg-[url('{% static 'img/bg-conference-at-glance.png' %}')] bg-contain bg-center">
+    class="pt-20 bg-[url('{% static 'img/bg-conference-at-glance.png' %}')] bg-contain bg-center">
     <div class="container mx-auto px-6">
         <!-- Header -->
         <div class="text-center mb-16">
@@ -9,10 +9,9 @@
             </h2>
         </div>
         <!-- Schedule Grid -->
-        <div class="flex flex-col sm:flex-row md:items-stretch md:justify-center gap-8 mb-20 max-w-5xl mx-auto">
+        <div class="flex flex-col justify-center sm:flex-row md:items-stretch md:justify-center gap-8 mb-20 max-w-5xl mx-auto">
             <!-- March 21-22 -->
-            <div class="p-8 rounded-2xl w-full bg-offwhite-2 border-t-[8px] border-t-[#F26D1D]"
-                style="max-width: 300px;">
+            <div class="p-8 rounded-2xl w-full max-w-[100%] sm:max-w-[300px] bg-offwhite-2 border-t-[8px] border-t-[#F26D1D]">
                 <div class="mb-6 font-bold">
                     <h3 class="text-2xl font-bantayog text-brown-1">MARCH 21-22,</h3>
                     <h4 class="text-2xl font-bantayog text-brown-1">SATURDAY-SUNDAY</h4>
@@ -57,8 +56,7 @@
                 </div>
             </div>
             <!-- March 23 -->
-            <div class="p-8 rounded-2xl w-full bg-offwhite-2 border-t-[8px] border-t-[#FFA218]"
-                style="max-width: 300px;">
+            <div class="p-8 rounded-2xl w-full max-w-[100%] sm:max-w-[300px]  bg-offwhite-2 border-t-[8px] border-t-[#FFA218]">
                 <div class="mb-6 font-bold">
                     <h3 class="text-2xl font-bantayog text-brown-1">MARCH 23,</h3>
                     <h4 class="text-2xl font-bantayog text-brown-1">MONDAY</h4>
@@ -78,8 +76,6 @@
             </div>
         </div>
 
-        {% comment %}
         {% include "home/sections/tickets-section.html" %}
-        {% endcomment %}
     </div>
 </section>
