@@ -29,3 +29,35 @@ class HomeView(BuildableTemplateView):
         context["featured_speakers"] = Speaker.objects.filter(is_featured=True).order_by("first_name", "last_name")
         context["speakers"] = Speaker.objects.filter(is_featured=False).order_by("first_name", "last_name")
         return context
+
+
+class InternalPageView(BuildableTemplateView):
+    """Base view for internal pages with consistent template structure"""
+
+    template_name = "internal/index.html"
+    page_template = None  # Override in subclasses
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["page_template"] = self.page_template
+        return context
+
+
+class CodeOfConductView(InternalPageView):
+    build_path = "code-of-conduct/index.html"
+    page_template = "internal/pages/code-of-conduct.html"
+
+
+class PartnershipView(InternalPageView):
+    build_path = "partnership/index.html"
+    page_template = "internal/pages/partnership.html"
+
+
+class TravelInfoView(InternalPageView):
+    build_path = "travel-info/index.html"
+    page_template = "internal/pages/travel-info.html"
+
+
+class AidScholarshipsView(InternalPageView):
+    build_path = "aid-scholarships/index.html"
+    page_template = "internal/pages/aid-scholarships.html"
