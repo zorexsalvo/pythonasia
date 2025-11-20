@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<main>
+    <div class="min-h-screen bg-contain bg-center" style="background-image: url('{% static 'img/bg-conference-at-glance.png' %}');">
+        <!-- Navbar -->
+        {% include "home/components/navbar.html" %}
+        <!-- Content Block (specific page content) -->
+        {% include page_template %}
+        <!-- Footer -->
+        {% include "home/sections/footer.html" %}
+    </div>
+</main>
+{% endblock %}
