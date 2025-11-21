@@ -61,3 +61,33 @@ class TravelInfoView(InternalPageView):
 class AidScholarshipsView(InternalPageView):
     build_path = "aid-scholarships/index.html"
     page_template = "internal/pages/aid-scholarships.html"
+
+
+class CovidPolicyView(InternalPageView):
+    build_path = "covid-policy/index.html"
+    page_template = "internal/pages/covid-policy.html"
+
+
+class DataPrivacyView(InternalPageView):
+    build_path = "data-privacy/index.html"
+    page_template = "internal/pages/data-privacy.html"
+
+
+class EveryoneWhoCanPaysView(InternalPageView):
+    build_path = "everyone-who-can-pays/index.html"
+    page_template = "internal/pages/everyone-who-can-pays.html"
+
+
+class PatronAcknowledgmentView(InternalPageView):
+    build_path = "patron-acknowledgment/index.html"
+    page_template = "internal/pages/patron-acknowledgment.html"
+
+
+class ScheduleView(InternalPageView):
+    build_path = "schedule/index.html"
+    page_template = "internal/pages/schedule.html"
+
+
+class VolunteersView(InternalPageView):
+    build_path = "volunteers/index.html"
+    page_template = "internal/pages/volunteers.html"
