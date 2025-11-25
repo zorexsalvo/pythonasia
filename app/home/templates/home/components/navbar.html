@@ -1,33 +1,54 @@
 {% load static %}
-<nav class="absolute w-full z-10 px-4">
+{% block extra_css %}
+<style>
+  .menu-nav:active,
+  .menu-nav:focus,
+  .menu-nav:focus-visible,
+  .menu-subnav:hover{
+    background: var(--color-primary);
+    color: white;
+  }
+
+  .menu-subnav{
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: var(--color-brown-1);
+    font-weight: 400;
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+  }
+</style>
+{% endblock %}
+<nav class="absolute w-full z-10">
   <div class="relative flex flex-col">
-    {% comment %}
     <!-- Ribbon CTA -->
-    <div class="bg-orange-1 py-1.5 flex items-center justify-center gap-2">
+    <div class="bg-orange-1 py-1.5 flex items-center justify-center gap-2 flex-col sm:flex-row">
       <p class="text-white font-nunito text-sm font-semibold">
-        👋 Registration for PyCon APAC 2025 is now open!
+        👋 Registration for PythonAsia 2026 is now open!
       </p>
-      <div class="w-[20px] h-[2px] bg-white"></div>
+      <div class="w-[20px] h-[2px] bg-white hidden sm:block"></div>
       <div>
-        <a class="text-white font-bantayog text-base flex gap-2 items-center" href="#">
-          <p>RESERVE YOUR SEATS NOW</p>
+        <a href="https://ti.to/pythonph/pythonasia-2026/" target="_blank" class="text-white font-bantayog text-base flex gap-2 items-center">
+          <p class="">RESERVE YOUR SEATS NOW</p>
           <img src="{% static 'img/vectors/ArrowCircleRight.svg' %}" alt="kliN" class="w-[24px] h-auto" width="24" height="24" />
         </a>
       </div>
     </div>
-    {% endcomment %}
 
-    <div class="bg-transparent w-full max-w-[1260px] mx-auto flex pt-8">
+
+    <div class="bg-transparent w-full max-w-[1260px] mx-auto flex pt-8 px-1 md:px-0">
 
       <!-- Site Logo -->
-      <div class="navbar-start">
-        <a class="btn btn-ghost text-xl">
+      <div class="navbar-start px-4">
+        <a class="btn btn-ghost text-xl px-0">
           <img src="{% static 'img/logo.png' %}"
                alt="PythonAsia 2026"
                class="h-8 w-full max-w-[233px]"
                width="233" height="32" />
         </a>
-        {% comment %}
+      </div>
+
+
+      <div class="flex justify-end items-center gap-7 w-full">
         <div class="dropdown">
           <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
             <svg xmlns="http://www.w3.org/2000/svg"
@@ -39,155 +60,202 @@
             </svg>
           </div>
           <ul tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-            <li>
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-64 p-2 shadow" style="left: -400%">
+            <li class="relative">
               <a class="font-bantayog">About</a>
               <ul class="p-2">
                 <li>
-                  <a href="#" class="font-bantayog">About the Conference</a>
-                </li>
-                <li>
-                  <a href="#" class="font-bantayog">About PythonAsia</a>
-                </li>
-                <li>
-                  <a href="#" class="font-bantayog">Team</a>
-                </li>
-                <li>
-                  <a href="#" class="font-bantayog">Venue</a>
+                  <a href="{% url 'everyone-who-can-pays' %}" class="font-bantayog hover:text-orange-2 hover:bg-transparent">Everyone who can, pays</a>
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="relative">
               <a class="font-bantayog">Get Involved</a>
               <ul class="p-2">
                 <li>
-                  <a href="#" class="font-bantayog">Become a Sponsor</a>
+                  <a href="{% url 'partnership' %}" class="font-bantayog hover:text-orange-2 hover:bg-transparent">Partnership</a>
                 </li>
                 <li>
-                  <a href="#" class="font-bantayog">Volunteer</a>
+                  <a href="{% url 'volunteers' %}" class="font-bantayog hover:text-orange-2 hover:bg-transparent">Volunteers</a>
                 </li>
                 <li>
-                  <a href="#" class="font-bantayog">Speak at the Event</a>
+                  <a href="{% url 'patron-acknowledgment' %}" class="font-bantayog hover:text-orange-2 hover:bg-transparent">Patron Acknowledgment</a>
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="relative">
               <a class="font-bantayog">Policies</a>
               <ul class="p-2">
                 <li>
-                  <a href="#" class="font-bantayog">Code of Conduct</a>
+                  <a href="{% url 'covid-policy' %}" class="font-bantayog hover:text-orange-2 hover:bg-transparent">Covid Policy</a>
                 </li>
                 <li>
-                  <a href="#" class="font-bantayog">Privacy Policy</a>
+                  <a href="{% url 'data-privacy' %}" class="font-bantayog hover:text-orange-2 hover:bg-transparent">Data Privacy</a>
                 </li>
                 <li>
-                  <a href="#" class="font-bantayog">Terms & Conditions</a>
+                  <a href="{% url 'code-of-conduct' %}" class="font-bantayog hover:text-orange-2 hover:bg-transparent">Code of Conduct</a>
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="relative">
               <a class="font-bantayog">Attend</a>
               <ul class="p-2">
                 <li>
-                  <a href="#" class="font-bantayog">Schedule</a>
+                  <a href="{% url 'travel-info' %}" class="font-bantayog hover:text-orange-2 hover:bg-transparent">Travel Info</a>
                 </li>
                 <li>
-                  <a href="#" class="font-bantayog">Speakers</a>
+                  <a href="{% url 'aid-scholarships' %}" class="font-bantayog hover:text-orange-2 hover:bg-transparent">Aid & Scholarships</a>
                 </li>
                 <li>
-                  <a href="#" class="font-bantayog">Accommodation</a>
-                </li>
-                <li>
-                  <a href="#" class="font-bantayog">Travel Info</a>
+                  <a href="{% url 'schedule' %}" class="font-bantayog hover:text-orange-2 hover:bg-transparent">Schedule</a>
                 </li>
               </ul>
             </li>
+            <li class="mt-2">
+              <a href="https://ti.to/pythonph/pythonasia-2026/" target="_blank" class="btn btn-primary w-full text-center">Get Tickets</a>
+            </li>
           </ul>
         </div>
-        {% endcomment %}
-      </div>
-
-
-      <div class="flex justify-end items-center gap-7 w-full">
-      {% comment %}
         <!-- Header Links -->
         <div class="hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
-            <li>
-              <details>
-                <summary class="font-bantayog text-xl text-brown-1 font-light">About</summary>
-                <ul class="p-2 bg-base-100 rounded-box z-[1] w-52 shadow">
-                  <li>
-                    <a href="#" class="font-bantayog">About the Conference</a>
-                  </li>
-                  <li>
-                    <a href="#" class="font-bantayog">About PythonAsia</a>
-                  </li>
-                  <li>
-                    <a href="#" class="font-bantayog">Team</a>
-                  </li>
-                  <li>
-                    <a href="#" class="font-bantayog">Venue</a>
-                  </li>
-                </ul>
-              </details>
+
+            <!-- About -->
+            <li class="relative group">
+              <button class="menu-nav font-bantayog text-xl text-brown-1 font-light hover:text-orange-2 cursor-pointer">
+                About
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 9L12 15L18 9"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"/>
+                    </svg>
+              </button>
+              <ul class="absolute left-0 top-full p-1 top-10 w-52 bg-base-100 rounded-box shadow opacity-0 invisible
+                        group-hover:opacity-100 group-hover:visible transition-all duration-150 z-[1]">
+                <li>
+                  <a href="{% url 'everyone-who-can-pays' %}"
+                    class="menu-subnav font-bantayog hover:text-orange-1 hover:bg-transparent">
+                    Everyone who can, pays
+                  </a>
+                </li>
+              </ul>
             </li>
-            <li>
-              <details>
-                <summary class="font-bantayog text-xl text-brown-1 font-light">Get Involved</summary>
-                <ul class="p-2 bg-base-100 rounded-box z-[1] w-52 shadow">
-                  <li>
-                    <a href="#" class="font-bantayog">Become a Sponsor</a>
-                  </li>
-                  <li>
-                    <a href="#" class="font-bantayog">Volunteer</a>
-                  </li>
-                  <li>
-                    <a href="#" class="font-bantayog">Speak at the Event</a>
-                  </li>
-                </ul>
-              </details>
+
+            <!-- Get Involved -->
+            <li class="relative group">
+              <button class="menu-nav font-bantayog text-xl text-brown-1 font-light hover:text-orange-2 cursor-pointer">
+                Get Involved
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 9L12 15L18 9"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"/>
+                    </svg>
+              </button>
+              <ul class="absolute left-0 top-full p-1 mt-2 w-52 bg-base-100 rounded-box shadow opacity-0 invisible
+                        group-hover:opacity-100 group-hover:visible transition-all duration-150 z-[1]">
+                <li>
+                  <a href="{% url 'partnership' %}"
+                    class="menu-subnav font-bantayog hover:text-orange-2 hover:bg-transparent">
+                    Partnership
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'volunteers' %}"
+                    class="menu-subnav font-bantayog hover:text-orange-2 hover:bg-transparent">
+                    Volunteers
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'patron-acknowledgment' %}"
+                    class="menu-subnav font-bantayog hover:text-orange-2 hover:bg-transparent">
+                    Patron Acknowledgment
+                  </a>
+                </li>
+              </ul>
             </li>
-            <li>
-              <details>
-                <summary class="font-bantayog text-xl text-brown-1 font-light">Policies</summary>
-                <ul class="p-2 bg-base-100 rounded-box z-[1] w-52 shadow">
-                  <li>
-                    <a href="#" class="font-bantayog">Code of Conduct</a>
-                  </li>
-                  <li>
-                    <a href="#" class="font-bantayog">Privacy Policy</a>
-                  </li>
-                  <li>
-                    <a href="#" class="font-bantayog">Terms & Conditions</a>
-                  </li>
-                </ul>
-              </details>
+
+            <!-- Policies -->
+            <li class="relative group">
+              <button class="menu-nav font-bantayog text-xl text-brown-1 font-light hover:text-orange-2 cursor-pointer">
+                Policies
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 9L12 15L18 9"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"/>
+                 </svg>
+              </button>
+              <ul class="absolute left-0 top-full p-1 mt-2 w-52 bg-base-100 rounded-box shadow opacity-0 invisible
+                        group-hover:opacity-100 group-hover:visible transition-all duration-150 z-[1]">
+                <li>
+                  <a href="{% url 'covid-policy' %}"
+                    class="menu-subnav font-bantayog hover:text-orange-2 hover:bg-transparent">
+                    Covid Policy
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'data-privacy' %}"
+                    class="menu-subnav font-bantayog hover:text-orange-2 hover:bg-transparent">
+                    Data Privacy
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'code-of-conduct' %}"
+                    class="menu-subnav font-bantayog hover:text-orange-2 hover:bg-transparent">
+                    Code of Conduct
+                  </a>
+                </li>
+              </ul>
             </li>
-            <li>
-              <details>
-                <summary class="font-bantayog text-xl text-brown-1 font-light">Attend</summary>
-                <ul class="p-2 bg-base-100 rounded-box z-[1] w-52 shadow">
-                  <li>
-                    <a href="#" class="font-bantayog">Schedule</a>
-                  </li>
-                  <li>
-                    <a href="#" class="font-bantayog">Speakers</a>
-                  </li>
-                  <li>
-                    <a href="#" class="font-bantayog">Accommodation</a>
-                  </li>
-                  <li>
-                    <a href="#" class="font-bantayog">Travel Info</a>
-                  </li>
-                </ul>
-              </details>
+
+            <!-- Attend -->
+            <li class="relative group">
+              <button class="menu-nav font-bantayog text-xl text-brown-1 font-light hover:text-orange-2 cursor-pointer">
+                Attend
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 9L12 15L18 9"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"/>
+                 </svg>
+              </button>
+              <ul class="absolute left-0 top-full p-1 mt-2 w-52 bg-base-100 rounded-box shadow opacity-0 invisible
+                        group-hover:opacity-100 group-hover:visible transition-all duration-150 z-[1]">
+                <li>
+                  <a href="{% url 'travel-info' %}"
+                    class="menu-subnav font-bantayog hover:text-orange-2 hover:bg-transparent">
+                    Travel Info
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'aid-scholarships' %}"
+                    class="menu-subnav font-bantayog hover:text-orange-2 hover:bg-transparent">
+                    Aid & Scholarships
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'schedule' %}"
+                    class="menu-subnav font-bantayog hover:text-orange-2 hover:bg-transparent">
+                    Schedule
+                  </a>
+                </li>
+              </ul>
             </li>
+
           </ul>
         </div>
-        {% endcomment %}
-        <!-- Ticket Button -->
-        <div>
+        <!-- Ticket Button (desktop only) -->
+        <div class="hidden lg:block">
           <a href="https://ti.to/pythonph/pythonasia-2026/" target="_blank" class="btn btn-primary btn-wide py-2 px-4 sm:py-3.5 sm:px-8">
             <span class="lg:inline font-bantayog text-base sm:text-xl">Get Tickets</span>
           </a>
