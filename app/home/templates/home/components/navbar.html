@@ -39,7 +39,7 @@
 
       <!-- Site Logo -->
       <div class="navbar-start px-4">
-        <a class="btn btn-ghost text-xl px-0">
+        <a class="btn btn-ghost text-xl px-0" href="{% url 'home' %}">
           <img src="{% static 'img/logo.png' %}"
                alt="PythonAsia 2026"
                class="h-8 w-full max-w-[233px]"
@@ -60,12 +60,12 @@
             </svg>
           </div>
           <ul tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-64 p-2 shadow" style="left: -400%">
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-64 p-2 shadow" style="left: -400%; z-index: 1000;">
             <li class="relative">
               <a class="font-bantayog">About</a>
               <ul class="p-2">
                 <li>
-                  <a href="{% url 'everyone-who-can-pays' %}" class="font-bantayog hover:text-orange-2 hover:bg-transparent">Everyone who can, pays</a>
+                  <a href="{% url 'everyone-who-can-pays' %}" class="font-bantayog hover:text-orange-2 hover:bg-transparent text-sm">Everyone who can, pays</a>
                 </li>
               </ul>
             </li>
@@ -137,7 +137,7 @@
                         group-hover:opacity-100 group-hover:visible transition-all duration-150 z-[1]">
                 <li>
                   <a href="{% url 'everyone-who-can-pays' %}"
-                    class="menu-subnav font-bantayog hover:text-orange-1 hover:bg-transparent">
+                    class="menu-subnav font-bantayog hover:text-orange-1 hover:bg-transparent" style="white-space: nowrap; font-size: 14px;">
                     Everyone who can, pays
                   </a>
                 </li>
