@@ -181,6 +181,36 @@ The application integrates with Pretalx for conference management:
 4. Run code quality checks: `make run-ruff`
 5. Submit a pull request
 
+### Pre-commit Setup
+
+This project uses [pre-commit](https://pre-commit.com/) to run code quality checks before each commit.
+
+1. **Install pre-commit**
+
+   ```bash
+   # Using uv (recommended)
+   uv pip install pre-commit
+
+   # Or using pip
+   pip install pre-commit
+   ```
+
+2. **Install the git hooks**
+
+   ```bash
+   pre-commit install
+   ```
+
+3. **Run pre-commit manually** (optional)
+
+   ```bash
+   # Run on all files
+   make run-pre-commit
+
+   # Or run directly
+   pre-commit run --all-files
+   ```
+
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
