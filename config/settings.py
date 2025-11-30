@@ -53,6 +53,7 @@ THIRD_PARTY_APPS = [
     "corsheaders",
     "django_tailwind_cli",
     "bakery",
+    "tinymce",
 ]
 
 if settings.APP_ENV == "development":
@@ -62,6 +63,7 @@ LOCAL_APPS = [
     "app.home",
     "app.speakers",
     "app.sponsors",
+    "app.pages",
 ]
 
 INSTALLED_APPS = [
