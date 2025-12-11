@@ -252,6 +252,34 @@
               </ul>
             </li>
 
+          {% for item in navigation_items %}
+            <li class="relative group">
+              <button class="menu-nav font-bantayog text-xl text-brown-1 font-light hover:text-orange-2 cursor-pointer">
+                {{ item }}
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 9L12 15L18 9"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"/>
+                 </svg>
+              </button>
+              <ul class="absolute left-0 top-full p-1 mt-2 w-52 bg-base-100 rounded-box shadow opacity-0 invisible
+                        group-hover:opacity-100 group-hover:visible transition-all duration-150 z-[1]">
+                {% for child in item.children.all %}
+                <li>
+                  <a href="{{ child.page.get_absolute_url }}"
+                    class="menu-subnav font-bantayog hover:text-orange-2 hover:bg-transparent">
+                    {{ child.title }}
+                  </a>
+                </li>
+              {% endfor %}
+              </ul>
+
+            </li>
+          {% endfor %}
+
           </ul>
         </div>
         <!-- Ticket Button (desktop only) -->
