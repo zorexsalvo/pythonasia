@@ -120,6 +120,7 @@
         <div class="hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
 
+            {% if not navigation_items %}
             <!-- About -->
             <li class="relative group">
               <button class="menu-nav font-bantayog text-xl text-brown-1 font-light hover:text-orange-2 cursor-pointer">
@@ -251,6 +252,7 @@
                 </li>
               </ul>
             </li>
+          {% endif %}
 
           {% for item in navigation_items %}
             <li class="relative group">
@@ -276,7 +278,6 @@
                 </li>
               {% endfor %}
               </ul>
-
             </li>
           {% endfor %}
 
