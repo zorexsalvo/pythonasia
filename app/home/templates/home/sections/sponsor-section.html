@@ -26,7 +26,14 @@
                 style="color: #7c5e3b">Organizer</h3>
             <div class="grid md:grid-cols-3 gap-8 items-center">
               {% for sponsor in sponsors %}
-                <div class="bg-white rounded-lg p-8 flex items-center justify-center h-48">
+                <div class="relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-white p-8">
+                    {% if sponsor.ribbon_visible %}
+                    <img
+                      src="/static/img/vectors/pao-ribbon.svg"
+                      alt="PAO Ribbon"
+                      class="absolute top-0 right-[20px] w-[50px]"
+                    >
+                    {% endif %}
                   {% if sponsor.website_url %}
                     <a href="{{ sponsor.website_url }}"
                        target="_blank"
@@ -52,7 +59,14 @@
                 style="color: #7c5e3b">Institutional Sponsor</h3>
             <div class="grid md:grid-cols-3 gap-8 items-center">
               {% for sponsor in sponsors %}
-                <div class="bg-white rounded-lg p-8 flex items-center justify-center h-48">
+                <div class="relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-white p-8">
+                    {% if sponsor.ribbon_visible %}
+                    <img
+                      src="/static/img/vectors/pao-ribbon.svg"
+                      alt="PAO Ribbon"
+                      class="absolute top-0 right-[20px] w-[50px]"
+                    >
+                    {% endif %}
                   {% if sponsor.website_url %}
                     <a href="{{ sponsor.website_url }}"
                        target="_blank"
@@ -78,7 +92,14 @@
                 style="color: #7c5e3b">Keystone Sponsor</h3>
             <div class="grid md:grid-cols-3 gap-8 items-center">
               {% for sponsor in sponsors %}
-                <div class="bg-white rounded-lg p-8 flex items-center justify-center h-48">
+                <div class="relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-white p-8">
+                    {% if sponsor.ribbon_visible %}
+                    <img
+                      src="/static/img/vectors/pao-ribbon.svg"
+                      alt="PAO Ribbon"
+                      class="absolute top-0 right-[20px] w-[50px]"
+                    >
+                    {% endif %}
                   {% if sponsor.website_url %}
                     <a href="{{ sponsor.website_url }}"
                        target="_blank"
@@ -104,7 +125,14 @@
                 style="color: #7c5e3b">Titanium Sponsor</h3>
             <div class="grid md:grid-cols-3 gap-8 items-center">
               {% for sponsor in sponsors %}
-                <div class="bg-white rounded-lg p-8 flex items-center justify-center h-48">
+                <div class="relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-white p-8">
+                    {% if sponsor.ribbon_visible %}
+                    <img
+                      src="/static/img/vectors/pao-ribbon.svg"
+                      alt="PAO Ribbon"
+                      class="absolute top-0 right-[20px] w-[50px]"
+                    >
+                    {% endif %}
                   {% if sponsor.website_url %}
                     <a href="{{ sponsor.website_url }}"
                        target="_blank"
@@ -130,7 +158,14 @@
                 style="color: #7c5e3b">Platinum Sponsor</h3>
             <div class="grid md:grid-cols-3 gap-8 items-center">
               {% for sponsor in sponsors %}
-                <div class="bg-white rounded-lg p-8 flex items-center justify-center h-48">
+                 <div class="relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-white p-8">
+                    {% if sponsor.ribbon_visible %}
+                    <img
+                      src="/static/img/vectors/pao-ribbon.svg"
+                      alt="PAO Ribbon"
+                      class="absolute top-0 right-[20px] w-[50px]"
+                    >
+                    {% endif %}
                   {% if sponsor.website_url %}
                     <a href="{{ sponsor.website_url }}"
                        target="_blank"
@@ -156,7 +191,14 @@
                 style="color: #7c5e3b">Gold Sponsor</h3>
             <div class="grid md:grid-cols-3 gap-8 items-center">
               {% for sponsor in sponsors %}
-                <div class="bg-white rounded-lg p-8 flex items-center justify-center h-48">
+                <div class="relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-white p-8">
+                    {% if sponsor.ribbon_visible %}
+                    <img
+                      src="/static/img/vectors/pao-ribbon.svg"
+                      alt="PAO Ribbon"
+                      class="absolute top-0 right-[20px] w-[50px]"
+                    >
+                    {% endif %}
                   {% if sponsor.website_url %}
                     <a href="{{ sponsor.website_url }}"
                        target="_blank"
@@ -182,7 +224,14 @@
                 style="color: #7c5e3b">Silver Sponsor</h3>
             <div class="grid md:grid-cols-3 gap-8 items-center">
               {% for sponsor in sponsors %}
-                <div class="bg-white rounded-lg p-8 flex items-center justify-center h-48">
+                <div class="relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-white p-8">
+                    {% if sponsor.ribbon_visible %}
+                    <img
+                      src="/static/img/vectors/pao-ribbon.svg"
+                      alt="PAO Ribbon"
+                      class="absolute top-0 right-[20px] w-[50px]"
+                    >
+                    {% endif %}
                   {% if sponsor.website_url %}
                     <a href="{{ sponsor.website_url }}"
                        target="_blank"
@@ -208,7 +257,14 @@
                 style="color: #7c5e3b">Community Partner</h3>
             <div class="grid md:grid-cols-4 gap-8 items-center">
               {% for sponsor in sponsors %}
-                <div class="bg-white rounded-lg p-8 flex items-center justify-center h-48">
+                <div class="relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-white p-8">
+                    {% if sponsor.ribbon_visible %}
+                    <img
+                      src="/static/img/vectors/pao-ribbon.svg"
+                      alt="PAO Ribbon"
+                      class="absolute top-0 right-[20px] w-[50px]"
+                    >
+                    {% endif %}
                   {% if sponsor.website_url %}
                     <a href="{{ sponsor.website_url }}"
                        target="_blank"
@@ -234,7 +290,14 @@
                 style="color: #7c5e3b">Wellness Partner</h3>
             <div class="grid md:grid-cols-3 gap-8 items-center">
               {% for sponsor in sponsors %}
-                <div class="bg-white rounded-lg p-8 flex items-center justify-center h-48">
+                <div class="relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-white p-8">
+                    {% if sponsor.ribbon_visible %}
+                    <img
+                      src="/static/img/vectors/pao-ribbon.svg"
+                      alt="PAO Ribbon"
+                      class="absolute top-0 right-[20px] w-[50px]"
+                    >
+                    {% endif %}
                   {% if sponsor.website_url %}
                     <a href="{{ sponsor.website_url }}"
                        target="_blank"

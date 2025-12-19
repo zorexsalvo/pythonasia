@@ -21,6 +21,9 @@ class Sponsor(models.Model):
     sponsor_type = models.CharField(max_length=255, choices=SponsorType.choices)
     contact_name = models.CharField(max_length=255, blank=True, null=True)
     contact_email = models.EmailField(max_length=255, blank=True, null=True)
+    ribbon_visible = models.BooleanField(
+        default=True, verbose_name="Ribbon Toggle", help_text="Toggle to show/hide the PAO ribbon"
+    )
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
