@@ -12,7 +12,7 @@
               <br />
               to Our Sponsors
             </h2>
-            <img src="{% static 'img/py_kalinga-w-band.png' %}" alt="" width="300" height="300" />
+            <img class="hidden md:block" src="{% static 'img/py_kalinga-w-band.png' %}" alt="" width="300" height="300" />
           </div>
           <p class="text-lg font-nunito" style="color: #7c5e3b">
             This event was made possible with the help of our generous sponsors
@@ -24,10 +24,10 @@
           <div class="mb-16">
             <h3 class="text-2xl font-bold mb-8 uppercase font-bantayog font-bantayog"
                 style="color: #7c5e3b">Organizer</h3>
-            <div class="grid md:grid-cols-3 gap-8 items-center">
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
               {% for sponsor in sponsors %}
                 <div class="relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-white p-8">
-                    {% if sponsor.ribbon_visible %}
+                    {% if sponsor.is_pao_connected %}
                     <img
                       src="/static/img/vectors/pao-ribbon.svg"
                       alt="PAO Ribbon"
@@ -57,10 +57,10 @@
           <div class="mb-16">
             <h3 class="text-2xl font-bold mb-8 uppercase font-bantayog font-bantayog"
                 style="color: #7c5e3b">Institutional Sponsor</h3>
-            <div class="grid md:grid-cols-3 gap-8 items-center">
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
               {% for sponsor in sponsors %}
                 <div class="relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-white p-8">
-                    {% if sponsor.ribbon_visible %}
+                    {% if sponsor.is_pao_connected %}
                     <img
                       src="/static/img/vectors/pao-ribbon.svg"
                       alt="PAO Ribbon"
@@ -90,10 +90,10 @@
           <div class="mb-16">
             <h3 class="text-2xl font-bold mb-8 uppercase font-bantayog font-bantayog"
                 style="color: #7c5e3b">Keystone Sponsor</h3>
-            <div class="grid md:grid-cols-3 gap-8 items-center">
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
               {% for sponsor in sponsors %}
                 <div class="relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-white p-8">
-                    {% if sponsor.ribbon_visible %}
+                    {% if sponsor.is_pao_connected %}
                     <img
                       src="/static/img/vectors/pao-ribbon.svg"
                       alt="PAO Ribbon"
@@ -123,10 +123,10 @@
           <div class="mb-16">
             <h3 class="text-2xl font-bold mb-8 uppercase font-bantayog font-bantayog"
                 style="color: #7c5e3b">Titanium Sponsor</h3>
-            <div class="grid md:grid-cols-3 gap-8 items-center">
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
               {% for sponsor in sponsors %}
                 <div class="relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-white p-8">
-                    {% if sponsor.ribbon_visible %}
+                    {% if sponsor.is_pao_connected %}
                     <img
                       src="/static/img/vectors/pao-ribbon.svg"
                       alt="PAO Ribbon"
@@ -156,10 +156,10 @@
           <div class="mb-16">
             <h3 class="text-2xl font-bold mb-8 uppercase font-bantayog font-bantayog"
                 style="color: #7c5e3b">Platinum Sponsor</h3>
-            <div class="grid md:grid-cols-3 gap-8 items-center">
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
               {% for sponsor in sponsors %}
                  <div class="relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-white p-8">
-                    {% if sponsor.ribbon_visible %}
+                    {% if sponsor.is_pao_connected %}
                     <img
                       src="/static/img/vectors/pao-ribbon.svg"
                       alt="PAO Ribbon"
@@ -189,10 +189,10 @@
           <div class="mb-16">
             <h3 class="text-2xl font-bold mb-8 uppercase font-bantayog font-bantayog"
                 style="color: #7c5e3b">Gold Sponsor</h3>
-            <div class="grid md:grid-cols-3 gap-8 items-center">
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
               {% for sponsor in sponsors %}
                 <div class="relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-white p-8">
-                    {% if sponsor.ribbon_visible %}
+                    {% if sponsor.is_pao_connected %}
                     <img
                       src="/static/img/vectors/pao-ribbon.svg"
                       alt="PAO Ribbon"
@@ -222,10 +222,10 @@
           <div class="mb-16">
             <h3 class="text-2xl font-bold mb-8 uppercase font-bantayog font-bantayog"
                 style="color: #7c5e3b">Silver Sponsor</h3>
-            <div class="grid md:grid-cols-3 gap-8 items-center">
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
               {% for sponsor in sponsors %}
                 <div class="relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-white p-8">
-                    {% if sponsor.ribbon_visible %}
+                    {% if sponsor.is_pao_connected %}
                     <img
                       src="/static/img/vectors/pao-ribbon.svg"
                       alt="PAO Ribbon"
@@ -258,7 +258,7 @@
             <div class="grid md:grid-cols-4 gap-8 items-center">
               {% for sponsor in sponsors %}
                 <div class="relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-white p-8">
-                    {% if sponsor.ribbon_visible %}
+                    {% if sponsor.is_pao_connected %}
                     <img
                       src="/static/img/vectors/pao-ribbon.svg"
                       alt="PAO Ribbon"
@@ -288,10 +288,10 @@
           <div class="mb-16">
             <h3 class="text-2xl font-bold mb-8 uppercase font-bantayog"
                 style="color: #7c5e3b">Wellness Partner</h3>
-            <div class="grid md:grid-cols-3 gap-8 items-center">
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
               {% for sponsor in sponsors %}
                 <div class="relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-white p-8">
-                    {% if sponsor.ribbon_visible %}
+                    {% if sponsor.is_pao_connected %}
                     <img
                       src="/static/img/vectors/pao-ribbon.svg"
                       alt="PAO Ribbon"
