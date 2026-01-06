@@ -108,6 +108,18 @@ PRETALX__BASE_URL=https://your-pretalx-instance.com
 PRETALX__API_TOKEN=your-pretalx-api-token
 ```
 
+## 🔧 Troubleshooting
+
+### Installation Issues with brotli or psycopg-binary
+
+If you encounter build errors when installing dependencies (particularly with `brotli` or `psycopg-binary`), you may need to install system-level dependencies first:
+
+```bash
+sudo apt-get update && sudo apt-get install -y build-essential libpq-dev
+```
+
+This installs the necessary build tools and PostgreSQL development libraries required to compile these packages.
+
 ## 🎨 Frontend Development
 
 This project uses Tailwind CSS with DaisyUI for styling:
