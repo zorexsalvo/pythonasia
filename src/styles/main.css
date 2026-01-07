@@ -94,30 +94,39 @@ body {
 .bg-orange-1 {
   background-color: var(--orange-1);
 }
+
 .bg-orange-2 {
   background-color: var(--orange-2);
 }
+
 .bg-white {
   background-color: var(--white);
 }
+
 .bg-offwhite-1 {
   background-color: var(--offwhite-1);
 }
+
 .bg-offwhite-2 {
   background-color: var(--offwhite-2);
 }
+
 .bg-offwhite-3 {
   background-color: var(--offwhite-3);
 }
+
 .bg-cream-1 {
   background-color: var(--bg-cream-1);
 }
+
 .bg-cream-2 {
   background-color: var(--bg-cream-2);
 }
+
 .bg-cream-3 {
   background-color: var(--bg-cream-3);
 }
+
 .bg-transparent {
   background-color: transparent;
 }
@@ -125,18 +134,23 @@ body {
 .text-orange-2 {
   color: var(--orange-2);
 }
+
 .text-orange-3 {
   color: var(--orange-3);
 }
+
 .text-brown-1 {
   color: var(--brown-1);
 }
+
 .text-brown-2 {
   color: var(--brown-2);
 }
+
 .text-brown-3 {
   color: var(--brown-3);
 }
+
 .text-white {
   color: var(--white);
 }
@@ -150,6 +164,7 @@ body {
   background-color: var(--orange-2);
   color: var(--white);
 }
+
 .bg-secondary-btn {
   background-color: var(--white);
   color: var(--brown-1);
@@ -179,8 +194,7 @@ body {
 }
 
 .bg_call-for-links {
-  background: url("../../static/img/call-for-links.png") center center / cover
-    no-repeat;
+  background: url("../../static/img/call-for-links.png") center center / cover no-repeat;
 }
 
 /* Media Query */
@@ -261,5 +275,45 @@ body {
 
   .python-kalinga-pot .justify-self-end.self-center {
     justify-self: unset;
+  }
+}
+
+
+/* TINY MCE Dynamic Styling */
+@layer components {
+  .prose-custom h2 {
+    font-family: 'Bantayog', sans-serif;
+    color: var(--brown-1);
+    @apply font-bold text-3xl mt-8 mb-4;
+  }
+
+  .prose-custom h3 {
+    font-family: 'Bantayog', sans-serif;
+    color: var(--brown-1);
+    @apply font-bold text-2xl mt-6 mb-2;
+  }
+
+  .prose-custom h4 {
+    font-family: 'Bantayog', sans-serif;
+    color: var(--brown-1);
+    @apply font-bold text-xl mt-6 mb-2;
+  }
+
+  .prose-custom p {
+    font-family: "Nunito", sans-serif;
+    @apply text-lg mb-4 leading-relaxed;
+  }
+
+  .prose-custom ul {
+    @apply text-lg list-disc list-inside mb-6 pl-6;
+  }
+
+  .prose-custom pre {
+    @apply text-lg bg-gray-100 rounded-md p-4 text-sm overflow-x-auto;
+  }
+
+  .prose-custom a {
+    color: var(--orange-2);
+    @apply underline;
   }
 }
