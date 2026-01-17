@@ -1,5 +1,29 @@
 {% load static %}
 {% if sponsors_by_type %}
+  <style>
+    .sponsor-card-overlay {
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+    .sponsor-logo-blur {
+      transition: filter 0.3s ease, opacity 0.3s ease;
+    }
+    .sponsor-pao-ribbon {
+      transition: filter 0.3s ease;
+    }
+    .sponsor-card-container:hover .sponsor-logo-blur {
+      filter: blur(8px);
+      opacity: 0.3;
+    }
+    .sponsor-card-container:hover .sponsor-pao-ribbon {
+      filter: blur(8px);
+    }
+    @supports not (backdrop-filter: blur(8px)) {
+      .sponsor-card-overlay {
+        background: rgba(255, 255, 255, 0.95) !important;
+      }
+    }
+  </style>
   <section id="sponsors" class="py-20">
     <div class="container mx-auto px-6">
       <!-- Header with Python Mascots -->
@@ -26,28 +50,34 @@
                 style="color: #7c5e3b">Organizer</h3>
             <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
               {% for sponsor in sponsors %}
-                <div class="relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-white p-8">
+                <div class="{% if sponsor.info %}sponsor-card-container group{% endif %} relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-white p-8 {% if sponsor.info %}cursor-pointer{% endif %}">
                     {% if sponsor.is_pao_connected %}
                     <img
                       src="/static/img/vectors/pao-ribbon.svg"
                       alt="PAO Ribbon"
-                      class="absolute top-0 right-[20px] w-[50px]"
+                      class="sponsor-pao-ribbon absolute top-0 right-[20px] w-[50px] z-20"
                     >
                     {% endif %}
                   {% if sponsor.website_url %}
                     <a href="{{ sponsor.website_url }}"
                        target="_blank"
-                       rel="noopener noreferrer">
+                       rel="noopener noreferrer"
+                       class="w-full h-full flex items-center justify-center">
                       <img src="{{ sponsor.logo_url }}"
                            alt="{{ sponsor.name }}"
-                           class="max-w-full max-h-32 object-contain"
+                           class="sponsor-logo-blur max-w-full max-h-32 object-contain"
                            width="256" height="128" />
                     </a>
                   {% else %}
                     <img src="{{ sponsor.logo_url }}"
                          alt="{{ sponsor.name }}"
-                         class="max-w-full max-h-32 object-contain"
+                         class="sponsor-logo-blur max-w-full max-h-32 object-contain"
                          width="256" height="128" />
+                  {% endif %}
+                  {% if sponsor.info %}
+                    <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-white/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
+                      <p class="text-sm text-center font-nunito" style="color: #7c5e3b">{{ sponsor.info }}</p>
+                    </div>
                   {% endif %}
                 </div>
               {% endfor %}
@@ -59,28 +89,34 @@
                 style="color: #7c5e3b">Institutional Sponsor</h3>
             <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
               {% for sponsor in sponsors %}
-                <div class="relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-white p-8">
+                <div class="{% if sponsor.info %}sponsor-card-container group{% endif %} relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-white p-8 {% if sponsor.info %}cursor-pointer{% endif %}">
                     {% if sponsor.is_pao_connected %}
                     <img
                       src="/static/img/vectors/pao-ribbon.svg"
                       alt="PAO Ribbon"
-                      class="absolute top-0 right-[20px] w-[50px]"
+                      class="sponsor-pao-ribbon absolute top-0 right-[20px] w-[50px] z-20"
                     >
                     {% endif %}
                   {% if sponsor.website_url %}
                     <a href="{{ sponsor.website_url }}"
                        target="_blank"
-                       rel="noopener noreferrer">
+                       rel="noopener noreferrer"
+                       class="w-full h-full flex items-center justify-center">
                       <img src="{{ sponsor.logo_url }}"
                            alt="{{ sponsor.name }}"
-                           class="max-w-full max-h-32 object-contain"
+                           class="sponsor-logo-blur max-w-full max-h-32 object-contain"
                            width="256" height="128" />
                     </a>
                   {% else %}
                     <img src="{{ sponsor.logo_url }}"
                          alt="{{ sponsor.name }}"
-                         class="max-w-full max-h-32 object-contain"
+                         class="sponsor-logo-blur max-w-full max-h-32 object-contain"
                          width="256" height="128" />
+                  {% endif %}
+                  {% if sponsor.info %}
+                    <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-white/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
+                      <p class="text-sm text-center font-nunito" style="color: #7c5e3b">{{ sponsor.info }}</p>
+                    </div>
                   {% endif %}
                 </div>
               {% endfor %}
@@ -92,28 +128,34 @@
                 style="color: #7c5e3b">Keystone Sponsor</h3>
             <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
               {% for sponsor in sponsors %}
-                <div class="relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-white p-8">
+                <div class="{% if sponsor.info %}sponsor-card-container group{% endif %} relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-white p-8 {% if sponsor.info %}cursor-pointer{% endif %}">
                     {% if sponsor.is_pao_connected %}
                     <img
                       src="/static/img/vectors/pao-ribbon.svg"
                       alt="PAO Ribbon"
-                      class="absolute top-0 right-[20px] w-[50px]"
+                      class="sponsor-pao-ribbon absolute top-0 right-[20px] w-[50px] z-20"
                     >
                     {% endif %}
                   {% if sponsor.website_url %}
                     <a href="{{ sponsor.website_url }}"
                        target="_blank"
-                       rel="noopener noreferrer">
+                       rel="noopener noreferrer"
+                       class="w-full h-full flex items-center justify-center">
                       <img src="{{ sponsor.logo_url }}"
                            alt="{{ sponsor.name }}"
-                           class="max-w-full max-h-32 object-contain"
+                           class="sponsor-logo-blur max-w-full max-h-32 object-contain"
                            width="256" height="128" />
                     </a>
                   {% else %}
                     <img src="{{ sponsor.logo_url }}"
                          alt="{{ sponsor.name }}"
-                         class="max-w-full max-h-32 object-contain"
+                         class="sponsor-logo-blur max-w-full max-h-32 object-contain"
                          width="256" height="128" />
+                  {% endif %}
+                  {% if sponsor.info %}
+                    <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-white/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
+                      <p class="text-sm text-center font-nunito" style="color: #7c5e3b">{{ sponsor.info }}</p>
+                    </div>
                   {% endif %}
                 </div>
               {% endfor %}
@@ -125,28 +167,34 @@
                 style="color: #7c5e3b">Titanium Sponsor</h3>
             <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
               {% for sponsor in sponsors %}
-                <div class="relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-white p-8">
+                <div class="{% if sponsor.info %}sponsor-card-container group{% endif %} relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-white p-8 {% if sponsor.info %}cursor-pointer{% endif %}">
                     {% if sponsor.is_pao_connected %}
                     <img
                       src="/static/img/vectors/pao-ribbon.svg"
                       alt="PAO Ribbon"
-                      class="absolute top-0 right-[20px] w-[50px]"
+                      class="sponsor-pao-ribbon absolute top-0 right-[20px] w-[50px] z-20"
                     >
                     {% endif %}
                   {% if sponsor.website_url %}
                     <a href="{{ sponsor.website_url }}"
                        target="_blank"
-                       rel="noopener noreferrer">
+                       rel="noopener noreferrer"
+                       class="w-full h-full flex items-center justify-center">
                       <img src="{{ sponsor.logo_url }}"
                            alt="{{ sponsor.name }}"
-                           class="max-w-full max-h-32 object-contain"
+                           class="sponsor-logo-blur max-w-full max-h-32 object-contain"
                            width="256" height="128" />
                     </a>
                   {% else %}
                     <img src="{{ sponsor.logo_url }}"
                          alt="{{ sponsor.name }}"
-                         class="max-w-full max-h-32 object-contain"
+                         class="sponsor-logo-blur max-w-full max-h-32 object-contain"
                          width="256" height="128" />
+                  {% endif %}
+                  {% if sponsor.info %}
+                    <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-white/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
+                      <p class="text-sm text-center font-nunito" style="color: #7c5e3b">{{ sponsor.info }}</p>
+                    </div>
                   {% endif %}
                 </div>
               {% endfor %}
@@ -191,28 +239,34 @@
                 style="color: #7c5e3b">Gold Sponsor</h3>
             <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
               {% for sponsor in sponsors %}
-                <div class="relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-white p-8">
+                <div class="{% if sponsor.info %}sponsor-card-container group{% endif %} relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-white p-8 {% if sponsor.info %}cursor-pointer{% endif %}">
                     {% if sponsor.is_pao_connected %}
                     <img
                       src="/static/img/vectors/pao-ribbon.svg"
                       alt="PAO Ribbon"
-                      class="absolute top-0 right-[20px] w-[50px]"
+                      class="sponsor-pao-ribbon absolute top-0 right-[20px] w-[50px] z-20"
                     >
                     {% endif %}
                   {% if sponsor.website_url %}
                     <a href="{{ sponsor.website_url }}"
                        target="_blank"
-                       rel="noopener noreferrer">
+                       rel="noopener noreferrer"
+                       class="w-full h-full flex items-center justify-center">
                       <img src="{{ sponsor.logo_url }}"
                            alt="{{ sponsor.name }}"
-                           class="max-w-full max-h-32 object-contain"
+                           class="sponsor-logo-blur max-w-full max-h-32 object-contain"
                            width="256" height="128" />
                     </a>
                   {% else %}
                     <img src="{{ sponsor.logo_url }}"
                          alt="{{ sponsor.name }}"
-                         class="max-w-full max-h-32 object-contain"
+                         class="sponsor-logo-blur max-w-full max-h-32 object-contain"
                          width="256" height="128" />
+                  {% endif %}
+                  {% if sponsor.info %}
+                    <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-white/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
+                      <p class="text-sm text-center font-nunito" style="color: #7c5e3b">{{ sponsor.info }}</p>
+                    </div>
                   {% endif %}
                 </div>
               {% endfor %}
@@ -224,28 +278,34 @@
                 style="color: #7c5e3b">Silver Sponsor</h3>
             <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
               {% for sponsor in sponsors %}
-                <div class="relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-white p-8">
+                <div class="{% if sponsor.info %}sponsor-card-container group{% endif %} relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-white p-8 {% if sponsor.info %}cursor-pointer{% endif %}">
                     {% if sponsor.is_pao_connected %}
                     <img
                       src="/static/img/vectors/pao-ribbon.svg"
                       alt="PAO Ribbon"
-                      class="absolute top-0 right-[20px] w-[50px]"
+                      class="sponsor-pao-ribbon absolute top-0 right-[20px] w-[50px] z-20"
                     >
                     {% endif %}
                   {% if sponsor.website_url %}
                     <a href="{{ sponsor.website_url }}"
                        target="_blank"
-                       rel="noopener noreferrer">
+                       rel="noopener noreferrer"
+                       class="w-full h-full flex items-center justify-center">
                       <img src="{{ sponsor.logo_url }}"
                            alt="{{ sponsor.name }}"
-                           class="max-w-full max-h-32 object-contain"
+                           class="sponsor-logo-blur max-w-full max-h-32 object-contain"
                            width="256" height="128" />
                     </a>
                   {% else %}
                     <img src="{{ sponsor.logo_url }}"
                          alt="{{ sponsor.name }}"
-                         class="max-w-full max-h-32 object-contain"
+                         class="sponsor-logo-blur max-w-full max-h-32 object-contain"
                          width="256" height="128" />
+                  {% endif %}
+                  {% if sponsor.info %}
+                    <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-white/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
+                      <p class="text-sm text-center font-nunito" style="color: #7c5e3b">{{ sponsor.info }}</p>
+                    </div>
                   {% endif %}
                 </div>
               {% endfor %}
@@ -257,28 +317,34 @@
                 style="color: #7c5e3b">Community Partner</h3>
             <div class="grid md:grid-cols-4 gap-8 items-center">
               {% for sponsor in sponsors %}
-                <div class="relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-white p-8">
+                <div class="{% if sponsor.info %}sponsor-card-container group{% endif %} relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-white p-8 {% if sponsor.info %}cursor-pointer{% endif %}">
                     {% if sponsor.is_pao_connected %}
                     <img
                       src="/static/img/vectors/pao-ribbon.svg"
                       alt="PAO Ribbon"
-                      class="absolute top-0 right-[20px] w-[50px]"
+                      class="sponsor-pao-ribbon absolute top-0 right-[20px] w-[50px] z-20"
                     >
                     {% endif %}
                   {% if sponsor.website_url %}
                     <a href="{{ sponsor.website_url }}"
                        target="_blank"
-                       rel="noopener noreferrer">
+                       rel="noopener noreferrer"
+                       class="w-full h-full flex items-center justify-center">
                       <img src="{{ sponsor.logo_url }}"
                            alt="{{ sponsor.name }}"
-                           class="max-w-full max-h-32 object-contain"
+                           class="sponsor-logo-blur max-w-full max-h-32 object-contain"
                            width="256" height="128" />
                     </a>
                   {% else %}
                     <img src="{{ sponsor.logo_url }}"
                          alt="{{ sponsor.name }}"
-                         class="max-w-full max-h-32 object-contain"
+                         class="sponsor-logo-blur max-w-full max-h-32 object-contain"
                          width="256" height="128" />
+                  {% endif %}
+                  {% if sponsor.info %}
+                    <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-white/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
+                      <p class="text-sm text-center font-nunito" style="color: #7c5e3b">{{ sponsor.info }}</p>
+                    </div>
                   {% endif %}
                 </div>
               {% endfor %}
@@ -290,28 +356,34 @@
                 style="color: #7c5e3b">Wellness Partner</h3>
             <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
               {% for sponsor in sponsors %}
-                <div class="relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-white p-8">
+                <div class="{% if sponsor.info %}sponsor-card-container group{% endif %} relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-white p-8 {% if sponsor.info %}cursor-pointer{% endif %}">
                     {% if sponsor.is_pao_connected %}
                     <img
                       src="/static/img/vectors/pao-ribbon.svg"
                       alt="PAO Ribbon"
-                      class="absolute top-0 right-[20px] w-[50px]"
+                      class="sponsor-pao-ribbon absolute top-0 right-[20px] w-[50px] z-20"
                     >
                     {% endif %}
                   {% if sponsor.website_url %}
                     <a href="{{ sponsor.website_url }}"
                        target="_blank"
-                       rel="noopener noreferrer">
+                       rel="noopener noreferrer"
+                       class="w-full h-full flex items-center justify-center">
                       <img src="{{ sponsor.logo_url }}"
                            alt="{{ sponsor.name }}"
-                           class="max-w-full max-h-32 object-contain"
+                           class="sponsor-logo-blur max-w-full max-h-32 object-contain"
                            width="256" height="128" />
                     </a>
                   {% else %}
                     <img src="{{ sponsor.logo_url }}"
                          alt="{{ sponsor.name }}"
-                         class="max-w-full max-h-32 object-contain"
+                         class="sponsor-logo-blur max-w-full max-h-32 object-contain"
                          width="256" height="128" />
+                  {% endif %}
+                  {% if sponsor.info %}
+                    <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-white/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
+                      <p class="text-sm text-center font-nunito" style="color: #7c5e3b">{{ sponsor.info }}</p>
+                    </div>
                   {% endif %}
                 </div>
               {% endfor %}
