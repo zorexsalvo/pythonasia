@@ -18,7 +18,7 @@
   }
 </style>
 {% endblock %}
-<nav class="absolute w-full z-10">
+<nav class="absolute w-full z-[999px]">
   <div class="relative flex flex-col">
     <!-- Ribbon CTA -->
     <div class="bg-orange-1 py-1.5 flex items-center justify-center gap-2 flex-col sm:flex-row">
@@ -61,198 +61,30 @@
           </div>
           <ul tabindex="0"
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-64 p-2 shadow" style="left: -400%; z-index: 1000;">
-            <li class="relative">
-              <a class="font-bantayog">About</a>
-              <ul class="p-2">
-                <li>
-                  <a href="{% url 'everyone-who-can-pays' %}" class="font-bantayog hover:text-orange-2 hover:bg-transparent text-sm">Everyone who can, pays</a>
-                </li>
-              </ul>
-            </li>
-            <li class="relative">
-              <a class="font-bantayog">Get Involved</a>
-              <ul class="p-2">
-                <li>
-                  <a href="{% url 'partnership' %}" class="font-bantayog hover:text-orange-2 hover:bg-transparent">Partnership</a>
-                </li>
-                <li>
-                  <a href="{% url 'volunteers' %}" class="font-bantayog hover:text-orange-2 hover:bg-transparent">Volunteers</a>
-                </li>
-                <li>
-                  <a href="{% url 'patron-acknowledgment' %}" class="font-bantayog hover:text-orange-2 hover:bg-transparent">Patron Acknowledgment</a>
-                </li>
-              </ul>
-            </li>
-            <li class="relative">
-              <a class="font-bantayog">Policies</a>
-              <ul class="p-2">
-                <li>
-                  <a href="{% url 'covid-policy' %}" class="font-bantayog hover:text-orange-2 hover:bg-transparent">Covid Policy</a>
-                </li>
-                <li>
-                  <a href="{% url 'data-privacy' %}" class="font-bantayog hover:text-orange-2 hover:bg-transparent">Data Privacy</a>
-                </li>
-                <li>
-                  <a href="{% url 'code-of-conduct' %}" class="font-bantayog hover:text-orange-2 hover:bg-transparent">Code of Conduct</a>
-                </li>
-              </ul>
-            </li>
-            <li class="relative">
-              <a class="font-bantayog">Attend</a>
-              <ul class="p-2">
-                <li>
-                  <a href="{% url 'travel-info' %}" class="font-bantayog hover:text-orange-2 hover:bg-transparent">Travel Info</a>
-                </li>
-                <li>
-                  <a href="{% url 'aid-scholarships' %}" class="font-bantayog hover:text-orange-2 hover:bg-transparent">Aid & Scholarships</a>
-                </li>
-                <li>
-                  <a href="{% url 'schedule' %}" class="font-bantayog hover:text-orange-2 hover:bg-transparent">Schedule</a>
-                </li>
-              </ul>
-            </li>
-            <li class="mt-2">
-              <a href="https://ti.to/pythonph/pythonasia-2026/" target="_blank" class="btn btn-primary w-full text-center">Get Tickets</a>
-            </li>
+            {% for item in navigation_items %}
+              <li class="relative">
+                <a class="font-bantayog">{{ item }}</a>
+                <ul class="p-2">
+                  {% for child in item.children.all %}
+                  <li>
+                    <a href="{{ child.get_url }}"
+                      class="font-bantayog hover:text-orange-2 hover:bg-transparent">
+                      {{ child.title }}
+                    </a>
+                  </li>
+                {% endfor %}
+                </ul>
+              </li>
+            {% endfor %}
+              <li class="mt-2">
+                <a href="https://ti.to/pythonph/pythonasia-2026/" target="_blank" class="btn btn-primary w-full text-center">Get Tickets</a>
+              </li>
           </ul>
         </div>
         <!-- Header Links -->
         <div class="hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
 
-            {% if not navigation_items %}
-            <!-- About -->
-            <li class="relative group">
-              <button class="menu-nav font-bantayog text-xl text-brown-1 font-light hover:text-orange-2 cursor-pointer">
-                About
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path d="M6 9L12 15L18 9"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"/>
-                    </svg>
-              </button>
-              <ul class="absolute left-0 top-full p-1 top-10 w-52 bg-base-100 rounded-box shadow opacity-0 invisible
-                        group-hover:opacity-100 group-hover:visible transition-all duration-150 z-[1]">
-                <li>
-                  <a href="{% url 'everyone-who-can-pays' %}"
-                    class="menu-subnav font-bantayog hover:text-orange-1 hover:bg-transparent" style="white-space: nowrap; font-size: 14px;">
-                    Everyone who can, pays
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <!-- Get Involved -->
-            <li class="relative group">
-              <button class="menu-nav font-bantayog text-xl text-brown-1 font-light hover:text-orange-2 cursor-pointer">
-                Get Involved
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path d="M6 9L12 15L18 9"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"/>
-                    </svg>
-              </button>
-              <ul class="absolute left-0 top-full p-1 mt-2 w-52 bg-base-100 rounded-box shadow opacity-0 invisible
-                        group-hover:opacity-100 group-hover:visible transition-all duration-150 z-[1]">
-                <li>
-                  <a href="{% url 'partnership' %}"
-                    class="menu-subnav font-bantayog hover:text-orange-2 hover:bg-transparent">
-                    Partnership
-                  </a>
-                </li>
-                <li>
-                  <a href="{% url 'volunteers' %}"
-                    class="menu-subnav font-bantayog hover:text-orange-2 hover:bg-transparent">
-                    Volunteers
-                  </a>
-                </li>
-                <li>
-                  <a href="{% url 'patron-acknowledgment' %}"
-                    class="menu-subnav font-bantayog hover:text-orange-2 hover:bg-transparent">
-                    Patron Acknowledgment
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <!-- Policies -->
-            <li class="relative group">
-              <button class="menu-nav font-bantayog text-xl text-brown-1 font-light hover:text-orange-2 cursor-pointer">
-                Policies
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path d="M6 9L12 15L18 9"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"/>
-                 </svg>
-              </button>
-              <ul class="absolute left-0 top-full p-1 mt-2 w-52 bg-base-100 rounded-box shadow opacity-0 invisible
-                        group-hover:opacity-100 group-hover:visible transition-all duration-150 z-[1]">
-                <li>
-                  <a href="{% url 'covid-policy' %}"
-                    class="menu-subnav font-bantayog hover:text-orange-2 hover:bg-transparent">
-                    Covid Policy
-                  </a>
-                </li>
-                <li>
-                  <a href="{% url 'data-privacy' %}"
-                    class="menu-subnav font-bantayog hover:text-orange-2 hover:bg-transparent">
-                    Data Privacy
-                  </a>
-                </li>
-                <li>
-                  <a href="{% url 'code-of-conduct' %}"
-                    class="menu-subnav font-bantayog hover:text-orange-2 hover:bg-transparent">
-                    Code of Conduct
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <!-- Attend -->
-            <li class="relative group">
-              <button class="menu-nav font-bantayog text-xl text-brown-1 font-light hover:text-orange-2 cursor-pointer">
-                Attend
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path d="M6 9L12 15L18 9"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"/>
-                 </svg>
-              </button>
-              <ul class="absolute left-0 top-full p-1 mt-2 w-52 bg-base-100 rounded-box shadow opacity-0 invisible
-                        group-hover:opacity-100 group-hover:visible transition-all duration-150 z-[1]">
-                <li>
-                  <a href="{% url 'travel-info' %}"
-                    class="menu-subnav font-bantayog hover:text-orange-2 hover:bg-transparent">
-                    Travel Info
-                  </a>
-                </li>
-                <li>
-                  <a href="{% url 'aid-scholarships' %}"
-                    class="menu-subnav font-bantayog hover:text-orange-2 hover:bg-transparent">
-                    Aid & Scholarships
-                  </a>
-                </li>
-                <li>
-                  <a href="{% url 'schedule' %}"
-                    class="menu-subnav font-bantayog hover:text-orange-2 hover:bg-transparent">
-                    Schedule
-                  </a>
-                </li>
-              </ul>
-            </li>
-          {% endif %}
 
           {% for item in navigation_items %}
             <li class="relative group">
@@ -271,7 +103,7 @@
                         group-hover:opacity-100 group-hover:visible transition-all duration-150 z-[1]">
                 {% for child in item.children.all %}
                 <li>
-                  <a href="{{ child.page.get_absolute_url }}"
+                  <a href="{{ child.get_url }}"
                     class="menu-subnav font-bantayog hover:text-orange-2 hover:bg-transparent">
                     {{ child.title }}
                   </a>
