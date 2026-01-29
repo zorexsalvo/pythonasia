@@ -2266,6 +2266,10 @@
     --tw-tracking: var(--tracking-wider);
     letter-spacing: var(--tracking-wider);
   }
+  .hyphens-auto {
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
   .text-\[\#7C5E3B\] {
     color: #7C5E3B;
   }
