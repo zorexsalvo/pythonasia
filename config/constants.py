@@ -3,6 +3,7 @@ SPONSOR_TYPE_ORDER = [
     "INSTITUTIONAL",
     "KEYSTONE",
     "PLATINUM",
+    "PLATINUM_PARTNER",
     "TITANIUM",
     "GOLD",
     "SILVER",

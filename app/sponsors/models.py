@@ -9,6 +9,7 @@ class Sponsor(models.Model):
         WELLNESS_PARTNER = "WELLNESS_PARTNER"
         KEYSTONE = "KEYSTONE"
         PLATINUM = "PLATINUM"
+        PLATINUM_PARTNER = "PLATINUM_PARTNER"
         TITANIUM = "TITANIUM"
         GOLD = "GOLD"
         SILVER = "SILVER"
