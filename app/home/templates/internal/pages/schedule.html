@@ -6,6 +6,20 @@
     pretalx-schedule {
       display: block;
       width: 100%;
+      --pretalx-font-size: 0.95rem;
+
+      /* Force light theme regardless of system dark mode */
+      color-scheme: light;
+
+      /* Explicit light colors (override dark-mode tokens) */
+      --pretalx-clr-background: #ffffff;
+      --pretalx-clr-card: #ffffff;
+      --pretalx-clr-text: #111827;
+      --pretalx-clr-text-muted: #4b5563;
+      --pretalx-clr-heading: #111827;
+      --pretalx-clr-border: #e5e7eb;
+
+      --pretalx-clr-primary: #f97316;
     }
 
     /* Make the schedule responsive on mobile */
@@ -24,7 +38,7 @@
     <div class="content-body font-nunito text-brown-2 text-lg leading-relaxed w-full overflow-x-auto">
       <p class="text-brown-2 font-nunito text-center sm:text-left max-w-7xl mx-auto mb-6 italic">Note: This schedule is subject to change. Please check back regularly for updates.</p>
 
-      <pretalx-schedule event-url="https://pretalx.com/python-asia-2026/" locale="en" format="grid" style="--pretalx-clr-primary: #f97316; zoom: 95%"></pretalx-schedule>
+      <pretalx-schedule event-url="https://pretalx.com/python-asia-2026/" locale="en" format="grid"></pretalx-schedule>
       <noscript>
         <div class="pretalx-widget">
           <div class="pretalx-widget-info-message">
