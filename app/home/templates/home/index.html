@@ -1,5 +1,25 @@
 {% extends "base.html" %}
+
 {% load static %}
+{% block extra_css %}
+<style>
+  .cstm_bottom{
+    position: absolute;
+    bottom: -65px;
+    left: 0;
+  }
+
+  .cstm_top{
+    position: absolute;
+    top: -65px;
+    left: 0;
+  }
+
+  #conference-at-a-glance {
+    background: url(/static/img/bg-conference-at-glance.png) no-repeat;
+  }
+</style>
+{% endblock %}
 {% block content %}
 <main>
     <div class="min-h-screen" style="background-image: url('{% static 'img/background.png' %}')">
@@ -7,17 +27,9 @@
         {% include "home/components/navbar.html" %}
         <!-- Hero Section -->
         {% include "home/sections/hero-section.html" %}
-        <div class="w-full py-0 my-0 z-10 -mb-25 hidden xl:block cstm_break mt-[-9vw]">
-            <img src="{% static 'img/vectors/section-break-1.svg' %}" alt="Section Break" class="w-full block"
-                width="1920" height="200">
-        </div>
         <!-- About Us Section -->
         {% include "home/sections/about-us.html" %}
         <!-- Section Break -->
-        <div class="w-full py-0 my-0  z-10 -mt-25 cstm_break about-us_break">
-            <img src="{% static 'img/vectors/section-break-2.svg' %}" alt="Section Break" class="w-full block"
-                width="1920" height="200">
-        </div>
         <!-- Conference at a Glance Section -->
         {% include "home/sections/conference-at-a-glance.html" %}
         <!-- Why Python Section -->

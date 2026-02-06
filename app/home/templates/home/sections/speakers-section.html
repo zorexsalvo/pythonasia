@@ -9,10 +9,10 @@
         for PythonAsia 2026
       </p>
     </div>
-    <div class="keynote-speakers-wrapper flex justify-center items-center gap-[30px] flex-wrap">
+    <div class="keynote-speakers-wrapper flex justify-center items-stretch gap-[30px] flex-wrap">
       {% for speaker in featured_speakers %}
       <div
-        class="rounded-[24px] bg-cream-1 flex flex-col sm:flex-row gap-10 w-full max-w-[100%] lg:max-w-[48%] grow items-stretch"
+        class="rounded-[24px] bg-cream-1 flex flex-col sm:flex-row gap-10 w-full max-w-[100%] lg:max-w-[48%] grow items-stretch h-full"
         style="padding: 30px">
         <div class="overflow-hidden flex-shrink-0 w-[230px] flex items-center justify-center">
           {% if speaker.photo_url %}
