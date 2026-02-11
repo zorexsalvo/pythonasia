@@ -14,6 +14,7 @@ class Sponsor(models.Model):
         GOLD = "GOLD"
         SILVER = "SILVER"
         COFFEE = "COFFEE"
+        EDUCATION_SUMMIT = "EDUCATION_SUMMIT"
 
     name = models.CharField(max_length=255)
     logo_url = models.URLField(max_length=255)
