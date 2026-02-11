@@ -197,6 +197,17 @@ body {
   background: url("../../static/img/call-for-links.png") center center / cover no-repeat;
 }
 
+.coc_footer_wrapper {
+  background-image:
+    url('../../static/img/leaves.png'),
+    linear-gradient(to right, #F5DDB8 0%, #F3E6D4 100%);
+
+  /* First layer: image, second layer: gradient */
+  background-position: center, center;
+  background-size: cover, cover; /* or auto for gradient */
+  background-repeat: no-repeat, no-repeat;
+}
+
 /* Media Query */
 
 @media screen and (max-width: 1570px) {
