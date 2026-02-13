@@ -1,14 +1,15 @@
 {% load static %}
-<section id="call-for-x" class="py-20 bg_call-for-links">
-    <div class="container mx-auto px-6">
+<section id="call-for-x" class="py-20 md:py-36 px-[4%] bg_call-for-links relative">
+    <div class="container mx-auto px-[4%]">
+        <img src="{% static 'img/vectors/section-divider-03.svg' %}" alt="Section Break" class="w-full py-0 my-0 z-10 cstm_top block divider-03">
         <!-- Header -->
-        <div class="text-center mb-16">
-            <h2 class="text-5xl md:text-6xl font-bold mb-12 font-td_pinoy text-white">Get Involved</h2>
+        <div class="text-center md:mb-16 mb-8">
+            <h2 class="text-5xl md:text-6xl font-bold mb-4 font-td_pinoy text-white">Get Involved</h2>
             <p class="text-[28px] font-bantayog uppercase text-white">Magic happens when people come together to achieve
                 common goals.</p>
         </div>
         <div
-            class="flex flex-col sm:flex-row md:items-stretch md:justify-center items-center gap-8 mb-20 max-w-5xl mx-auto">
+            class="flex flex-col sm:flex-row md:items-stretch md:justify-center items-center gap-8 max-w-5xl mx-auto">
 
             <div
                 class="p-8 rounded-2xl w-full max-w-[300px] min-h-[350px] bg-offwhite-2 border-t-[8px] border-t-[#B04301] h-[250px]">
@@ -34,9 +35,6 @@
                 </div>
             </div>
         </div>
-
-        {% comment %}
-        {% include "home/sections/tickets-section.html" %}
-        {% endcomment %}
+        <img src="{% static 'img/vectors/section-divider-04.svg' %}" alt="Section Break" class="w-full py-0 my-0 z-10 cstm_bottom block divider-04">
     </div>
 </section>

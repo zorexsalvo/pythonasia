@@ -1,29 +1,34 @@
+import os
+from pathlib import Path
+
 import django.db.models.signals
 import sentry_sdk
 from sentry_sdk.integrations.django import DjangoIntegration
 
-from config.environment import BASE_DIR, settings
+from config.environment import settings
 
-# Sentry Configuration
-# https://docs.sentry.io/platforms/python/integrations/django/
+BASE_DIR = Path(__file__).resolve().parent.parent
 
-sentry_sdk.init(
-    dsn=settings.SENTRY_DSN,
-    send_default_pii=True,
-    integrations=[
-        DjangoIntegration(
-            transaction_style="url",
-            middleware_spans=True,
-            signals_spans=True,
-            signals_denylist=[
-                django.db.models.signals.pre_init,
-                django.db.models.signals.post_init,
-            ],
-            cache_spans=False,
-            http_methods_to_capture=("GET",),
-        ),
-    ],
-)
+SENTRY_DSN = os.environ.get("SENTRY_DSN") or getattr(settings, "SENTRY_DSN", None)
+
+if SENTRY_DSN:
+    sentry_sdk.init(
+        dsn=SENTRY_DSN,
+        send_default_pii=True,
+        integrations=[
+            DjangoIntegration(
+                transaction_style="url",
+                middleware_spans=True,
+                signals_spans=True,
+                signals_denylist=[
+                    django.db.models.signals.pre_init,
+                    django.db.models.signals.post_init,
+                ],
+                cache_spans=False,
+                http_methods_to_capture=("GET",),
+            ),
+        ],
+    )
 
 # General Settings
 

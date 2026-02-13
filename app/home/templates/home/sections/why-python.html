@@ -1,11 +1,11 @@
 {% load static %}
 
-<section id="why-python" class="py-20 px-6 bg-offwhite-3">
+<section id="why-python" class="py-20 px-[4%] bg-offwhite-3">
     <div class="container mx-auto w-full max-w-[1080px]">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <!-- Left Column - Text Content -->
-            <div class="space-y-6 w-full max-w-[452px] mx-auto md:m-0 xl:m-0">
-                <h2 class="text-5xl lg:text-6xl font-bold text-[#D87532] mb-6 font-td_pinoy text-center md:text-left xl:text-left">Why Python?</h2>
+            <div class="space-y-6 w-full max-w-full lg:max-w-[452px] mx-auto md:m-0 xl:m-0">
+                <h2 class="text-5xl lg:text-6xl font-bold text-orange-2 mb-6 font-td_pinoy text-center md:text-left xl:text-left">Why Python?</h2>
 
                 <p class="text-brown-2 text-lg leading-relaxed font-nunito text-center md:text-left xl:text-left">
                     We believe Python changes lives.
@@ -33,76 +33,58 @@
             </div>
 
             <!-- Right Column - Icon Grid -->
-            <div class="grid grid-cols-3 gap-8">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-2">
                 <!-- Data Analysis -->
-                <div class="flex flex-col items-center text-center">
-                    <div class="w-20 h-20 rounded-lg bg-[#FFF8F0] flex items-center justify-center mb-3">
-                        <span class="material-symbols-outlined text-[#D87532]" style="font-size: 48px;">analytics</span>
-                    </div>
+                <div class="flex flex-col justify-center items-center text-center rounded-2xl bg-[#FAEEE0] md:py-10 py-5 px-3 gap-3">
+                    <img src="{% static 'img/vectors/big-data.svg' %}" alt="Data Analysis Icon">
                     <p class="text-brown-2 text-sm font-medium">Data Analysis</p>
                 </div>
 
                 <!-- AI/Machine Learning -->
-                <div class="flex flex-col items-center text-center">
-                    <div class="w-20 h-20 rounded-lg bg-[#FFF8F0] flex items-center justify-center mb-3">
-                        <span class="material-symbols-outlined text-[#D87532]" style="font-size: 48px;">psychology</span>
-                    </div>
+                <div class="flex flex-col justify-center items-center text-center rounded-2xl bg-[#FAEEE0] md:py-10 py-5 px-3 gap-3">
+                    <img src="{% static 'img/vectors/ai-learning.svg' %}" alt="AI/Machine Learning Icon">
                     <p class="text-brown-2 text-sm font-medium">AI/Machine Learning</p>
                 </div>
 
                 <!-- Automation -->
-                <div class="flex flex-col items-center text-center">
-                    <div class="w-20 h-20 rounded-lg bg-[#FFF8F0] flex items-center justify-center mb-3">
-                        <span class="material-symbols-outlined text-[#D87532]" style="font-size: 48px;">settings_suggest</span>
-                    </div>
+                <div class="flex flex-col justify-center items-center text-center rounded-2xl bg-[#FAEEE0] md:py-10 py-5 px-3 gap-3">
+                    <img src="{% static 'img/vectors/automation.svg' %}" alt="Automation Icon">
                     <p class="text-brown-2 text-sm font-medium">Automation</p>
                 </div>
 
                 <!-- Cloud Computing -->
-                <div class="flex flex-col items-center text-center">
-                    <div class="w-20 h-20 rounded-lg bg-[#FFF8F0] flex items-center justify-center mb-3">
-                        <span class="material-symbols-outlined text-[#D87532]" style="font-size: 48px;">cloud</span>
-                    </div>
+                <div class="flex flex-col justify-center items-center text-center rounded-2xl bg-[#FAEEE0] md:py-10 py-5 px-3 gap-3">
+                    <img src="{% static 'img/vectors/cloud-computing.svg' %}" alt="Cloud Computing Icon">
                     <p class="text-brown-2 text-sm font-medium">Cloud Computing</p>
                 </div>
 
                 <!-- Web Apps -->
-                <div class="flex flex-col items-center text-center">
-                    <div class="w-20 h-20 rounded-lg bg-[#FFF8F0] flex items-center justify-center mb-3">
-                        <span class="material-symbols-outlined text-[#D87532]" style="font-size: 48px;">web</span>
-                    </div>
+                <div class="flex flex-col justify-center items-center text-center rounded-2xl bg-[#FAEEE0] md:py-10 py-5 px-3 gap-3">
+                    <img src="{% static 'img/vectors/web-app.svg' %}" alt="Web Apps Icon">
                     <p class="text-brown-2 text-sm font-medium">Web Apps</p>
                 </div>
 
                 <!-- Mobile Apps -->
-                <div class="flex flex-col items-center text-center">
-                    <div class="w-20 h-20 rounded-lg bg-[#FFF8F0] flex items-center justify-center mb-3">
-                        <span class="material-symbols-outlined text-[#D87532]" style="font-size: 48px;">smartphone</span>
-                    </div>
+                <div class="flex flex-col justify-center items-center text-center rounded-2xl bg-[#FAEEE0] md:py-10 py-5 px-3 gap-3">
+                    <img src="{% static 'img/vectors/mobile-app.svg' %}" alt="Mobile Apps Icon">
                     <p class="text-brown-2 text-sm font-medium">Mobile Apps</p>
                 </div>
 
                 <!-- Desktop Apps -->
-                <div class="flex flex-col items-center text-center">
-                    <div class="w-20 h-20 rounded-lg bg-[#FFF8F0] flex items-center justify-center mb-3">
-                        <span class="material-symbols-outlined text-[#D87532]" style="font-size: 48px;">computer</span>
-                    </div>
+                <div class="flex flex-col justify-center items-center text-center rounded-2xl bg-[#FAEEE0] md:py-10 py-5 px-3 gap-3">
+                    <img src="{% static 'img/vectors/workstation.svg' %}" alt="Desktop Apps Icon">
                     <p class="text-brown-2 text-sm font-medium">Desktop Apps</p>
                 </div>
 
                 <!-- Software Testing -->
-                <div class="flex flex-col items-center text-center">
-                    <div class="w-20 h-20 rounded-lg bg-[#FFF8F0] flex items-center justify-center mb-3">
-                        <span class="material-symbols-outlined text-[#D87532]" style="font-size: 48px;">bug_report</span>
-                    </div>
+                <div class="flex flex-col justify-center items-center text-center rounded-2xl bg-[#FAEEE0] md:py-10 py-5 px-3 gap-3">
+                    <img src="{% static 'img/vectors/software-testing.svg' %}" alt="Software Testing Icon">
                     <p class="text-brown-2 text-sm font-medium">Software Testing</p>
                 </div>
 
                 <!-- Cyber Security -->
-                <div class="flex flex-col items-center text-center">
-                    <div class="w-20 h-20 rounded-lg bg-[#FFF8F0] flex items-center justify-center mb-3">
-                        <span class="material-symbols-outlined text-[#D87532]" style="font-size: 48px;">security</span>
-                    </div>
+                <div class="flex flex-col justify-center items-center text-center rounded-2xl bg-[#FAEEE0] md:py-10 py-5 px-3 gap-3">
+                    <img src="{% static 'img/vectors/cybersecurity.svg' %}" alt="Cyber Security Icon">
                     <p class="text-brown-2 text-sm font-medium">Cyber Security</p>
                 </div>
             </div>
