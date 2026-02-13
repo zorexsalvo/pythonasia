@@ -12,7 +12,7 @@
     <div class="keynote-speakers-wrapper grid gap-[30px] grid-cols-1 lg:grid-cols-2 gap-[30px]">
       {% for speaker in featured_speakers %}
       <div
-        class="rounded-[24px] bg-cream-1 flex flex-col sm:flex-row gap-10 w-full max-w-[100%] lg:max-w-[100%] grow items-stretch h-full"
+        class="rounded-[24px] bg-cream-1 flex flex-col sm:flex-row gap-10 w-full max-w-[100%] lg:max-w-[100%] grow md:items-stretch items-center h-full"
         style="padding: 30px">
         <div class="overflow-hidden flex-shrink-0 w-[230px] flex items-center justify-center">
           {% if speaker.photo_url %}
@@ -24,14 +24,14 @@
           {% endif %}
         </div>
         <div  class="flex flex-col gap-2 justify-center">
-          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">{{ speaker.full_name }}</h3>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase md:text-left text-center">{{ speaker.full_name }}</h3>
           {% if speaker.title %}
-          <p class="font-nunito text-brown-2 font-semibold text-sm">{{ speaker.title }}</p>
+          <p class="font-nunito text-brown-2 font-semibold text-sm md:text-left text-center">{{ speaker.title }}</p>
           {% endif %}
           {% if speaker.introduction %}
-          <p class="font-nunito text-brown-2 text-[13px]">{{ speaker.introduction }}</p>
+          <p class="font-nunito text-brown-2 text-[13px] md:text-left text-center">{{ speaker.introduction }}</p>
           {% elif speaker.bio %}
-          <p class="font-nunito text-brown-2 text-[13px]">{{ speaker.bio }}</p>
+          <p class="font-nunito text-brown-2 text-[13px] md:text-left text-center">{{ speaker.bio }}</p>
           {% endif %}
         </div>
       </div>
@@ -77,6 +77,6 @@
     </div>
   </div>
   {% endif %}
-  <img src="{% static 'img/vectors/section-divider-04.svg' %}" alt="Section Break" class="w-full py-0 my-0 z-10 cstm_bottom block" style="transform: rotate(180deg); bottom: -110px">
+  <img src="{% static 'img/vectors/section-divider-04.svg' %}" alt="Section Break" class="w-full py-0 my-0 z-10 cstm_bottom block divider-05">
 </section>
 {% endif %}

@@ -16,7 +16,10 @@
   }
 
   #conference-at-a-glance {
-    background: url(/static/img/bg-conference-at-glance.png) no-repeat;
+    background: url('{% static 'img/bg-conference-at-glance.png' %}'), #FFF9F2;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 </style>
 {% endblock %}
