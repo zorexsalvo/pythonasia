@@ -13,6 +13,10 @@ uv sync
 echo "Applying database migrations..."
 uv run manage.py migrate --noinput
 
+# Create cache table
+echo "Creating cache table..."
+uv run manage.py createcachetable
+
 # Collect static files
 echo "Collecting static files..."
 uv run manage.py collectstatic --noinput

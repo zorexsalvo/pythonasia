@@ -1,13 +1,13 @@
 import requests
+from django.core.cache import cache
 
 from config.environment import settings
 
 
 class PretalxService:
-    def __init__(self, base_url: str):
-        self.base_url = settings.PRETALX.BASE_URL.rstrip("/")
+    def __init__(self, base_url: str | None = None):
+        self.base_url = base_url or settings.PRETALX.BASE_URL.rstrip("/")
         self.headers = {
-            "Authorization": f"Token {settings.PRETALX.API_TOKEN}",
             "Content-Type": "application/json",
         }
 
@@ -17,14 +17,39 @@ class PretalxService:
         return response.json() if response.ok else response.raise_for_status()
 
     def get_submissions(self, event_slug: str):
-        url = f"{self.base_url}/api/events/{event_slug}/submissions/"
+        cache_key = f"pretalx_submissions_{event_slug}"
+        cached = cache.get(cache_key)
+        if cached:
+            return cached
+        url = f"{self.base_url}/api/events/{event_slug}/submissions/?page_size=999"
         response = requests.get(url, headers=self.headers)
-        return response.json() if response.ok else response.raise_for_status()
+        data = response.json() if response.ok else response.raise_for_status()
+        cache.set(cache_key, data)
+        return data
 
     def get_speakers(self, event_slug: str):
-        url = f"{self.base_url}/api/events/{event_slug}/speakers/"
-        response = requests.get(url, headers=self.headers)
-        return response.json() if response.ok else response.raise_for_status()
+        try:
+            cache_key = f"pretalx_speakers_{event_slug}"
+            cached = cache.get(cache_key)
+            if cached:
+                return cached
+
+            url = f"{self.base_url}/api/events/{event_slug}/speakers/?page_size=999"
+            response = requests.get(url, headers=self.headers)
+            data = response.json() if response.ok else response.raise_for_status()
+
+            submissions = self.get_submissions(event_slug)
+            confirmed_codes = {sub["code"] for sub in submissions.get("results", []) if sub.get("state") == "confirmed"}
+
+            data["results"] = [
+                speaker
+                for speaker in data.get("results", [])
+                if any(code in confirmed_codes for code in speaker.get("submissions", []))
+            ]
+            cache.set(cache_key, data)
+            return data
+        except requests.RequestException:
+            return {"results": []}
 
     def get_talks(self, event_slug: str):
         url = f"{self.base_url}/api/events/{event_slug}/talks?limit=999&state=confirmed"
@@ -39,4 +64,9 @@ class PretalxService:
     def send_feedback(self, event_slug: str, submission_id: str, feedback: dict):
         url = f"{self.base_url}/api/events/{event_slug}/submissions/{submission_id}/feedback/"
         response = requests.post(url, json=feedback, headers=self.headers)
+        return response.json() if response.ok else response.raise_for_status()
+
+    def get_sessions(self, event_slug: str):
+        url = f"{self.base_url}/api/events/{event_slug}/sessions/"
+        response = requests.get(url, headers=self.headers)
         return response.json() if response.ok else response.raise_for_status()

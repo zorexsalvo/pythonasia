@@ -206,6 +206,13 @@ TAILWIND_CLI_USE_DAISY_UI = True
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
+CACHES = {
+    "default": {
+        "BACKEND": "django.core.cache.backends.db.DatabaseCache",
+        "LOCATION": "django_cache",
+    }
+}
+
 # Build directory for bakery
 BUILD_DIR = BASE_DIR / "build"
 BAKERY_VIEWS = ("app.home.views.HomeView",)

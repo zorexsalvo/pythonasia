@@ -6,6 +6,7 @@ from bakery.views import BuildableTemplateView
 from app.speakers.models import Speaker
 from app.sponsors.models import Sponsor
 from config.constants import SPONSOR_TYPE_ORDER
+from services.pretalx_service import PretalxService
 
 
 class HomeView(BuildableTemplateView):
@@ -25,9 +26,14 @@ class HomeView(BuildableTemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
+        service = PretalxService()
         context["sponsors_by_type"] = self.get_sponsors()
-        context["featured_speakers"] = Speaker.objects.filter(is_featured=True).order_by("first_name", "last_name")
-        context["speakers"] = Speaker.objects.filter(is_featured=False).order_by("first_name", "last_name")
+        featured_speakers = Speaker.objects.filter(is_featured=True).order_by("first_name", "last_name")
+        context["featured_speakers"] = featured_speakers
+        keynote_names = {s.full_name for s in featured_speakers}
+        context["speakers"] = [
+            s for s in service.get_speakers("python-asia-2026")["results"] if s.get("name") not in keynote_names
+        ]
         return context
 
 

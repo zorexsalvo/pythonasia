@@ -134,3 +134,6 @@ dmypy.json
 
 # NodeJS/npm
 node_modules/
+
+# Pretalx export files
+*_python-asia-*.json
