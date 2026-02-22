@@ -54,13 +54,8 @@
       {% if speaker.avatar_url %}
       <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
         <div class="overflow-hidden flex-shrink-0 w-[250px] h-[250px]">
-          {% if speaker.avatar_url %}
           <img src="{{ speaker.avatar_url }}" class="w-[250px] h-[250px] object-cover rounded-[85px]"
             alt="{{ speaker.name }} - Image" width="250" height="250">
-          {% else %}
-          <img src="{% static 'img/speakers/speakers-img-1.jpg' %}" class="w-[250px] h-[250px] object-cover rounded-[85px]"
-            alt="{{ speaker.name }} - Image" width="250" height="250">
-          {% endif %}
         </div>
         <div>
           <h3 class="font-bantayog text-brown-1 text-2xl uppercase">{{ speaker.name }}</h3>

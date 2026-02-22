@@ -58,8 +58,4 @@ class Settings(BaseSettings):
         return {"NAME": name, "HOST": host, "USER": user, "PASSWORD": pwd, "PORT": 5432}
 
 
-settings = Settings(
-    PRETALX=PretalxConfig(
-        BASE_URL="https://pretalx.com",
-    )
-)
+settings = Settings()

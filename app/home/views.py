@@ -26,7 +26,7 @@ class HomeView(BuildableTemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        service = PretalxService(base_url="https://pretalx.com")
+        service = PretalxService()
         context["sponsors_by_type"] = self.get_sponsors()
         featured_speakers = Speaker.objects.filter(is_featured=True).order_by("first_name", "last_name")
         context["featured_speakers"] = featured_speakers

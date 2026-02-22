@@ -1,5 +1,3 @@
-import json
-
 import requests
 from django.core.cache import cache
 
