@@ -32,33 +32,38 @@
 {% endblock header %}
 
 
-<div class="w-full px-[4%] pt-40 pb-18 mx-auto max-w-[1440px]">
-  <div class="w-full" id="schedule-container">
+<div class="w-full pt-40 pb-18">
+  <div class="w-full px-[4%] mx-auto max-w-[1440px]" id="schedule-container">
     <h2 class="text-5xl my-10 font-bold font-td_pinoy text-orange-2 text-center sm:text-left max-w-7xl mx-auto">Schedule</h2>
     <div class="content-body font-nunito text-brown-2 text-lg leading-relaxed w-full">
-      <p class="text-brown-2 font-nunito text-center sm:text-left max-w-7xl mx-auto mb-6 italic">Note: This schedule is subject to change. Please check back regularly for updates.</p>
-
-      <div class="min-w-0 w-full">
-        <pretalx-schedule event-url="https://pretalx.com/python-asia-2026/" locale="en" format="grid"></pretalx-schedule>
-      </div>
-      <noscript>
-        <div class="pretalx-widget">
-          <div class="pretalx-widget-info-message">
-            JavaScript is disabled in your browser. To access our schedule without JavaScript, please <a target="_blank" href="https://pretalx.com/python-asia-2026/schedule/nojs">click here</a>.
-          </div>
-        </div>
-      </noscript>
+      <p class="text-brown-2 font-nunito text-center sm:text-left max-w-7xl mx-auto mb-6 italic">
+        The schedule is still taking shape — sessions and times may shift as we finalize the program.
+        Check back closer to the event for the latest updates, or view it directly on <a href="https://pretalx.com/python-asia-2026/schedule/" target="_blank" rel="noopener" class="text-orange-2 underline">pretalx.com</a>.
+      </p>
     </div>
   </div>
+
+  <div id="schedule-widget-wrapper" class="w-full px-[2%]" style="overflow: auto; height: 90dvh;">
+    <pretalx-schedule event-url="https://pretalx.com/python-asia-2026/" locale="en" format="grid"></pretalx-schedule>
+  </div>
+
+  <noscript>
+    <p class="px-[4%] font-nunito text-brown-2 mt-4">
+      JavaScript is disabled in your browser. To access our schedule without JavaScript, please
+      <a class="text-orange-2 underline" target="_blank" href="https://pretalx.com/python-asia-2026/schedule/nojs">click here</a>.
+    </p>
+  </noscript>
 </div>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    setTimeout(() => {
-      const scheduleContainer = document.getElementById('schedule-container');
-      if (scheduleContainer) {
-        scheduleContainer.style.overflowX = 'auto';
-      }
-    }, 1000);
+  document.addEventListener('DOMContentLoaded', function () {
+    const wrapper = document.getElementById('schedule-widget-wrapper');
+    const widget = document.querySelector('pretalx-schedule');
+
+    if (widget) widget.style.height = '100%';
+
+    wrapper.addEventListener('mouseenter', () => {
+      wrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
   });
 </script>
