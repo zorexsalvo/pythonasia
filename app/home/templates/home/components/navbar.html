@@ -63,7 +63,11 @@
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-64 p-2 shadow" style="left: -400%; z-index: 1000;">
             {% for item in navigation_items %}
               <li class="relative">
+                {% if item.external_url %}
+                <a href="{{ item.external_url }}" class="font-bantayog">{{ item }}</a>
+                {% else %}
                 <a class="font-bantayog">{{ item }}</a>
+                {% endif %}
                 <ul class="p-2">
                   {% for child in item.children.all %}
                   <li>
