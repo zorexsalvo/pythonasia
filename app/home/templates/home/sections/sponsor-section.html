@@ -4,7 +4,6 @@
     .sponsor-card-overlay {
       backdrop-filter: blur(8px);
       -webkit-backdrop-filter: blur(8px);
-      pointer-events: none;
     }
     .sponsor-logo-blur {
       transition: filter 0.3s ease, opacity 0.3s ease;
@@ -76,7 +75,7 @@
                   {% endif %}
                   {% if sponsor.info %}
                     <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-offwhite-3/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
-                      <p class="text-sm text-center font-nunito" style="color: #7c5e3b">{{ sponsor.info }}</p>
+                      <p class="text-sm text-center font-nunito overflow-y-auto h-[100%]" style="color: #7c5e3b">{{ sponsor.info }}</p>
                     </div>
                   {% endif %}
                 </div>
@@ -114,7 +113,7 @@
                   {% endif %}
                   {% if sponsor.info %}
                     <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-offwhite-3/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
-                      <p class="text-sm text-center font-nunito" style="color: #7c5e3b">{{ sponsor.info }}</p>
+                      <p class="text-sm text-center font-nunito overflow-y-auto h-[100%]" style="color: #7c5e3b">{{ sponsor.info }}</p>
                     </div>
                   {% endif %}
                 </div>
@@ -152,7 +151,7 @@
                   {% endif %}
                   {% if sponsor.info %}
                     <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-offwhite-3/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
-                      <p class="text-sm text-center font-nunito" style="color: #7c5e3b">{{ sponsor.info }}</p>
+                      <p class="text-sm text-center font-nunito overflow-y-auto h-[100%]" style="color: #7c5e3b">{{ sponsor.info }}</p>
                     </div>
                   {% endif %}
                 </div>
@@ -190,7 +189,7 @@
                   {% endif %}
                   {% if sponsor.info %}
                     <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-offwhite-3/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
-                      <p class="text-sm text-center font-nunito" style="color: #7c5e3b">{{ sponsor.info }}</p>
+                      <p class="text-sm text-center font-nunito overflow-y-auto h-[100%]" style="color: #7c5e3b">{{ sponsor.info }}</p>
                     </div>
                   {% endif %}
                 </div>
@@ -227,7 +226,7 @@
                   {% endif %}
                   {% if sponsor.info %}
                     <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-offwhite-3/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
-                      <p class="text-sm text-center font-nunito" style="color: #7c5e3b">{{ sponsor.info }}</p>
+                      <p class="text-sm text-center font-nunito overflow-y-auto h-[100%]" style="color: #7c5e3b">{{ sponsor.info }}</p>
                     </div>
                   {% endif %}
                 </div>
@@ -264,7 +263,7 @@
                   {% endif %}
                   {% if sponsor.info %}
                     <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-offwhite-3/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
-                      <p class="text-sm text-center font-nunito" style="color: #7c5e3b">{{ sponsor.info }}</p>
+                      <p class="text-sm text-center font-nunito overflow-y-auto h-[100%]" style="color: #7c5e3b">{{ sponsor.info }}</p>
                     </div>
                   {% endif %}
                 </div>
@@ -302,7 +301,7 @@
                   {% endif %}
                   {% if sponsor.info %}
                     <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-offwhite-3/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
-                      <p class="text-sm text-center font-nunito" style="color: #7c5e3b">{{ sponsor.info }}</p>
+                      <p class="text-sm text-center font-nunito overflow-y-auto h-[100%]" style="color: #7c5e3b">{{ sponsor.info }}</p>
                     </div>
                   {% endif %}
                 </div>
@@ -340,7 +339,7 @@
                   {% endif %}
                   {% if sponsor.info %}
                     <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-offwhite-3/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
-                      <p class="text-sm text-center font-nunito" style="color: #7c5e3b">{{ sponsor.info }}</p>
+                      <p class="text-sm text-center font-nunito overflow-y-auto h-[100%]" style="color: #7c5e3b">{{ sponsor.info }}</p>
                     </div>
                   {% endif %}
                 </div>
@@ -378,10 +377,49 @@
                   {% endif %}
                   {% if sponsor.info %}
                     <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-offwhite-3/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
-                      <p class="text-sm text-center font-nunito" style="color: #7c5e3b">{{ sponsor.info }}</p>
+                      <p class="text-sm text-center font-nunito overflow-y-auto h-[100%]" style="color: #7c5e3b">{{ sponsor.info }}</p>
                     </div>
                   {% endif %}
                 </div>
+              {% endfor %}
+            </div>
+          </div>
+        {% elif sponsor_type_key == "ACADEMIC_PARTNER" %}
+          <div class="mb-16">
+            <h3 class="text-2xl font-bold mb-8 uppercase font-bantayog"
+                style="color: #7c5e3b">Academic Partner</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
+              {% for sponsor in sponsors %}
+              <div class="{% if sponsor.info %}sponsor-card-container group{% endif %} relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-offwhite-3 p-8 {% if sponsor.info %}cursor-pointer{% endif %}">
+                {% if sponsor.is_pao_connected %}
+                <img
+                  src="/static/img/vectors/pao-ribbon.svg"
+                  alt="PAO Ribbon"
+                  class="sponsor-pao-ribbon absolute top-0 right-[20px] w-[50px] z-20"
+                >
+                {% endif %}
+              {% if sponsor.website_url %}
+                <a href="{{ sponsor.website_url }}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="w-full h-full flex items-center justify-center">
+                  <img src="{{ sponsor.logo_url }}"
+                      alt="{{ sponsor.name }}"
+                      class="sponsor-logo-blur max-w-full max-h-32 object-contain"
+                      width="256" height="128" />
+                </a>
+              {% else %}
+                <img src="{{ sponsor.logo_url }}"
+                    alt="{{ sponsor.name }}"
+                    class="sponsor-logo-blur max-w-full max-h-32 object-contain"
+                    width="256" height="128" />
+              {% endif %}
+              {% if sponsor.info %}
+                <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-offwhite-3/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
+                  <p class="text-sm text-center font-nunito overflow-y-auto h-[100%]" style="color: #7c5e3b">{{ sponsor.info }}</p>
+                </div>
+              {% endif %}
+            </div>
               {% endfor %}
             </div>
           </div>
@@ -417,7 +455,7 @@
                   {% endif %}
                   {% if sponsor.info %}
                     <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-offwhite-3/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
-                      <p class="text-sm text-center font-nunito" style="color: #7c5e3b">{{ sponsor.info }}</p>
+                      <p class="text-sm text-center font-nunito overflow-y-auto h-[100%]" style="color: #7c5e3b">{{ sponsor.info }}</p>
                     </div>
                   {% endif %}
                 </div>
@@ -456,7 +494,7 @@
                   {% endif %}
                   {% if sponsor.info %}
                     <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-offwhite-3/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
-                      <p class="text-sm text-center font-nunito" style="color: #7c5e3b">{{ sponsor.info }}</p>
+                      <p class="text-sm text-center font-nunito overflow-y-auto h-[100%]" style="color: #7c5e3b">{{ sponsor.info }}</p>
                     </div>
                   {% endif %}
                 </div>
@@ -495,13 +533,14 @@
               {% endif %}
               {% if sponsor.info %}
                 <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-offwhite-3/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
-                  <p class="text-sm text-center font-nunito" style="color: #7c5e3b">{{ sponsor.info }}</p>
+                  <p class="text-sm text-center font-nunito overflow-y-auto h-[100%]" style="color: #7c5e3b">{{ sponsor.info }}</p>
                 </div>
               {% endif %}
             </div>
               {% endfor %}
             </div>
           </div>
+
         {% endif %}
       {% endfor %}
     </div>
