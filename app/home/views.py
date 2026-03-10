@@ -97,3 +97,8 @@ class ScheduleView(InternalPageView):
 class VolunteersView(InternalPageView):
     build_path = "volunteers/index.html"
     page_template = "internal/pages/volunteers.html"
+
+
+class MerchandiseView(InternalPageView):
+    build_path = "merchandise/index.html"
+    page_template = "internal/pages/merchandise.html"

@@ -1,0 +1,270 @@
+{% load static %}
+
+<div class="max-w-6xl mx-auto px-[4%] pt-40 pb-18">
+  <h2 class="text-5xl my-10 font-bold font-td_pinoy text-orange-2">
+    Merchandise
+  </h2>
+
+  <div class="font-nunito text-brown-2 text-lg mb-12 space-y-4">
+    <p>
+      Thank you for your interest in PythonAsia 2026 merchandise! Browse our exclusive collection
+      below — from apparel and accessories to Filipino-inspired keepsakes.
+    </p>
+    <p>
+      This order form is <strong>exclusive to confirmed attendees</strong> of PythonAsia 2026.
+      Fill it out to reserve your items. Our organizing team will contact you to confirm
+      your order and provide payment instructions.
+    </p>
+    <div class="flex flex-col items-center gap-4 pt-2">
+      <a
+        href="https://forms.gle/RRdGLFGUV6sbJtey5"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-block bg-orange-2 text-white font-bold font-bantayog px-8 py-3 rounded-xl hover:opacity-90 transition-opacity"
+      >
+        Reserve Your Merch
+      </a>
+      <div class="flex flex-col items-center gap-2 pt-2">
+        <p class="font-nunito text-brown-2 text-sm">or scan to reserve</p>
+        <img
+          src="{% static 'img/merchandise/order-form-qr.png' %}"
+          alt="QR code for merchandise order form"
+          class="w-28 h-28 rounded-lg shadow-sm"
+        >
+      </div>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-3 sm:grid-cols-4 gap-4">
+
+    <div class="bg-offwhite-2 rounded-2xl overflow-hidden shadow-sm flex flex-col">
+      <div class="aspect-square bg-cream-1 flex items-center justify-center p-4">
+        <img
+          src="{% static 'img/merchandise/tshirt-kalinga-maroon.png' %}"
+          alt="Kalinga T-Shirt (Maroon)"
+          class="w-full h-full object-contain"
+          loading="lazy"
+        >
+      </div>
+      <div class="p-4 flex flex-col flex-1">
+        <h3 class="font-bantayog font-bold text-brown-1 text-lg leading-snug">Kalinga T-Shirt</h3>
+        <p class="font-nunito text-brown-2 text-sm mt-1">Maroon · XS–2XL</p>
+        <p class="font-nunito font-bold text-orange-2 text-base mt-auto pt-3">Php 500.00</p>
+      </div>
+    </div>
+
+    <div class="bg-offwhite-2 rounded-2xl overflow-hidden shadow-sm flex flex-col">
+      <div class="aspect-square bg-cream-1 flex items-center justify-center p-4">
+        <img
+          src="{% static 'img/merchandise/tshirt-pythonasia-2026-white-generic.png' %}"
+          alt="PythonAsia 2026 T-Shirt (White)"
+          class="w-full h-full object-contain"
+          loading="lazy"
+        >
+      </div>
+      <div class="p-4 flex flex-col flex-1">
+        <h3 class="font-bantayog font-bold text-brown-1 text-lg leading-snug">PythonAsia 2026 T-Shirt</h3>
+        <p class="font-nunito text-brown-2 text-sm mt-1">Conference Type · White · XS–2XL</p>
+        <p class="font-nunito font-bold text-orange-2 text-base mt-auto pt-3">Php 500.00</p>
+      </div>
+    </div>
+
+    <div class="bg-offwhite-2 rounded-2xl overflow-hidden shadow-sm flex flex-col">
+      <div class="aspect-square bg-cream-1 flex items-center justify-center p-4">
+        <img
+          src="{% static 'img/merchandise/leather-tray.png' %}"
+          alt="Leather Tray"
+          class="w-full h-full object-contain"
+          loading="lazy"
+        >
+      </div>
+      <div class="p-4 flex flex-col flex-1">
+        <h3 class="font-bantayog font-bold text-brown-1 text-lg leading-snug">Leather Tray</h3>
+        <p class="font-nunito font-bold text-orange-2 text-base mt-auto pt-3">Php 450.00</p>
+      </div>
+    </div>
+
+    <div class="bg-offwhite-2 rounded-2xl overflow-hidden shadow-sm flex flex-col">
+      <div class="aspect-square bg-cream-1 flex items-center justify-center p-4">
+        <img
+          src="{% static 'img/merchandise/notepad-large.png' %}"
+          alt="Notepad (80 Sheets, 4×4)"
+          class="w-full h-full object-contain"
+          loading="lazy"
+        >
+      </div>
+      <div class="p-4 flex flex-col flex-1">
+        <h3 class="font-bantayog font-bold text-brown-1 text-lg leading-snug">Notepad</h3>
+        <p class="font-nunito text-brown-2 text-sm mt-1">80 Sheets · 4×4</p>
+        <p class="font-nunito font-bold text-orange-2 text-base mt-auto pt-3">Php 100.00</p>
+      </div>
+    </div>
+
+    <div class="bg-offwhite-2 rounded-2xl overflow-hidden shadow-sm flex flex-col">
+      <div class="aspect-square bg-cream-1 flex items-center justify-center p-4">
+        <img
+          src="{% static 'img/merchandise/notepad-design1-small.png' %}"
+          alt="Notepad Design 1 (40 Sheets, 3×3)"
+          class="w-full h-full object-contain"
+          loading="lazy"
+        >
+      </div>
+      <div class="p-4 flex flex-col flex-1">
+        <h3 class="font-bantayog font-bold text-brown-1 text-lg leading-snug">Notepad Design 1</h3>
+        <p class="font-nunito text-brown-2 text-sm mt-1">40 Sheets · 3×3</p>
+        <p class="font-nunito font-bold text-orange-2 text-base mt-auto pt-3">Php 80.00</p>
+      </div>
+    </div>
+
+    <div class="bg-offwhite-2 rounded-2xl overflow-hidden shadow-sm flex flex-col">
+      <div class="aspect-square bg-cream-1 flex items-center justify-center p-4">
+        <img
+          src="{% static 'img/merchandise/notepad-design2-small.png' %}"
+          alt="Notepad Design 2 (40 Sheets, 3×3)"
+          class="w-full h-full object-contain"
+          loading="lazy"
+        >
+      </div>
+      <div class="p-4 flex flex-col flex-1">
+        <h3 class="font-bantayog font-bold text-brown-1 text-lg leading-snug">Notepad Design 2</h3>
+        <p class="font-nunito text-brown-2 text-sm mt-1">40 Sheets · 3×3</p>
+        <p class="font-nunito font-bold text-orange-2 text-base mt-auto pt-3">Php 80.00</p>
+      </div>
+    </div>
+
+    <div class="bg-offwhite-2 rounded-2xl overflow-hidden shadow-sm flex flex-col">
+      <div class="aspect-square bg-cream-1 flex items-center justify-center p-4">
+        <img
+          src="{% static 'img/merchandise/pythonasia-2026-acrylic.png' %}"
+          alt="Acrylic Keychain PythonAsia 2026"
+          class="w-full h-full object-contain"
+          loading="lazy"
+        >
+      </div>
+      <div class="p-4 flex flex-col flex-1">
+        <h3 class="font-bantayog font-bold text-brown-1 text-lg leading-snug">Acrylic Keychain PythonAsia 2026</h3>
+        <p class="font-nunito font-bold text-orange-2 text-base mt-auto pt-3">Php 100.00</p>
+      </div>
+    </div>
+
+    <div class="bg-offwhite-2 rounded-2xl overflow-hidden shadow-sm flex flex-col">
+      <div class="aspect-square bg-cream-1 flex items-center justify-center p-4">
+        <img
+          src="{% static 'img/merchandise/palayok-acrylic.png' %}"
+          alt="Acrylic Keychain Palayok"
+          class="w-full h-full object-contain"
+          loading="lazy"
+        >
+      </div>
+      <div class="p-4 flex flex-col flex-1">
+        <h3 class="font-bantayog font-bold text-brown-1 text-lg leading-snug">Acrylic Keychain Palayok</h3>
+        <p class="font-nunito font-bold text-orange-2 text-base mt-auto pt-3">Php 100.00</p>
+      </div>
+    </div>
+
+    <div class="bg-offwhite-2 rounded-2xl overflow-hidden shadow-sm flex flex-col">
+      <div class="aspect-square bg-cream-1 flex items-center justify-center p-4">
+        <img
+          src="{% static 'img/merchandise/fridge-magnet.jpg' %}"
+          alt="Refrigerator Magnet"
+          class="w-full h-full object-contain"
+          loading="lazy"
+        >
+      </div>
+      <div class="p-4 flex flex-col flex-1">
+        <h3 class="font-bantayog font-bold text-brown-1 text-lg leading-snug">Refrigerator Magnet</h3>
+        <p class="font-nunito font-bold text-orange-2 text-base mt-auto pt-3">Php 150.00</p>
+      </div>
+    </div>
+
+    <div class="bg-offwhite-2 rounded-2xl overflow-hidden shadow-sm flex flex-col">
+      <div class="aspect-square bg-cream-1 flex items-center justify-center p-4">
+        <img
+          src="{% static 'img/merchandise/pythonph-fidget.jpg' %}"
+          alt="3D PythonPH Clicker Fidget"
+          class="w-full h-full object-contain"
+          loading="lazy"
+        >
+      </div>
+      <div class="p-4 flex flex-col flex-1">
+        <h3 class="font-bantayog font-bold text-brown-1 text-lg leading-snug">3D PythonPH Clicker Fidget</h3>
+        <p class="font-nunito font-bold text-orange-2 text-base mt-auto pt-3">Php 250.00</p>
+      </div>
+    </div>
+
+    <div class="bg-offwhite-2 rounded-2xl overflow-hidden shadow-sm flex flex-col">
+      <div class="aspect-square bg-cream-1 flex items-center justify-center p-4">
+        <img
+          src="{% static 'img/merchandise/palayok-clicker.png' %}"
+          alt="3D Palayok Clicker Fidget (Large)"
+          class="w-full h-full object-contain"
+          loading="lazy"
+        >
+      </div>
+      <div class="p-4 flex flex-col flex-1">
+        <h3 class="font-bantayog font-bold text-brown-1 text-lg leading-snug">3D Palayok Clicker Fidget</h3>
+        <p class="font-nunito text-brown-2 text-sm mt-1">Large</p>
+        <p class="font-nunito font-bold text-orange-2 text-base mt-auto pt-3">Php 350.00</p>
+      </div>
+    </div>
+
+    <div class="bg-offwhite-2 rounded-2xl overflow-hidden shadow-sm flex flex-col">
+      <div class="aspect-square bg-cream-1 flex items-center justify-center p-4">
+        <img
+          src="{% static 'img/merchandise/palayok-clicker.png' %}"
+          alt="3D Palayok Clicker Fidget (Small)"
+          class="w-full h-full object-contain"
+          loading="lazy"
+        >
+      </div>
+      <div class="p-4 flex flex-col flex-1">
+        <h3 class="font-bantayog font-bold text-brown-1 text-lg leading-snug">3D Palayok Clicker Fidget</h3>
+        <p class="font-nunito text-brown-2 text-sm mt-1">Small</p>
+        <p class="font-nunito font-bold text-orange-2 text-base mt-auto pt-3">Php 300.00</p>
+      </div>
+    </div>
+
+    <div class="bg-offwhite-2 rounded-2xl overflow-hidden shadow-sm flex flex-col">
+      <div class="aspect-square bg-cream-1 flex items-center justify-center p-4">
+        <img
+          src="{% static 'img/merchandise/pythonasia-2026-socks.png' %}"
+          alt="PythonAsia Pattern Style Customized Socks (Beige)"
+          class="w-full h-full object-contain"
+          loading="lazy"
+        >
+      </div>
+      <div class="p-4 flex flex-col flex-1">
+        <h3 class="font-bantayog font-bold text-brown-1 text-lg leading-snug">PythonAsia Pattern Style Customized Socks</h3>
+        <p class="font-nunito text-brown-2 text-sm mt-1">Beige</p>
+        <p class="font-nunito font-bold text-orange-2 text-base mt-auto pt-3">Php 350.00</p>
+      </div>
+    </div>
+
+    <div class="bg-offwhite-2 rounded-2xl overflow-hidden shadow-sm flex flex-col">
+      <div class="aspect-square bg-cream-1 flex items-center justify-center p-4">
+        <img
+          src="{% static 'img/merchandise/socks-pattern-pythonph.png' %}"
+          alt="PythonPH Logo Pattern Style Customized Socks (Black)"
+          class="w-full h-full object-contain"
+          loading="lazy"
+        >
+      </div>
+      <div class="p-4 flex flex-col flex-1">
+        <h3 class="font-bantayog font-bold text-brown-1 text-lg leading-snug">PythonPH Logo Pattern Style Customized Socks</h3>
+        <p class="font-nunito text-brown-2 text-sm mt-1">Black</p>
+        <p class="font-nunito font-bold text-orange-2 text-base mt-auto pt-3">Php 320.00</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="mt-16 flex flex-col items-center">
+    <h3 class="font-bantayog font-bold text-brown-1 text-2xl mb-6">Size Chart</h3>
+    <img
+      src="{% static 'img/merchandise/size-chart.png' %}"
+      alt="Merchandise size chart"
+      class="w-full max-w-lg rounded-2xl shadow-sm"
+    >
+  </div>
+
+</div>
