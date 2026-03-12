@@ -24,7 +24,7 @@
     <title>
         PythonAsia 2026 {% block title %}{% endblock %}
     </title>
-    {% tailwind_css %}
+    <link href="{% static 'css/app.css' %}?v={% now 'U' %}" rel="stylesheet">
     {% block extra_css %}{% endblock %}
 </head>
 
