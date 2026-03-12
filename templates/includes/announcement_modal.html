@@ -1,0 +1,40 @@
+{% comment %}
+Announcement modal component. Displays the latest published announcement from the database.
+The modal is dismissible and won't show again until browser session is closed or cache is cleared.
+{% endcomment %}
+
+{% if latest_announcement %}
+<dialog id="announcement-modal" class="modal" open>
+    <div class="modal-box bg-cream-1">
+        <h3 class="font-bold text-lg">📢 {{ latest_announcement.title }}</h3>
+        <div class="py-4">
+            {{ latest_announcement.content|safe }}
+        </div>
+        <div class="modal-action">
+            <form method="dialog">
+                <button class="btn">Close</button>
+            </form>
+        </div>
+    </div>
+    <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+    </form>
+</dialog>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const modal = document.getElementById('announcement-modal');
+        const dismissKey = 'announcement-dismissed-v1';
+
+        // Check if user has dismissed this announcement
+        if (sessionStorage.getItem(dismissKey)) {
+            modal.removeAttribute('open');
+        }
+
+        // Store dismissal when modal closes
+        modal.addEventListener('close', function() {
+            sessionStorage.setItem(dismissKey, 'true');
+        });
+    });
+</script>
+{% endif %}

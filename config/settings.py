@@ -69,6 +69,7 @@ LOCAL_APPS = [
     "app.speakers",
     "app.sponsors",
     "app.pages",
+    "app.announcements.apps.AnnouncementsConfig",
 ]
 
 INSTALLED_APPS = [
@@ -119,6 +120,7 @@ TEMPLATES = [
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
                 "app.pages.context_processors.navigation",
+                "config.context_processors.announcement_context",
             ],
         },
     },
