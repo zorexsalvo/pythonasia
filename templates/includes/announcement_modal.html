@@ -9,8 +9,8 @@ The modal is dismissible and won't show again until browser session is closed or
         <form method="dialog" class="absolute right-4 top-4">
             <button class="text-2xl cursor-pointer hover:opacity-70">✕</button>
         </form>
-        <h3 class="font-bold text-lg">📢 {{ latest_announcement.title }}</h3>
-        <div class="py-4">
+        <h3 class="font-bold text-3xl mb-4">📢 {{ latest_announcement.title }}</h3>
+        <div class="py-4 text-sm prose prose-sm max-w-none [&_p]:text-sm [&_h1]:text-lg [&_h2]:text-base">
             {{ latest_announcement.content|safe }}
         </div>
     </div>

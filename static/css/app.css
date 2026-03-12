@@ -3824,6 +3824,24 @@
       padding-bottom: 100px;
     }
   }
+  .\[\&_h1\]\:text-lg {
+    & h1 {
+      font-size: var(--text-lg);
+      line-height: var(--tw-leading, var(--text-lg--line-height));
+    }
+  }
+  .\[\&_h2\]\:text-base {
+    & h2 {
+      font-size: var(--text-base);
+      line-height: var(--tw-leading, var(--text-base--line-height));
+    }
+  }
+  .\[\&_p\]\:text-sm {
+    & p {
+      font-size: var(--text-sm);
+      line-height: var(--tw-leading, var(--text-sm--line-height));
+    }
+  }
   .\[\&\>tr\]\:bg-white {
     &>tr {
       background-color: var(--color-white);
