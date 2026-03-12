@@ -2,6 +2,7 @@
 Announcement modal component. Displays the latest published announcement from the database.
 The modal is dismissible and won't show again until browser session is closed or cache is cleared.
 {% endcomment %}
+{% load content_filters %}
 
 {% if latest_announcement %}
 <dialog id="announcement-modal" class="modal" open>
@@ -11,7 +12,7 @@ The modal is dismissible and won't show again until browser session is closed or
         </form>
         <h3 class="font-bold text-2xl mb-4">📢 {{ latest_announcement.title }}</h3>
         <div class="py-4 prose prose-sm max-w-none [&_p]:text-lg [&_p]:pb-4 [&_h1]:text-lg [&_h2]:text-xl">
-            {{ latest_announcement.content|safe }}
+            {{ latest_announcement.content|render_buttons }}
         </div>
     </div>
     <form method="dialog" class="modal-backdrop">
