@@ -2424,6 +2424,9 @@
   .w-6 {
     width: calc(var(--spacing) * 6);
   }
+  .w-11 {
+    width: calc(var(--spacing) * 11);
+  }
   .w-11\/12 {
     width: calc(11 / 12 * 100%);
   }
@@ -2678,9 +2681,6 @@
   }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
-  }
-  .gap-2\.5 {
-    gap: calc(var(--spacing) * 2.5);
   }
   .gap-3 {
     gap: calc(var(--spacing) * 3);
@@ -2988,9 +2988,6 @@
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
-  }
-  .py-2\.5 {
-    padding-block: calc(var(--spacing) * 2.5);
   }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
@@ -3425,11 +3422,6 @@
       justify-content: flex-start;
     }
   }
-  .sm\:gap-2 {
-    @media (width >= 40rem) {
-      gap: calc(var(--spacing) * 2);
-    }
-  }
   .sm\:gap-4 {
     @media (width >= 40rem) {
       gap: calc(var(--spacing) * 4);
@@ -3824,6 +3816,12 @@
       padding-bottom: 100px;
     }
   }
+  .\[\&_h1\]\:text-2xl {
+    & h1 {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
+    }
+  }
   .\[\&_h1\]\:text-lg {
     & h1 {
       font-size: var(--text-lg);
@@ -3834,6 +3832,28 @@
     & h2 {
       font-size: var(--text-base);
       line-height: var(--tw-leading, var(--text-base--line-height));
+    }
+  }
+  .\[\&_h2\]\:text-xl {
+    & h2 {
+      font-size: var(--text-xl);
+      line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
+  }
+  .\[\&_p\]\:pb-4 {
+    & p {
+      padding-bottom: calc(var(--spacing) * 4);
+    }
+  }
+  .\[\&_p\]\:pb-10 {
+    & p {
+      padding-bottom: calc(var(--spacing) * 10);
+    }
+  }
+  .\[\&_p\]\:text-lg {
+    & p {
+      font-size: var(--text-lg);
+      line-height: var(--tw-leading, var(--text-lg--line-height));
     }
   }
   .\[\&_p\]\:text-sm {

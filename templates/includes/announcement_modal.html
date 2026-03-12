@@ -9,8 +9,8 @@ The modal is dismissible and won't show again until browser session is closed or
         <form method="dialog" class="absolute right-4 top-4">
             <button class="text-2xl cursor-pointer hover:opacity-70">✕</button>
         </form>
-        <h3 class="font-bold text-3xl mb-4">📢 {{ latest_announcement.title }}</h3>
-        <div class="py-4 text-sm prose prose-sm max-w-none [&_p]:text-sm [&_h1]:text-lg [&_h2]:text-base">
+        <h3 class="font-bold text-2xl mb-4">📢 {{ latest_announcement.title }}</h3>
+        <div class="py-4 prose prose-sm max-w-none [&_p]:text-lg [&_p]:pb-4 [&_h1]:text-lg [&_h2]:text-xl">
             {{ latest_announcement.content|safe }}
         </div>
     </div>
@@ -22,7 +22,7 @@ The modal is dismissible and won't show again until browser session is closed or
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const modal = document.getElementById('announcement-modal');
-        const dismissKey = 'announcement-dismissed-{{ latest_announcement.id }}';
+        const dismissKey = 'announcement-dismissed-{{ latest_announcement.id }}-{{ latest_announcement.updated_at.timestamp }}';
 
         // Check if user has dismissed this announcement
         if (sessionStorage.getItem(dismissKey)) {
