@@ -2484,6 +2484,9 @@
   .w-\[670px\] {
     width: 670px;
   }
+  .w-auto {
+    width: auto;
+  }
   .w-full {
     width: 100%;
   }
