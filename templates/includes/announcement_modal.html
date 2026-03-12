@@ -7,7 +7,7 @@ The modal is dismissible and won't show again until browser session is closed or
 <dialog id="announcement-modal" class="modal" open>
     <div class="modal-box bg-cream-1 {% if latest_announcement.modal_size == 'lg' %}w-11/12 max-w-2xl{% elif latest_announcement.modal_size == 'xl' %}w-11/12 max-w-4xl{% endif %}">
         <form method="dialog" class="absolute right-4 top-4">
-            <button class="btn btn-ghost text-2xl p-0 h-auto w-auto leading-none">✕</button>
+            <button class="text-2xl cursor-pointer hover:opacity-70">✕</button>
         </form>
         <h3 class="font-bold text-lg">📢 {{ latest_announcement.title }}</h3>
         <div class="py-4">
