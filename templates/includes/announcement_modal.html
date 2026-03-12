@@ -22,7 +22,7 @@ The modal is dismissible and won't show again until browser session is closed or
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const modal = document.getElementById('announcement-modal');
-        const dismissKey = 'announcement-dismissed-v1';
+        const dismissKey = 'announcement-dismissed-{{ latest_announcement.id }}';
 
         // Check if user has dismissed this announcement
         if (sessionStorage.getItem(dismissKey)) {
