@@ -2418,6 +2418,9 @@
   .w-6 {
     width: calc(var(--spacing) * 6);
   }
+  .w-11\/12 {
+    width: calc(11 / 12 * 100%);
+  }
   .w-16 {
     width: calc(var(--spacing) * 16);
   }
@@ -2477,6 +2480,9 @@
   }
   .w-full {
     width: 100%;
+  }
+  .max-w-2xl {
+    max-width: var(--container-2xl);
   }
   .max-w-3xl {
     max-width: var(--container-3xl);
