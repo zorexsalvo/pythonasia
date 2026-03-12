@@ -102,3 +102,95 @@ class VolunteersView(InternalPageView):
 class MerchandiseView(InternalPageView):
     build_path = "merchandise/index.html"
     page_template = "internal/pages/merchandise.html"
+
+    ITEMS = [
+        {
+            "image": "img/merchandise/tshirt-kalinga-maroon.png",
+            "name": "Kalinga T-Shirt",
+            "description": "Red · XS–2XL",
+            "price": "₱500.00",
+        },
+        {
+            "image": "img/merchandise/tshirt-pythonasia-2026-white-generic.png",
+            "name": "PythonAsia 2026 T-Shirt",
+            "description": "Conference Type · White · XS–2XL",
+            "price": "₱500.00",
+        },
+        {
+            "image": "img/merchandise/leather-tray.png",
+            "name": "Leather Tray",
+            "description": "",
+            "price": "₱450.00",
+        },
+        {
+            "image": "img/merchandise/notepad-large.png",
+            "name": "Notepad",
+            "description": "80 Sheets · 4×4",
+            "price": "₱100.00",
+        },
+        {
+            "image": "img/merchandise/notepad-design1-small.png",
+            "name": "Notepad Design 1",
+            "description": "40 Sheets · 3×3",
+            "price": "₱80.00",
+        },
+        {
+            "image": "img/merchandise/notepad-design2-small.png",
+            "name": "Notepad Design 2",
+            "description": "40 Sheets · 3×3",
+            "price": "₱80.00",
+        },
+        {
+            "image": "img/merchandise/pythonasia-2026-acrylic.png",
+            "name": "Acrylic Keychain PythonAsia 2026",
+            "description": "",
+            "price": "₱100.00",
+        },
+        {
+            "image": "img/merchandise/palayok-acrylic.png",
+            "name": "Acrylic Keychain Palayok",
+            "description": "",
+            "price": "₱100.00",
+        },
+        {
+            "image": "img/merchandise/fridge-magnet.jpg",
+            "name": "Refrigerator Magnet",
+            "description": "",
+            "price": "₱150.00",
+        },
+        {
+            "image": "img/merchandise/pythonph-fidget.jpg",
+            "name": "3D PythonPH Clicker Fidget",
+            "description": "",
+            "price": "₱250.00",
+        },
+        {
+            "image": "img/merchandise/palayok-clicker.png",
+            "name": "3D Palayok Clicker Fidget",
+            "description": "Large",
+            "price": "₱350.00",
+        },
+        {
+            "image": "img/merchandise/palayok-clicker.png",
+            "name": "3D Palayok Clicker Fidget",
+            "description": "Small",
+            "price": "₱300.00",
+        },
+        {
+            "image": "img/merchandise/pythonasia-2026-socks.png",
+            "name": "PythonAsia Pattern Style Customized Socks",
+            "description": "Beige",
+            "price": "₱450.00",
+        },
+        {
+            "image": "img/merchandise/socks-pattern-pythonph.png",
+            "name": "PythonPH Logo Pattern Style Customized Socks",
+            "description": "Black",
+            "price": "₱320.00",
+        },
+    ]
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["merchandise_items"] = self.ITEMS
+        return context
