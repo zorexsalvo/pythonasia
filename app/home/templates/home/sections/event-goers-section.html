@@ -1,0 +1,117 @@
+{% load static %}
+
+<section id="event-goers" class="py-20 md:py-24 px-[4%] bg-offwhite-2">
+    <div class="container mx-auto w-full max-w-[1120px]">
+        <!-- Event Reminders Header -->
+        <div class="text-center mb-10 md:mb-14" id="event-reminders">
+            <p class="inline-flex items-center gap-2 px-4 py-1 mb-4 rounded-full bg-[#FBE7D6] text-xs md:text-sm font-semibold tracking-wide text-brown-2 uppercase font-nunito shadow-sm">
+                <span class="inline-flex h-2 w-2 rounded-full bg-orange-2"></span>
+                Important for all attendees
+            </p>
+            <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold font-td_pinoy text-orange-2 drop-shadow-sm">
+                Event Reminders
+            </h2>
+            <p class="mt-4 text-brown-2 text-base md:text-lg leading-relaxed font-nunito max-w-3xl mx-auto">
+                As we get closer to the event, here are a few important reminders to help you prepare.
+            </p>
+        </div>
+
+        <!-- Reminder Content -->
+        <div class="bg-[#FFF5EB] border border-[#F7C28A] rounded-3xl p-6 md:p-10 shadow-[0_18px_0_0_rgba(242,109,29,0.16)] md:shadow-[0_24px_0_0_rgba(242,109,29,0.16)] relative overflow-hidden">
+            <div class="pointer-events-none absolute -top-10 -right-10 md:-top-8 md:-right-6 opacity-60">
+                <img src="{% static 'img/vectors/icon-reminder.svg' %}" alt="" class="w-20 md:w-24 lg:w-28">
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-8 relative z-10">
+                <!-- What to Bring (full-width) -->
+                <div id="what-to-bring" class="border border-[#F7C28A] bg-[#FFF9F3] rounded-2xl p-4 md:p-5 md:col-span-2">
+                    <h3 class="text-xl md:text-2xl font-bantayog text-brown-1 mb-3 flex items-center gap-2">
+                        <span class="inline-flex h-2 w-2 rounded-full bg-orange-2"></span>
+                        What to Bring
+                    </h3>
+                    <ul class="list-disc list-inside space-y-2 font-nunito text-brown-2 text-sm md:text-base leading-relaxed">
+                        <li>Laptop <span class="font-semibold">(especially for workshops and sprints)</span></li>
+                        <li>Reusable water bottle</li>
+                        <li>Your ticket QR code ready for scanning</li>
+                    </ul>
+                    <p class="mt-4 text-xs md:text-sm font-nunito leading-relaxed text-brown-2 bg-[#FDE4D6] border border-[#F26D1D] rounded-2xl px-4 py-3">
+                        <span class="font-semibold uppercase tracking-wide text-[0.7rem] md:text-[0.75rem]">Reminder:</span>
+                        <br>
+                        Pet bottles and plastic cups are not allowed inside the premises of De La Salle University Manila.
+                    </p>
+                </div>
+
+                <!-- Registration (full-width) -->
+                <div id="registration" class="border border-dashed border-[#F7C28A] rounded-2xl p-4 md:p-5 bg-[#FFFDFC] md:col-span-2">
+                    <h3 class="text-xl md:text-2xl font-bantayog text-brown-1 mb-3 flex items-center gap-2">
+                        <span class="inline-flex h-2 w-2 rounded-full bg-[#FFA218]"></span>
+                        Registration
+                    </h3>
+                    <ul class="list-disc list-inside space-y-2 font-nunito text-brown-2 text-sm md:text-base leading-relaxed">
+                        <li>Registration starts at <span class="font-semibold">8:00 AM</span> and ends at <span class="font-semibold">2:00 PM</span>.</li>
+                        <li>Please prepare your ticket QR code for faster entry.</li>
+                        <li>You may be asked to confirm data privacy consent during registration.</li>
+                    </ul>
+                </div>
+
+                <!-- Bottom Grid: 2-column layout for remaining cards -->
+                <!-- Dress Code -->
+                <div id="dress-code" class="border border-[#F7C28A] bg-[#FFF9F3] rounded-2xl p-4 md:p-5">
+                    <h3 class="text-xl md:text-2xl font-bantayog text-brown-1 mb-3 flex items-center gap-2">
+                        <span class="inline-flex h-2 w-2 rounded-full bg-[#F26D1D]"></span>
+                        Dress Code
+                    </h3>
+                    <p class="font-nunito text-brown-2 text-sm md:text-base leading-relaxed mb-2">
+                        Please follow the university guidelines of De La Salle University Manila.
+                    </p>
+                    <ul class="list-disc list-inside space-y-2 font-nunito text-brown-2 text-sm md:text-base leading-relaxed">
+                        <li>Revealing clothes are not allowed.</li>
+                        <li>We recommend wearing comfortable attire suitable for a conference setting.</li>
+                    </ul>
+                </div>
+
+                <!-- Conference Gate Access -->
+                <div id="conference-gate-access" class="border border-dashed border-[#F7C28A] rounded-2xl p-4 md:p-5 bg-[#FFFDFC]">
+                    <h3 class="text-xl md:text-2xl font-bantayog text-brown-1 mb-3 flex items-center gap-2">
+                        <span class="inline-flex h-2 w-2 rounded-full bg-[#FFA218]"></span>
+                        Conference Gate Access
+                    </h3>
+                    <ul class="list-disc list-inside space-y-2 font-nunito text-brown-2 text-sm md:text-base leading-relaxed">
+                        <li>Use the designated conference gate for attendees.</li>
+                        <li>Follow the event signage and volunteer instructions upon arrival.</li>
+                    </ul>
+                </div>
+
+                <!-- Parking Reminder -->
+                <div id="parking-reminder" class="border border-[#F7C28A] bg-[#FFF9F3] rounded-2xl p-4 md:p-5">
+                    <h3 class="text-xl md:text-2xl font-bantayog text-brown-1 mb-3 flex items-center gap-2">
+                        <span class="inline-flex h-2 w-2 rounded-full bg-[#F26D1D]"></span>
+                        Parking Reminder
+                    </h3>
+                    <ul class="list-disc list-inside space-y-2 font-nunito text-brown-2 text-sm md:text-base leading-relaxed">
+                        <li>There are no parking spaces available inside De La Salle University Manila.</li>
+                        <li>Attendees are encouraged to park at nearby public parking areas.</li>
+                    </ul>
+                </div>
+
+                <!-- Venue Guide -->
+                <div id="venue-guide" class="border border-dashed border-[#F7C28A] rounded-2xl p-4 md:p-5 bg-[#FFFDFC]">
+                    <h3 class="text-xl md:text-2xl font-bantayog text-brown-1 mb-3 flex items-center gap-2">
+                        <span class="inline-flex h-2 w-2 rounded-full bg-[#FFA218]"></span>
+                        Venue Guide
+                    </h3>
+                    <p class="font-nunito text-brown-2 text-sm md:text-base leading-relaxed">
+                        A venue and university map guide will be provided to help you navigate the campus and find the conference halls easily.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Closing Note -->
+            <div class="mt-8 text-center font-nunito text-brown-2 text-sm md:text-base">
+                <p class="inline-block px-4 py-2 rounded-full bg-[#FBE7D6] font-semibold">
+                    See you all this March 21–23! 🎉
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
