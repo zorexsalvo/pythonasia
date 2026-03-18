@@ -21,18 +21,20 @@
 <nav class="absolute w-full z-[999] pointer-events-none">
   <div class="relative flex flex-col pointer-events-auto">
     <!-- Ribbon CTA -->
+    {% if ribbon_cta %}
     <div class="bg-orange-1 py-1.5 flex items-center justify-center gap-2 flex-col sm:flex-row">
       <p class="text-white font-nunito text-sm font-semibold">
-        👋 Registration for PythonAsia 2026 is now open!
+        {{ ribbon_cta.message }}
       </p>
       <div class="w-[20px] h-[2px] bg-white hidden sm:block"></div>
       <div>
-        <a href="https://ti.to/pythonph/pythonasia-2026/" target="_blank" class="text-white font-bantayog text-base flex gap-2 items-center">
-          <p class="">RESERVE YOUR SEATS NOW</p>
+        <a href="{{ ribbon_cta.cta_url }}" target="_blank" class="text-white font-bantayog text-base flex gap-2 items-center">
+          <p class="">{{ ribbon_cta.cta_text }}</p>
           <img src="{% static 'img/vectors/ArrowCircleRight.svg' %}" alt="kliN" class="w-[24px] h-auto" width="24" height="24" />
         </a>
       </div>
     </div>
+    {% endif %}
 
 
     <div class="bg-transparent w-full max-w-[1260px] mx-auto flex pt-8 px-3 md:px-5">
