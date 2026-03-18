@@ -82,9 +82,11 @@
                 </ul>
               </li>
             {% endfor %}
+              {% if button_cta %}
               <li class="mt-2">
-                <a href="https://ti.to/pythonph/pythonasia-2026/" target="_blank" class="btn btn-primary w-full text-center">Get Tickets</a>
+                <a href="{{ button_cta.url }}" target="_blank" class="btn btn-primary w-full text-center">{{ button_cta.label }}</a>
               </li>
+              {% endif %}
           </ul>
         </div>
         <!-- Header Links -->
@@ -132,11 +134,13 @@
           </ul>
         </div>
         <!-- Ticket Button (desktop only) -->
+        {% if button_cta %}
         <div class="hidden lg:block">
-          <a href="https://ti.to/pythonph/pythonasia-2026/" target="_blank" class="btn btn-primary btn-wide py-2 px-4 sm:py-3.5 sm:px-8 text-white">
-            <span class="lg:inline font-bantayog text-base sm:text-xl">Get Tickets</span>
+          <a href="{{ button_cta.url }}" target="_blank" class="btn btn-primary btn-wide py-2 px-4 sm:py-3.5 sm:px-8 text-white">
+            <span class="lg:inline font-bantayog text-base sm:text-xl">{{ button_cta.label }}</span>
           </a>
         </div>
+        {% endif %}
       </div>
 
     </div>

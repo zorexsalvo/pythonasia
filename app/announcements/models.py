@@ -35,6 +35,27 @@ class Announcement(models.Model):
         verbose_name_plural = "Announcements"
 
 
+class ButtonCTA(models.Model):
+    label = models.CharField(max_length=100)
+    url = models.URLField()
+    is_active = models.BooleanField(default=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.label
+
+    @classmethod
+    def get_active(cls):
+        """Get the first active button CTA."""
+        return cls.objects.filter(is_active=True).first()
+
+    class Meta:
+        ordering = ["-created_at"]
+        verbose_name = "Button CTA"
+        verbose_name_plural = "Button CTAs"
+
+
 class RibbonCTA(models.Model):
     message = models.CharField(max_length=255)
     cta_text = models.CharField(max_length=100, default="LEARN MORE")
