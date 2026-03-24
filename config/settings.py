@@ -215,9 +215,22 @@ CACHES = {
     }
 }
 
-# Build directory for bakery
-BUILD_DIR = BASE_DIR / "build"
-BAKERY_VIEWS = ("app.home.views.HomeView",)
+# Build directory for bakery (django-bakery expects a string path)
+BUILD_DIR = str(BASE_DIR / "build")
+BAKERY_VIEWS = (
+    "app.home.views.HomeView",
+    "app.home.views.CodeOfConductView",
+    "app.home.views.PartnershipView",
+    "app.home.views.TravelInfoView",
+    "app.home.views.AidScholarshipsView",
+    "app.home.views.CovidPolicyView",
+    "app.home.views.DataPrivacyView",
+    "app.home.views.EveryoneWhoCanPaysView",
+    "app.home.views.PatronAcknowledgmentView",
+    "app.home.views.ScheduleView",
+    "app.home.views.VolunteersView",
+    "app.home.views.MerchandiseView",
+)
 
 # Whitenoise Configuration
 # https://whitenoise.readthedocs.io/en/latest/
