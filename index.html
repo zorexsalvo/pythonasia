@@ -1,0 +1,2883 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta http-equiv="Cross-Origin-Opener-Policy" content="unsafe-none">
+    <meta name="keywords" content="PythonAsia 2026">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PythonAsia 2026">
+    
+
+<!-- HTML Meta Tags -->
+<meta name="description"
+    content="The flagship gathering for Python enthusiasts across Asia — uniting diverse communities across the region.">
+
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://2026.pythonasia.org">
+<meta property="og:type" content="website">
+<meta property="og:title" content="PythonAsia 2026">
+<meta property="og:description"
+    content="The flagship gathering for Python enthusiasts across Asia — uniting diverse communities across the region.">
+<meta property="og:image" content="/static/img/pythonasia2026-banner.png">
+
+<!-- X Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="2026.pythonasia.org">
+<meta property="twitter:url" content="https://2026.pythonasia.org">
+<meta name="twitter:title" content="PythonAsia 2026">
+<meta name="twitter:description"
+    content="The flagship gathering for Python enthusiasts across Asia — uniting diverse communities across the region.">
+<meta name="twitter:image" content="/static/img/pythonasia2026-banner.png">
+
+    <!-- Preconnect to font origins early to reduce critical request chain latency -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="/static/img/py_kalinga-pot.png">
+    <link rel="preload" href="/static/img/vectors/python-asia-branding.png" as="image" fetchpriority="high">
+    <link rel="preload" href="/static/fonts/Bantayog-Light.otf" as="font" type="font/otf" crossorigin>
+    <link rel="preload" href="/static/fonts/Bantayog-Regular.otf" as="font" type="font/otf" crossorigin>
+    <link rel="preload" href="/static/fonts/Bantayog-Semilight.otf" as="font" type="font/otf" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <title>
+        PythonAsia 2026 
+    </title>
+    <link href="/static/css/app.css?v=1774343189" rel="stylesheet">
+    
+<style>
+  .cstm_bottom{
+    position: absolute;
+    bottom: -65px;
+    left: 0;
+  }
+
+  .cstm_top{
+    position: absolute;
+    top: -65px;
+    left: 0;
+  }
+
+  #conference-at-a-glance {
+    background: url('/static/img/bg-conference-at-glance.png'), #FFF9F2;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+</style>
+
+</head>
+
+<body>
+    
+<main>
+    <div class="min-h-screen" style="background-image: url('/static/img/background.png')">
+        <!-- Navbar -->
+        
+
+<style>
+  .menu-nav:active,
+  .menu-nav:focus,
+  .menu-nav:focus-visible,
+  .menu-subnav:hover{
+    background: var(--color-primary);
+    color: white;
+  }
+
+  .menu-subnav{
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: var(--color-brown-1);
+    font-weight: 400;
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+  }
+</style>
+
+<nav class="absolute w-full z-[999] pointer-events-none">
+  <div class="relative flex flex-col pointer-events-auto">
+    <!-- Ribbon CTA -->
+    
+    <div class="bg-orange-1 py-1.5 flex items-center justify-center gap-2 flex-col sm:flex-row">
+      <p class="text-white font-nunito text-sm font-semibold">
+        Join the PythonAsia 2026 Discord
+      </p>
+      <div class="w-[20px] h-[2px] bg-white hidden sm:block"></div>
+      <div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfmYAsvDJYBjtd9yLGcl-8WZXaiOP-sH7vAajA-6Jjrm4e2CA/viewform" target="_blank" class="text-white font-bantayog text-base flex gap-2 items-center">
+          <p class="">Connect with attendees &amp; get live updates</p>
+          <img src="/static/img/vectors/ArrowCircleRight.svg" alt="kliN" class="w-[24px] h-auto" width="24" height="24" />
+        </a>
+      </div>
+    </div>
+    
+
+
+    <div class="bg-transparent w-full max-w-[1260px] mx-auto flex pt-8 px-3 md:px-5">
+
+      <!-- Site Logo -->
+      <div class="navbar-start px-4">
+        <a class="btn btn-ghost text-xl px-0" href="/">
+          <img src="/static/img/logo.png"
+               alt="PythonAsia 2026"
+               class="h-8 w-full max-w-[233px]"
+               width="233" height="32" />
+        </a>
+      </div>
+
+
+      <div class="flex justify-end items-center gap-7 w-full">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 class="h-5 w-5"
+                 fill="none"
+                 viewBox="0 0 24 24"
+                 stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-64 p-2 shadow" style="left: -400%; z-index: 1000;">
+            
+              <li class="relative">
+                
+                <a class="font-bantayog">About</a>
+                
+                <ul class="p-2">
+                  
+                  <li>
+                    <a href="/everyone-who-can-pays/"
+                      class="font-bantayog hover:text-orange-2 hover:bg-transparent">
+                      Everyone who can, pays
+                    </a>
+                  </li>
+                
+                </ul>
+              </li>
+            
+              <li class="relative">
+                
+                <a class="font-bantayog">Get Involved</a>
+                
+                <ul class="p-2">
+                  
+                  <li>
+                    <a href="/partnership/"
+                      class="font-bantayog hover:text-orange-2 hover:bg-transparent">
+                      Partnership
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="/patron-acknowledgement/"
+                      class="font-bantayog hover:text-orange-2 hover:bg-transparent">
+                      Patron Acknowledgement
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="https://2026.pythonasia.org/volunteers/"
+                      class="font-bantayog hover:text-orange-2 hover:bg-transparent">
+                      Volunteers
+                    </a>
+                  </li>
+                
+                </ul>
+              </li>
+            
+              <li class="relative">
+                
+                <a class="font-bantayog">Policies</a>
+                
+                <ul class="p-2">
+                  
+                  <li>
+                    <a href="/code-of-conduct/"
+                      class="font-bantayog hover:text-orange-2 hover:bg-transparent">
+                      Code of Conduct
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="/covid-policy/"
+                      class="font-bantayog hover:text-orange-2 hover:bg-transparent">
+                      Covid Policy
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="/data-privacy-policy/"
+                      class="font-bantayog hover:text-orange-2 hover:bg-transparent">
+                      Data Privacy
+                    </a>
+                  </li>
+                
+                </ul>
+              </li>
+            
+              <li class="relative">
+                
+                <a class="font-bantayog">Attend</a>
+                
+                <ul class="p-2">
+                  
+                  <li>
+                    <a href="/aid-scholarships/"
+                      class="font-bantayog hover:text-orange-2 hover:bg-transparent">
+                      Aid Scholarships
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="https://pretalx.com/python-asia-2026/schedule/"
+                      class="font-bantayog hover:text-orange-2 hover:bg-transparent">
+                      Schedule
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="/poster-session/"
+                      class="font-bantayog hover:text-orange-2 hover:bg-transparent">
+                      Poster Session
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="/pythonasia-2026-in-manila/"
+                      class="font-bantayog hover:text-orange-2 hover:bg-transparent">
+                      Travel Info
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="https://2026.pythonasia.org/merchandise/"
+                      class="font-bantayog hover:text-orange-2 hover:bg-transparent">
+                      Merchandise Catalog
+                    </a>
+                  </li>
+                
+                </ul>
+              </li>
+            
+              <li class="relative">
+                
+                <a href="https://medium.com/@pythonph" class="font-bantayog">Blog</a>
+                
+                <ul class="p-2">
+                  
+                </ul>
+              </li>
+            
+              
+              <li class="mt-2">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfmYAsvDJYBjtd9yLGcl-8WZXaiOP-sH7vAajA-6Jjrm4e2CA/viewform" target="_blank" class="btn btn-primary w-full text-center">Connect</a>
+              </li>
+              
+          </ul>
+        </div>
+        <!-- Header Links -->
+        <div class="hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+
+
+          
+            <li class="relative group">
+              
+              <button class="menu-nav font-bantayog text-xl text-brown-1 font-light hover:text-orange-2 cursor-pointer">
+                About
+                
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 9L12 15L18 9"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"/>
+                 </svg>
+                
+              </button>
+              
+              
+              <ul class="absolute left-0 top-full p-1 mt-2 w-52 bg-base-100 rounded-box shadow opacity-0 invisible
+                        group-hover:opacity-100 group-hover:visible transition-all duration-150 z-[1]">
+                
+                <li>
+                  <a href="/everyone-who-can-pays/"
+                    class="menu-subnav font-bantayog hover:text-orange-2 hover:bg-transparent">
+                    Everyone who can, pays
+                  </a>
+                </li>
+              
+              </ul>
+              
+            </li>
+          
+            <li class="relative group">
+              
+              <button class="menu-nav font-bantayog text-xl text-brown-1 font-light hover:text-orange-2 cursor-pointer">
+                Get Involved
+                
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 9L12 15L18 9"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"/>
+                 </svg>
+                
+              </button>
+              
+              
+              <ul class="absolute left-0 top-full p-1 mt-2 w-52 bg-base-100 rounded-box shadow opacity-0 invisible
+                        group-hover:opacity-100 group-hover:visible transition-all duration-150 z-[1]">
+                
+                <li>
+                  <a href="/partnership/"
+                    class="menu-subnav font-bantayog hover:text-orange-2 hover:bg-transparent">
+                    Partnership
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="/patron-acknowledgement/"
+                    class="menu-subnav font-bantayog hover:text-orange-2 hover:bg-transparent">
+                    Patron Acknowledgement
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="https://2026.pythonasia.org/volunteers/"
+                    class="menu-subnav font-bantayog hover:text-orange-2 hover:bg-transparent">
+                    Volunteers
+                  </a>
+                </li>
+              
+              </ul>
+              
+            </li>
+          
+            <li class="relative group">
+              
+              <button class="menu-nav font-bantayog text-xl text-brown-1 font-light hover:text-orange-2 cursor-pointer">
+                Policies
+                
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 9L12 15L18 9"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"/>
+                 </svg>
+                
+              </button>
+              
+              
+              <ul class="absolute left-0 top-full p-1 mt-2 w-52 bg-base-100 rounded-box shadow opacity-0 invisible
+                        group-hover:opacity-100 group-hover:visible transition-all duration-150 z-[1]">
+                
+                <li>
+                  <a href="/code-of-conduct/"
+                    class="menu-subnav font-bantayog hover:text-orange-2 hover:bg-transparent">
+                    Code of Conduct
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="/covid-policy/"
+                    class="menu-subnav font-bantayog hover:text-orange-2 hover:bg-transparent">
+                    Covid Policy
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="/data-privacy-policy/"
+                    class="menu-subnav font-bantayog hover:text-orange-2 hover:bg-transparent">
+                    Data Privacy
+                  </a>
+                </li>
+              
+              </ul>
+              
+            </li>
+          
+            <li class="relative group">
+              
+              <button class="menu-nav font-bantayog text-xl text-brown-1 font-light hover:text-orange-2 cursor-pointer">
+                Attend
+                
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 9L12 15L18 9"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"/>
+                 </svg>
+                
+              </button>
+              
+              
+              <ul class="absolute left-0 top-full p-1 mt-2 w-52 bg-base-100 rounded-box shadow opacity-0 invisible
+                        group-hover:opacity-100 group-hover:visible transition-all duration-150 z-[1]">
+                
+                <li>
+                  <a href="/aid-scholarships/"
+                    class="menu-subnav font-bantayog hover:text-orange-2 hover:bg-transparent">
+                    Aid Scholarships
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="https://pretalx.com/python-asia-2026/schedule/"
+                    class="menu-subnav font-bantayog hover:text-orange-2 hover:bg-transparent">
+                    Schedule
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="/poster-session/"
+                    class="menu-subnav font-bantayog hover:text-orange-2 hover:bg-transparent">
+                    Poster Session
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="/pythonasia-2026-in-manila/"
+                    class="menu-subnav font-bantayog hover:text-orange-2 hover:bg-transparent">
+                    Travel Info
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="https://2026.pythonasia.org/merchandise/"
+                    class="menu-subnav font-bantayog hover:text-orange-2 hover:bg-transparent">
+                    Merchandise Catalog
+                  </a>
+                </li>
+              
+              </ul>
+              
+            </li>
+          
+            <li class="relative group">
+              
+              <a href="https://medium.com/@pythonph" class="menu-nav font-bantayog text-xl text-brown-1 font-light hover:text-orange-2 cursor-pointer">
+                Blog
+              </a>
+              
+              
+            </li>
+          
+
+          </ul>
+        </div>
+        <!-- Ticket Button (desktop only) -->
+        
+        <div class="hidden lg:block">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfmYAsvDJYBjtd9yLGcl-8WZXaiOP-sH7vAajA-6Jjrm4e2CA/viewform" target="_blank" class="btn btn-primary btn-wide py-2 px-4 sm:py-3.5 sm:px-8 text-white">
+            <span class="lg:inline font-bantayog text-base sm:text-xl">Connect</span>
+          </a>
+        </div>
+        
+      </div>
+
+    </div>
+  </div>
+</nav>
+
+        <!-- Hero Section -->
+        
+<section id="hero" class="px-[4%] flex flex-col items-center justify-end relative">
+  <div class="flex flex-col max-w-[730px] mx-auto pb-[20px] pt-[180px] xl:pb-[50px] xl:pt-[150px] 2xl:pb-[100px]
+    2xl:pt-[250px] gap-5">
+    <div class="flex flex-col justify-center items-center gap-8">
+      <img src="/static/img/vectors/kalinga-baybayin.svg" alt="kliN" class="w-full max-w-[189px]">
+      <img src="/static/img/kalinga.png" alt="Kalinga" class="w-full max-w-[336.34px]">
+      <img src="/static/img/vectors/python-asia-branding.png" alt="PythonAsia 2026" fetchpriority="high">
+    </div>
+    <div class="text-center z-10">
+      <p class="font-nunito leading-[125%] font-normal text-2xl text-brown-2">Nurturing a community of care, compassion,
+        and growth.</p>
+      <p class="font-nunito leading-[125%] font-normal text-2xl text-brown-2">The same heart of PyCon APAC, now as
+        PythonAsia.</p>
+    </div>
+    <div class="text-center z-10">
+      <h2 class="font-bantayog leading-[125%] text-[52px] text-brown-1">MARCH 21-23, 2026</h2>
+      <p class="font-bantayog leading-[125%] text-xl text-brown-2 font-light">DE LA SALLE UNIVERSITY (DLSU), MALATE,
+        MANILA</p>
+    </div>
+    <div class="z-10 flex flex-col items-center justify-center gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
+      <a href="https://pretalx.com/python-asia-2026/schedule/" class="inline-block bg-orange-2 text-white px-4 py-2 rounded-md text-base font-semibold font-nunito hover:bg-orange-3 transition">
+        View Program Schedule
+      </a>
+      <a href="#event-reminders" class="inline-block bg-orange-1 text-white px-4 py-2 rounded-md text-base font-semibold font-nunito hover:bg-brown-2 transition">
+        View Event Reminders
+      </a>
+    </div>
+    <div class="python-kalinga-pot">
+      <img class="pot" src="/static/img/py_kalinga-pot.svg" alt="Kalinga pot" width="500" height="500">
+      <div class="">
+        <h2 class="font-bantayog text-[28px] text-white text-center">Co-organized By</h2>
+        <div class="flex flex-row items-center justify-center gap-[45px] co-organized">
+          <img src="/static/img/footer/pythonph.svg" alt="PythonPH" class="w-full max-w-[210px]" width="210"
+            height="60">
+          <img src="/static/img/footer/pythonasia.svg" alt="Python Asia Organization"
+            class="w-full max-w-[320px]" width="320" height="60">
+          <img src="/static/img/footer/dlsu.svg" alt="DLSU" class="w-full max-w-[110px]" width="110" height="60">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<img src="/static/img/vectors/section-divider-01.svg" alt="Section Break" class="w-full py-0 my-0 z-10 cstm_bottom block divider-01">
+
+</section>
+
+        <!-- About Us Section -->
+        
+<section id="about-us" class="py-20 text-white" style="background-color: #BD4B06">
+    <div class="container mx-auto px-[4%]">
+        <!-- Header -->
+        <div class="text-center mb-16">
+            <h2 class="text-5xl md:text-6xl font-bold mb-12 font-td_pinoy">What is PythonAsia?</h2>
+        </div>
+        <!-- Main Content -->
+        <div class="text-center px-8 md:px-16 lg:px-24 w-full max-w-[975px] mx-auto">
+            <h3 class="text-2xl md:text-3xl font-bold mb-6 uppercase font-bantayog">
+                The Flagship Gathering for Python Enthusiasts Across Asia - Uniting Diverse Communities across the
+                region
+            </h3>
+            <p class="text-base md:text-lg leading-relaxed font-nunito">
+                Previously known as PyCon APAC, the conference has a long history of bringing together developers,
+                students, educators, researchers, and industry leaders to collaborate, exchange ideas, and build lasting
+                connections. Its goal remains to create a space for exploring, discussing, and applying Python and its
+                surrounding technologies across the Asia-Pacific region. Past hosts include Singapore, Japan, Taiwan,
+                South Korea, Malaysia, Thailand, Indonesia, and the Philippines. The event is hosted annually in
+                different countries.
+                <br />
+                <br />
+                Starting 2026, the event takes on its new identity as PythonAsia, co-organized with the Python Asia
+                Organization (PAO). PythonAsia 2026 will be proudly hosted in the Philippines once again, building on
+                the success of PyCon APAC 2025 and with the continued support of the local Python community through
+                PythonPH in collaboration with PAO.
+                <br />
+                <br />
+                Like PyCon APAC, PythonAsia expands the local Python community’s reach to an international audience,
+                creating opportunities for deeper collaboration and knowledge sharing across diverse cultures and
+                industries throughout the Asia region.
+                <br />
+                <br />
+            </p>
+        </div>
+        <div class="flex justify-center items-center mb-12">
+            <div class="relative">
+                <img src="/static/img/about-us-photo.png" alt="PyCon PH 2025 Conference" class="w-full">
+            </div>
+        </div>
+        <!-- 3 Days Section -->
+        <div class="mb-12 w-full max-w-[1160px] mx-auto">
+            <h3 class="text-4xl md:text-5xl font-bold mb-8 font-td_pinoy text-center md:text-left whitespace-wrap md:whitespace-nowrap">3 Days, Endless
+                Possibilities</h3>
+            <p class="text-lg leading-relaxed font-nunito text-center sm:text-left xl:text-left">
+                Dive into three days of learning, building, and connecting with the Python community. From inspiring
+                talks to hands-on sprints, PythonAsia is where ideas spark, skills grow, and collaborations begin.
+                Whether you're a first-time attendee or a seasoned contributor, there's something here for everyone.
+            </p>
+        </div>
+        <!-- Features Grid -->
+        <div class="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-10 mb-16 w-full max-w-[1160px] mx-auto">
+            <!-- Inspiring Keynotes -->
+            <div
+                class="flex flex-col items-center justify-center sm:items-start sm:justify-start xl:items-start xl:justify-start">
+                <div class="inline-block mb-2">
+                    <img src="/static/img/vectors/star-icon.svg" alt="Inspiring Keynotes"
+                        class="w-[60px] h-[60px] mb-4" />
+                </div>
+                <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Inspiring Keynotes</h4>
+                <p class="text-base font-nunito w-full max-w-[305px] text-center sm:text-left xl:text-left">
+                    Hear inspiring talks from core contributors, community leaders, and innovators shaping Python across
+                    Asia and beyond
+                </p>
+            </div>
+            <!-- Talks & Lightning Talks -->
+            <div
+                class="flex flex-col items-center justify-center sm:items-start sm:justify-start xl:items-start xl:justify-start">
+                <div class="inline-block mb-2">
+                    <img src="/static/img/vectors/conversation-icon.svg" alt="Talks & Lightning Talks"
+                        class="w-[60px] h-[60px] mb-4" />
+                </div>
+                <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Talks & Lightning Talks</h4>
+                <p class="text-base font-nunito w-full max-w-[305px] text-center sm:text-left xl:text-left">
+                    From deep-dive sessions to quick, punchy insights, learn from diverse voices across the Python
+                    community.
+                </p>
+            </div>
+            <!-- Multi-Track & Live Workshops -->
+            <div
+                class="flex flex-col items-center justify-center sm:items-start sm:justify-start xl:items-start xl:justify-start">
+                <div class="inline-block mb-2">
+                    <img src="/static/img/vectors/icon-multitrack-and-live.svg"
+                        alt="Multi-Track & Live Workshops" class="w-[60px] h-[60px] mb-4" />
+                </div>
+                <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Multi-Track & Live Workshops</h4>
+                <p class="text-base font-nunito w-full max-w-[305px] text-center sm:text-left xl:text-left">
+                    Dive into AI/ML, Data Science, DevOps, Open Source, and region-specific use cases powering
+                    real-world impact.
+                </p>
+            </div>
+            <!-- Community Gatherings -->
+            <div
+                class="flex flex-col items-center justify-center sm:items-start sm:justify-start xl:items-start xl:justify-start">
+                <div class="inline-block mb-2">
+                    <img src="/static/img/vectors/icon-community-gatherings.svg" alt="Community Gatherings"
+                        width="64" class="w-[85px] h-[60px] mb-4" />
+                </div>
+                <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Community Gatherings</h4>
+                <p class="text-base font-nunito w-full max-w-[305px] text-center sm:text-left xl:text-left">
+                    Join special sessions like the PyLadies Lunch, and Open Spaces — designed to spark conversations and
+                    build connections.
+                </p>
+            </div>
+            <!-- Career Mixer -->
+            <div
+                class="flex flex-col items-center justify-center sm:items-start sm:justify-start xl:items-start xl:justify-start">
+                <div class="inline-block mb-2">
+                    <img src="/static/img/vectors/icon-career-mixer.svg" alt="Career Mixer"
+                        class="w-[60px] h-[60px] mb-4" />
+                </div>
+                <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Career Mixer</h4>
+                <p class="text-base font-nunito w-full max-w-[305px] text-center sm:text-left xl:text-left">
+                    Meet potential employers, collaborators, and mentors in a relaxed, networking-focused environment.
+                </p>
+            </div>
+            <!-- Sponsor Booths & Stamp Quest -->
+            <div
+                class="flex flex-col items-center justify-center sm:items-start sm:justify-start xl:items-start xl:justify-start">
+                <div class="inline-block mb-2">
+                    <img src="/static/img/vectors/icon-sponsor-booths.svg" alt="Sponsor Booths & Stamp Quest"
+                        class="w-[60px] h-[60px] mb-4" />
+                </div>
+                <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Sponsor Booths & Stamp Quest</h4>
+                <p class="text-base font-nunito w-full max-w-[305px] text-center sm:text-left xl:text-left">
+                    Explore sponsor showcases, discover new opportunities, and complete our signature Stamp Collection
+                    Quest for fun tokens, prizes, and new connections.
+                </p>
+            </div>
+            <!-- Open Source Sprints -->
+            <div
+                class="flex flex-col items-center justify-center sm:items-start sm:justify-start xl:items-start xl:justify-start">
+                <div class="inline-block mb-2">
+                    <img src="/static/img/vectors/hands-on-icon.svg" alt="Open Source Sprints" class="w-[75px] h-[60px] mb-4"/>
+                </div>
+                <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Open Source Sprints</h4>
+                <p class="text-base font-nunito w-full max-w-[305px] text-center sm:text-left xl:text-left">
+                    Team up with maintainers and peers (bring your laptop!) to contribute to open source, then connect
+                    at our career fair.
+                </p>
+            </div>
+            <!-- Education Summit -->
+            <div
+                class="flex flex-col items-center justify-center sm:items-start sm:justify-start xl:items-start xl:justify-start">
+                <div class="inline-block mb-2">
+                    <img src="/static/img/vectors/icon-education-summit.svg" alt="Education Summit"
+                        class="w-[60px] h-[60px] mb-4" />
+                </div>
+                <h4 class="text-xl font-bold uppercase mb-3 font-bantayog">Education Summit</h4>
+                <p class="text-base font-nunito w-full max-w-[305px] text-center sm:text-left xl:text-left">
+                    Co-organized with De La Salle University (DLSU), this special track brings together educators,
+                    students, and practitioners to explore how Python is shaping learning and research in Asia
+                </p>
+            </div>
+        </div>
+        <!-- Call to Action -->
+        <div class="text-center bg-[#B04301] p-[30px] pb-10 rounded-2xl" style="max-width: 1160 px; margin: 0 auto;">
+            <p class="text-2xl mb-8 uppercase tracking-wide font-bantayog mx-auto" style="max-width: 900px;">
+                Join hundreds of developers, students, educators, researchers, and community leaders from across Asia
+                for 3 days of
+            </p>
+            <h3 class="md:text-[42px] text-4xl font-bold uppercase font-td_pinoy">Learning, Inspiration, and Connection
+            </h3>
+        </div>
+    </div>
+</section>
+
+        <!-- Section Break -->
+        <!-- Conference at a Glance Section -->
+        
+<section id="conference-at-a-glance"
+    class="pt-20 md:pt-48 bg-contain bg-center relative px-[4%] bg-conference-at-glance">
+
+    <img src="/static/img/vectors/section-divider-02.svg" alt="Section Break" class="w-full py-0 my-0 z-10 cstm_top block divider-02">
+
+    <div class="container mx-auto">
+        <!-- Header -->
+        <div class="text-center mb-16">
+            <h2 class="text-5xl md:text-6xl font-bold font-td_pinoy text-orange-2" >
+                Conference at a Glance
+            </h2>
+        </div>
+        <!-- Schedule Grid -->
+        <div class="flex flex-col justify-center sm:flex-row md:items-stretch md:justify-center gap-8 mb-20 max-w-5xl mx-auto">
+            <!-- March 21-22 -->
+            <div class="p-8 rounded-2xl w-full max-w-[100%] sm:max-w-[300px] bg-offwhite-2 border-t-[8px] border-t-[#F26D1D]">
+                <div class="mb-6 font-bold">
+                    <h3 class="text-2xl font-bantayog text-brown-1">MARCH 21-22,</h3>
+                    <h4 class="text-2xl font-bantayog text-brown-1">SATURDAY-SUNDAY</h4>
+                </div>
+                <div class="space-y-3">
+                    <p class="text-lg font-bantayog text-brown-2">Main Conference</p>
+                    <div class="flex items-center space-x-3 font-nunito">
+                        <img src="/static/img/vectors/icon-checkbox-brown-2.svg" alt="Checkbox Icon" width="20"
+                            height="20" style="width: 20px; height: 20px; flex-shrink: 0;">
+                        <span class="font-nunito text-lg text-brown-2">Talks</span>
+                    </div>
+                    <div class="flex items-center space-x-3 font-nunito">
+                        <img src="/static/img/vectors/icon-checkbox-brown-2.svg" alt="Checkbox Icon" width="20"
+                            height="20" style="width: 20px; height: 20px; flex-shrink: 0;">
+                        <span class="font-nunito text-lg text-brown-2">Workshops</span>
+                    </div>
+                    <div class="flex items-center space-x-3 font-nunito">
+                        <img src="/static/img/vectors/icon-checkbox-brown-2.svg" alt="Checkbox Icon" width="20"
+                            height="20" style="width: 20px; height: 20px; flex-shrink: 0;">
+                        <span class="font-nunito text-lg text-brown-2">Lightning Talks</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <img src="/static/img/vectors/icon-checkbox-brown-2.svg" alt="Checkbox Icon" width="20"
+                            height="20" style="width: 20px; height: 20px; flex-shrink: 0;">
+                        <span class="font-nunito text-lg text-brown-2">PyLadies Lunch</span>
+                    </div>
+                    <div class="flex items-center space-x-3 font-nunito">
+                        <img src="/static/img/vectors/icon-checkbox-brown-2.svg" alt="Checkbox Icon" width="20"
+                            height="20" style="width: 20px; height: 20px; flex-shrink: 0;">
+                        <span class="font-nunito text-lg text-brown-2">Open Spaces</span>
+                    </div>
+                    <div class="flex items-center space-x-3 font-nunito">
+                        <img src="/static/img/vectors/icon-checkbox-brown-2.svg" alt="Checkbox Icon" width="20"
+                            height="20" style="width: 20px; height: 20px; flex-shrink: 0;">
+                        <span class="font-nunito text-lg text-brown-2">Career Mixer</span>
+                    </div>
+                    <div class="flex items-center space-x-3 font-nunito">
+                        <img src="/static/img/vectors/icon-checkbox-brown-2.svg" alt="Checkbox Icon" width="20"
+                            height="20" style="width: 20px; height: 20px; flex-shrink: 0;">
+                        <span class="font-nunito text-lg text-brown-2">Poster Session</span>
+                    </div>
+                </div>
+            </div>
+            <!-- March 23 -->
+            <div class="p-8 rounded-2xl w-full max-w-[100%] sm:max-w-[300px]  bg-offwhite-2 border-t-[8px] border-t-[#FFA218]">
+                <div class="mb-6 font-bold">
+                    <h3 class="text-2xl font-bantayog text-brown-1">MARCH 23,</h3>
+                    <h4 class="text-2xl font-bantayog text-brown-1">MONDAY</h4>
+                </div>
+                <div class="space-y-3">
+                    <div class="flex items-center space-x-3 font-bantayog">
+                        <img src="/static/img/vectors/icon-checkbox-brown-2.svg" alt="Checkbox Icon" width="20"
+                            height="20" style="width: 20px; height: 20px; flex-shrink: 0;">
+                        <span class="font-nunito text-lg text-brown-2">Education Summit</span>
+                    </div>
+                    <div class="flex items-center space-x-3 font-bantayog">
+                        <img src="/static/img/vectors/icon-checkbox-brown-2.svg" alt="Checkbox Icon" width="20"
+                            height="20" style="width: 20px; height: 20px; flex-shrink: 0;">
+                        <span class="font-nunito text-lg text-brown-2">Open Source Sprints</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+<div class="text-center relative max-w-[940px] mx-auto overflow-hidden">
+  <h2 class="text-5xl font-bold mb-6 font-td_pinoy text-brown-1">Tickets Available</h2>
+  <p class="text-lg max-w-3xl mx-auto font-nunito text-brown-2">
+  Join us as we learn something new, teach something new, find opportunities, build cool things,
+  <br />
+  make friends, and geek out!
+  </p>
+  <div class="flex justify-between items-center relative max-w-[900px] gap-4 md:gap-8 mx-auto mb-0 md:mb-[-30px]">
+    <!-- Left Python Logo -->
+    <div>
+      <img src="/static/img/python-blue.png" alt="Python Logo" class="w-full max-w-56 max-h-80 mb-[-20px] md:mb-[-50px]">
+    </div>
+    <!-- Get Tickets Button -->
+    <div class="inline-block">
+      <a href="https://ti.to/pythonph/pythonasia-2026/" target="_blank"
+         class="inline-block px-4 py-2 md:px-12 md:py-6 text-white font-bold text-base sm:text-xl uppercase rounded-lg transition-all bg-orange-2 hover:opacity-90 mb-5"
+         >Get Tickets</a>
+    </div>
+    <!-- Right Python Logo -->
+    <div>
+      <img src="/static/img/python-yellow.png" alt="Python Logo" class="w-full max-w-56 max-h-80 mb-[-20px] md:mb-[-50px]">
+    </div>
+  </div>
+</div>
+
+    </div>
+</section>
+
+        <!-- Event Goers Section -->
+        
+
+<section id="event-goers" class="py-20 md:py-24 px-[4%] bg-offwhite-2">
+    <div class="container mx-auto w-full max-w-[1120px]">
+        <!-- Event Reminders Header -->
+        <div class="text-center mb-10 md:mb-14" id="event-reminders">
+            <p class="inline-flex items-center gap-2 px-4 py-1 mb-4 rounded-full bg-[#FBE7D6] text-xs md:text-sm font-semibold tracking-wide text-brown-2 uppercase font-nunito shadow-sm">
+                <span class="inline-flex h-2 w-2 rounded-full bg-orange-2"></span>
+                Important for all attendees
+            </p>
+            <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold font-td_pinoy text-orange-2 drop-shadow-sm">
+                Event Reminders
+            </h2>
+            <p class="mt-4 text-brown-2 text-base md:text-lg leading-relaxed font-nunito max-w-3xl mx-auto">
+                As we get closer to the event, here are a few important reminders to help you prepare.
+            </p>
+        </div>
+
+        <!-- Reminder Content -->
+        <div class="bg-[#FFF5EB] border border-[#F7C28A] rounded-3xl p-6 md:p-10 shadow-[0_18px_0_0_rgba(242,109,29,0.16)] md:shadow-[0_24px_0_0_rgba(242,109,29,0.16)] relative overflow-hidden">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-8 relative z-10">
+                <!-- What to Bring (full-width) -->
+                <div id="what-to-bring" class="border border-[#F7C28A] bg-[#FFF9F3] rounded-2xl p-4 md:p-5 md:col-span-2">
+                    <h3 class="text-xl md:text-2xl font-bantayog text-brown-1 mb-3 flex items-center gap-2">
+                        <span class="inline-flex h-2 w-2 rounded-full bg-orange-2"></span>
+                        What to Bring
+                    </h3>
+                    <ul class="list-disc list-inside space-y-2 font-nunito text-brown-2 text-sm md:text-base leading-relaxed">
+                        <li>Laptop <span class="font-semibold">(especially for workshops and sprints)</span></li>
+                        <li>Reusable water bottle</li>
+                        <li>Your ticket QR code ready for scanning</li>
+                    </ul>
+                    <p class="mt-4 text-xs md:text-sm font-nunito leading-relaxed text-brown-2 bg-[#FDE4D6] border border-[#F26D1D] rounded-2xl px-4 py-3">
+                        <span class="font-semibold uppercase tracking-wide text-[0.7rem] md:text-[0.75rem]">Reminder:</span>
+                        <br>
+                        Pet bottles and plastic cups are not allowed inside the premises of De La Salle University Manila.
+                    </p>
+                </div>
+
+                <!-- Registration (full-width) -->
+                <div id="registration" class="border border-dashed border-[#F7C28A] rounded-2xl p-4 md:p-5 bg-[#FFFDFC] md:col-span-2">
+                    <h3 class="text-xl md:text-2xl font-bantayog text-brown-1 mb-3 flex items-center gap-2">
+                        <span class="inline-flex h-2 w-2 rounded-full bg-[#FFA218]"></span>
+                        Registration
+                    </h3>
+                    <ul class="list-disc list-inside space-y-2 font-nunito text-brown-2 text-sm md:text-base leading-relaxed">
+                        <li>Registration starts at <span class="font-semibold">8:00 AM</span> and ends at <span class="font-semibold">2:00 PM</span>.</li>
+                        <li>Please prepare your ticket QR code for faster entry.</li>
+                        <li>You may be asked to confirm data privacy consent during registration.</li>
+                    </ul>
+                </div>
+
+                <!-- Bottom Grid: 2-column layout for remaining cards -->
+                <!-- Dress Code -->
+                <div id="dress-code" class="border border-[#F7C28A] bg-[#FFF9F3] rounded-2xl p-4 md:p-5">
+                    <h3 class="text-xl md:text-2xl font-bantayog text-brown-1 mb-3 flex items-center gap-2">
+                        <span class="inline-flex h-2 w-2 rounded-full bg-[#F26D1D]"></span>
+                        Dress Code
+                    </h3>
+                    <p class="font-nunito text-brown-2 text-sm md:text-base leading-relaxed mb-2">
+                        Please follow the university guidelines of De La Salle University Manila.
+                    </p>
+                    <ul class="list-disc list-inside space-y-2 font-nunito text-brown-2 text-sm md:text-base leading-relaxed">
+                        <li>Revealing clothes are not allowed.</li>
+                        <li>We recommend wearing comfortable attire suitable for a conference setting.</li>
+                    </ul>
+                </div>
+
+                <!-- Conference Gate Access -->
+                <div id="conference-gate-access" class="border border-dashed border-[#F7C28A] rounded-2xl p-4 md:p-5 bg-[#FFFDFC]">
+                    <h3 class="text-xl md:text-2xl font-bantayog text-brown-1 mb-3 flex items-center gap-2">
+                        <span class="inline-flex h-2 w-2 rounded-full bg-[#FFA218]"></span>
+                        Conference Gate Access
+                    </h3>
+                    <ul class="list-disc list-inside space-y-2 font-nunito text-brown-2 text-sm md:text-base leading-relaxed">
+                        <li>Use the designated conference gate for attendees.</li>
+                        <li>Follow the event signage and volunteer instructions upon arrival.</li>
+                    </ul>
+                </div>
+
+                <!-- Parking Reminder -->
+                <div id="parking-reminder" class="border border-[#F7C28A] bg-[#FFF9F3] rounded-2xl p-4 md:p-5">
+                    <h3 class="text-xl md:text-2xl font-bantayog text-brown-1 mb-3 flex items-center gap-2">
+                        <span class="inline-flex h-2 w-2 rounded-full bg-[#F26D1D]"></span>
+                        Parking Reminder
+                    </h3>
+                    <ul class="list-disc list-inside space-y-2 font-nunito text-brown-2 text-sm md:text-base leading-relaxed">
+                        <li>There are no parking spaces available inside De La Salle University Manila.</li>
+                        <li>Attendees are encouraged to park at nearby public parking areas.</li>
+                    </ul>
+                </div>
+
+                <!-- Venue Guide -->
+                <div id="venue-guide" class="border border-dashed border-[#F7C28A] rounded-2xl p-4 md:p-5 bg-[#FFFDFC]">
+                    <h3 class="text-xl md:text-2xl font-bantayog text-brown-1 mb-3 flex items-center gap-2">
+                        <span class="inline-flex h-2 w-2 rounded-full bg-[#FFA218]"></span>
+                        Venue Guide
+                    </h3>
+                    <p class="font-nunito text-brown-2 text-sm md:text-base leading-relaxed">
+                        A venue and university map guide will be provided to help you navigate the campus and find the conference halls easily.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Closing Note -->
+            <div class="mt-8 text-center font-nunito text-brown-2 text-sm md:text-base">
+                <p class="inline-block px-4 py-2 rounded-full bg-[#FBE7D6] font-semibold">
+                    See you all this March 21–23! 🎉
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Why Python Section -->
+        
+
+<section id="why-python" class="py-20 px-[4%] bg-offwhite-3">
+    <div class="container mx-auto w-full max-w-[1080px]">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <!-- Left Column - Text Content -->
+            <div class="space-y-6 w-full max-w-full lg:max-w-[452px] mx-auto md:m-0 xl:m-0">
+                <h2 class="text-5xl lg:text-6xl font-bold text-orange-2 mb-6 font-td_pinoy text-center md:text-left xl:text-left">Why Python?</h2>
+
+                <p class="text-brown-2 text-lg leading-relaxed font-nunito text-center md:text-left xl:text-left">
+                    We believe Python changes lives.
+                </p>
+
+                <p class="text-brown-2 text-base leading-relaxed font-nunito text-center md:text-left xl:text-left">
+                    It gives everyday people the tools to create, solve problems,
+                    and share ideas with the world—while also powering
+                    industries from AI and data science to cloud computing and
+                    automation.
+                </p>
+
+                <p class="text-brown-2 text-base leading-relaxed font-nunito text-center md:text-left xl:text-left">
+                    From students building their first websites, to small teams
+                    streamlining workflows, to researchers and companies tackling
+                    big challenges—Python is there.
+                </p>
+
+                <p class="text-brown-2 text-base leading-relaxed font-nunito text-center md:text-left xl:text-left">
+                    Simple enough to start with, powerful enough to shape the
+                    future. And at PythonPH, we see it every day in our
+                    community: people learning, teaching, and creating together.
+                    That's the heart of why we do what we do.
+                </p>
+            </div>
+
+            <!-- Right Column - Icon Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-2">
+                <!-- Data Analysis -->
+                <div class="flex flex-col justify-center items-center text-center rounded-2xl bg-[#FAEEE0] md:py-10 py-5 px-3 gap-3">
+                    <img src="/static/img/vectors/big-data.svg" alt="Data Analysis Icon">
+                    <p class="text-brown-2 text-sm font-medium">Data Analysis</p>
+                </div>
+
+                <!-- AI/Machine Learning -->
+                <div class="flex flex-col justify-center items-center text-center rounded-2xl bg-[#FAEEE0] md:py-10 py-5 px-3 gap-3">
+                    <img src="/static/img/vectors/ai-learning.svg" alt="AI/Machine Learning Icon">
+                    <p class="text-brown-2 text-sm font-medium">AI/Machine Learning</p>
+                </div>
+
+                <!-- Automation -->
+                <div class="flex flex-col justify-center items-center text-center rounded-2xl bg-[#FAEEE0] md:py-10 py-5 px-3 gap-3">
+                    <img src="/static/img/vectors/automation.svg" alt="Automation Icon">
+                    <p class="text-brown-2 text-sm font-medium">Automation</p>
+                </div>
+
+                <!-- Cloud Computing -->
+                <div class="flex flex-col justify-center items-center text-center rounded-2xl bg-[#FAEEE0] md:py-10 py-5 px-3 gap-3">
+                    <img src="/static/img/vectors/cloud-computing.svg" alt="Cloud Computing Icon">
+                    <p class="text-brown-2 text-sm font-medium">Cloud Computing</p>
+                </div>
+
+                <!-- Web Apps -->
+                <div class="flex flex-col justify-center items-center text-center rounded-2xl bg-[#FAEEE0] md:py-10 py-5 px-3 gap-3">
+                    <img src="/static/img/vectors/web-app.svg" alt="Web Apps Icon">
+                    <p class="text-brown-2 text-sm font-medium">Web Apps</p>
+                </div>
+
+                <!-- Mobile Apps -->
+                <div class="flex flex-col justify-center items-center text-center rounded-2xl bg-[#FAEEE0] md:py-10 py-5 px-3 gap-3">
+                    <img src="/static/img/vectors/mobile-app.svg" alt="Mobile Apps Icon">
+                    <p class="text-brown-2 text-sm font-medium">Mobile Apps</p>
+                </div>
+
+                <!-- Desktop Apps -->
+                <div class="flex flex-col justify-center items-center text-center rounded-2xl bg-[#FAEEE0] md:py-10 py-5 px-3 gap-3">
+                    <img src="/static/img/vectors/workstation.svg" alt="Desktop Apps Icon">
+                    <p class="text-brown-2 text-sm font-medium">Desktop Apps</p>
+                </div>
+
+                <!-- Software Testing -->
+                <div class="flex flex-col justify-center items-center text-center rounded-2xl bg-[#FAEEE0] md:py-10 py-5 px-3 gap-3">
+                    <img src="/static/img/vectors/software-testing.svg" alt="Software Testing Icon">
+                    <p class="text-brown-2 text-sm font-medium">Software Testing</p>
+                </div>
+
+                <!-- Cyber Security -->
+                <div class="flex flex-col justify-center items-center text-center rounded-2xl bg-[#FAEEE0] md:py-10 py-5 px-3 gap-3">
+                    <img src="/static/img/vectors/cybersecurity.svg" alt="Cyber Security Icon">
+                    <p class="text-brown-2 text-sm font-medium">Cyber Security</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Call For X -->
+        
+<section id="call-for-x" class="py-20 md:py-36 px-[4%] bg_call-for-links relative">
+    <div class="container mx-auto px-[4%]">
+        <img src="/static/img/vectors/section-divider-03.svg" alt="Section Break" class="w-full py-0 my-0 z-10 cstm_top block divider-03">
+        <!-- Header -->
+        <div class="text-center md:mb-16 mb-8">
+            <h2 class="text-5xl md:text-6xl font-bold mb-4 font-td_pinoy text-white">Get Involved</h2>
+            <p class="text-[28px] font-bantayog uppercase text-white">Magic happens when people come together to achieve
+                common goals.</p>
+        </div>
+        <div
+            class="flex flex-col sm:flex-row md:items-stretch md:justify-center items-center gap-8 max-w-5xl mx-auto">
+            <div
+                class="p-8 rounded-2xl w-full max-w-[400px] min-h-[350px] bg-offwhite-2 border-t-[8px] border-t-[#B04301] h-[250px]">
+                <div class="mb-6">
+                    <h3 class="text-4xl font-bold mb-0 font-bantayog text-brown-1">CALL FOR <br> ACADEMIC PARTNERS</h3>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="text-2xl mb-0 font-bantayog text-brown-3 font-bold">LINK:</h4>
+                    <a class="text-lg font-bold mb-2 font-bantayog text-brown-2 leading-none underline pointer"
+                        href="https://bit.ly/PythonAsia2026-AcademicPartners" target="_blank">https://bit.ly/PythonAsia2026-AcademicPartners</a>
+                </div>
+            </div>
+        </div>
+        <img src="/static/img/vectors/section-divider-04.svg" alt="Section Break" class="w-full py-0 my-0 z-10 cstm_bottom block divider-04">
+    </div>
+</section>
+
+        <!-- What is PyCon Section -->
+        
+        <!-- Speakers Section -->
+        
+
+<section id="speakers" class="bg-white px-[4%] relative py-20 flex flex-col gap-16">
+  <div class="flex flex-col gap-10 w-full max-w-[1160px] mx-auto ">
+    <div class="flex flex-col gap-8 pb-0">
+      <h2 class="font-td_pinoy text-6xl text-orange-2 text-center m-0">Keynote Speakers</h2>
+      <p class="text-4xl font-bold mb-0 font-bantayog text-brown-1 uppercase text-center">
+        Discover our keynote speakers
+        for PythonAsia 2026
+      </p>
+    </div>
+    <div class="keynote-speakers-wrapper grid gap-[30px] grid-cols-1 lg:grid-cols-2 gap-[30px]">
+      
+      <div
+        class="rounded-[24px] bg-cream-1 flex flex-col sm:flex-row gap-10 w-full max-w-[100%] lg:max-w-[100%] grow md:items-stretch items-center h-full"
+        style="padding: 30px">
+        <div class="overflow-hidden flex-shrink-0 w-[230px] flex items-center justify-center">
+          
+          <img src="https://pretalx.com/media/avatars/ZEVJHK_3N2Otff.webp" class="w-[230px] h-[230px] object-cover rounded-[85px]"
+            alt="Audrey Roy Greenfeld - Image" style="height: 230px;">
+          
+        </div>
+        <div  class="flex flex-col gap-2 justify-center">
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase md:text-left text-center">Audrey Roy Greenfeld</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px] md:text-left text-center">Audrey sees repetitive developer work and builds tools to eliminate it. Her project templating tool Cookiecutter saves developers countless hours—downloaded over 5 million times monthly with 24k GitHub stars. She is best known for co-authoring Two Scoops of Django, and is also a prolific fantasy and sci-fi fiction writer. She is a core developer of Air, the new AI-first Python web framework.</p>
+          
+        </div>
+      </div>
+      
+      <div
+        class="rounded-[24px] bg-cream-1 flex flex-col sm:flex-row gap-10 w-full max-w-[100%] lg:max-w-[100%] grow md:items-stretch items-center h-full"
+        style="padding: 30px">
+        <div class="overflow-hidden flex-shrink-0 w-[230px] flex items-center justify-center">
+          
+          <img src="https://pretalx.com/media/avatars/DDF7LU_SCH3gr5.webp" class="w-[230px] h-[230px] object-cover rounded-[85px]"
+            alt="Charibeth Cheng - Image" style="height: 230px;">
+          
+        </div>
+        <div  class="flex flex-col gap-2 justify-center">
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase md:text-left text-center">Charibeth Cheng</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px] md:text-left text-center">Chari Cheng is the Associate Dean and a professor at the College of Computer Studies, De La
+Salle University. A local pioneer in her field, she co-founded Senti AI and is a recognized expert
+in Natural Language Processing (NLP). Since 2003, her work has been driven by a passion for
+the digitization and better representation of Philippine languages.</p>
+          
+        </div>
+      </div>
+      
+      <div
+        class="rounded-[24px] bg-cream-1 flex flex-col sm:flex-row gap-10 w-full max-w-[100%] lg:max-w-[100%] grow md:items-stretch items-center h-full"
+        style="padding: 30px">
+        <div class="overflow-hidden flex-shrink-0 w-[230px] flex items-center justify-center">
+          
+          <img src="https://pretalx.com/media/avatars/VDTNQV_HU2swNW.webp" class="w-[230px] h-[230px] object-cover rounded-[85px]"
+            alt="Daniel Roy Greenfeld - Image" style="height: 230px;">
+          
+        </div>
+        <div  class="flex flex-col gap-2 justify-center">
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase md:text-left text-center">Daniel Roy Greenfeld</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px] md:text-left text-center">Daniel believes great code should be accessible to everyone. His Two Scoops of Django series became the definitive guide for tens of thousands of developers worldwide, and he&#x27;s contributed code to hundreds of open source packages.</p>
+          
+        </div>
+      </div>
+      
+      <div
+        class="rounded-[24px] bg-cream-1 flex flex-col sm:flex-row gap-10 w-full max-w-[100%] lg:max-w-[100%] grow md:items-stretch items-center h-full"
+        style="padding: 30px">
+        <div class="overflow-hidden flex-shrink-0 w-[230px] flex items-center justify-center">
+          
+          <img src="https://pretalx.com/media/avatars/PFEFTZ_glsD2Ih.webp" class="w-[230px] h-[230px] object-cover rounded-[85px]"
+            alt="Jay Miller - Image" style="height: 230px;">
+          
+        </div>
+        <div  class="flex flex-col gap-2 justify-center">
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase md:text-left text-center">Jay Miller</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px] md:text-left text-center">Jay is a Staff Developer Advocate at Aiven. Jay is also the founder of Black Python Devs where they work to extend the reach of Python communities, projects, and organizations to Black developers around the globe. Jay has served as a keynote speaker in the Python Community and when away from the keyboard can often be found cheering on their favorite baseball team.</p>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  <div class="flex flex-col gap-10 w-full max-w-[1160px] mx-auto">
+    <div class="flex flex-col gap-8">
+      <h2 class="font-td_pinoy text-6xl text-orange-2 text-center m-0">Speakers</h2>
+      <p class="text-4xl font-bold mb-0 font-bantayog text-brown-1 uppercase text-center">
+        Discover our speakers for
+        PythonAsia 2026
+      </p>
+    </div>
+    <div class="speakers-wrapper flex items-center gap-[30px] flex-row flex-wrap justify-between">
+      
+      
+      <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
+        <div class="overflow-hidden flex-shrink-0 w-[250px] h-[250px]">
+          <img src="https://pretalx.com/media/avatars/8ZRKXU_HEyyqXr.webp" class="w-[250px] h-[250px] object-cover rounded-[85px]"
+            alt="David Mertz, Ph.D. - Image" width="250" height="250">
+        </div>
+        <div>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">David Mertz, Ph.D.</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px]">David is Principal Software and Security Architect of Service Employees International Union, one of the largest and most progressive unions in the United States. He served as a Director of …</p>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
+        <div class="overflow-hidden flex-shrink-0 w-[250px] h-[250px]">
+          <img src="https://pretalx.com/media/avatars/A39GJW_7nQeGNr.webp" class="w-[250px] h-[250px] object-cover rounded-[85px]"
+            alt="Naohide Anahara - Image" width="250" height="250">
+        </div>
+        <div>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">Naohide Anahara</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px]">I work as an engineer at Tokyo Gas Co., Ltd. Tokyo Gas is a very old company with a 140-year history, but we are currently in the process of advancing …</p>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
+        <div class="overflow-hidden flex-shrink-0 w-[250px] h-[250px]">
+          <img src="https://pretalx.com/media/avatars/BANUN3_3EZaIFi.webp" class="w-[250px] h-[250px] object-cover rounded-[85px]"
+            alt="Piti Champeethong - Image" width="250" height="250">
+        </div>
+        <div>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">Piti Champeethong</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px]">I&#x27;ve been working with databases and software development for 20 years. Currently, I&#x27;m a MongoDB senior consulting engineer based in Singapore. I&#x27;ve previously spoken at conferences such as PyCon APAC …</p>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
+        <div class="overflow-hidden flex-shrink-0 w-[250px] h-[250px]">
+          <img src="https://pretalx.com/media/avatars/BBNMGQ_ZOEYh5v.webp" class="w-[250px] h-[250px] object-cover rounded-[85px]"
+            alt="Rodelene Joy Leonorio - Image" width="250" height="250">
+        </div>
+        <div>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">Rodelene Joy Leonorio</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px]">Rodelene Joy Leonorio is a Licensed Professional Teacher and a graduate of the Philippine Normal University, where she earned her Bachelor’s degree in Education with a major in TLE and …</p>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
+        <div class="overflow-hidden flex-shrink-0 w-[250px] h-[250px]">
+          <img src="https://pretalx.com/media/avatars/BJBKJM_yRkltiR.webp" class="w-[250px] h-[250px] object-cover rounded-[85px]"
+            alt="Romar Mayer R. Micabalo - Image" width="250" height="250">
+        </div>
+        <div>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">Romar Mayer R. Micabalo</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px]">A technology veteran with more than 20 years in the tech industry managing cloud-based infrastructure and highly technical teams. An open source evangelist and organizer/volunteer for various tech communities in …</p>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
+        <div class="overflow-hidden flex-shrink-0 w-[250px] h-[250px]">
+          <img src="https://pretalx.com/media/avatars/CEHB8A_cKxF7r2.webp" class="w-[250px] h-[250px] object-cover rounded-[85px]"
+            alt="Petr Andreev - Image" width="250" height="250">
+        </div>
+        <div>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">Petr Andreev</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px]">Specializes in CPython internals, optimization, and high-performance computing. Driven by GPU acceleration, CPU vectorization. Evolved from ML systems to CPython core research engineer. 8+ years leading teams in AI, maths, …</p>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
+        <div class="overflow-hidden flex-shrink-0 w-[250px] h-[250px]">
+          <img src="https://pretalx.com/media/avatars/D89MDE_phMWdtZ.webp" class="w-[250px] h-[250px] object-cover rounded-[85px]"
+            alt="Shahmir Varqha - Image" width="250" height="250">
+        </div>
+        <div>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">Shahmir Varqha</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px]">Shahmir is a software engineer at CoreWeave, focused on building the SQL and tables experience for marimo. Previously, he worked on Grab’s enterprise platform and has a strong interest in …</p>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
+        <div class="overflow-hidden flex-shrink-0 w-[250px] h-[250px]">
+          <img src="https://pretalx.com/media/avatars/DCF9TY_5cgOLqz.webp" class="w-[250px] h-[250px] object-cover rounded-[85px]"
+            alt="keiko kamijo - Image" width="250" height="250">
+        </div>
+        <div>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">keiko kamijo</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px]">I work as a software engineer, mainly on test automation, CI/CD tooling, and authorization systems for production services.</p>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
+        <div class="overflow-hidden flex-shrink-0 w-[250px] h-[250px]">
+          <img src="https://pretalx.com/media/avatars/DQ7DSL_xqlGDlu.webp" class="w-[250px] h-[250px] object-cover rounded-[85px]"
+            alt="Neil Riego - Image" width="250" height="250">
+        </div>
+        <div>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">Neil Riego</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px]">Neil Riego, is a Software Engineer, excels in crafting innovative solutions. Currently serving as a Tech Lead at Control Flow Labs. Neil&#x27;s diverse portfolio includes roles as a Career Coach …</p>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
+        <div class="overflow-hidden flex-shrink-0 w-[250px] h-[250px]">
+          <img src="https://pretalx.com/media/avatars/ENX7FA_FG2LaVS.webp" class="w-[250px] h-[250px] object-cover rounded-[85px]"
+            alt="Rafiqul Hasan - Image" width="250" height="250">
+        </div>
+        <div>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">Rafiqul Hasan</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px]">A seasoned software engineer with over 10 years of experience designing and delivering high-performance, scalable software systems. Currently works as a Senior Lead Engineer at bKash Limited, focusing on building …</p>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
+        <div class="overflow-hidden flex-shrink-0 w-[250px] h-[250px]">
+          <img src="https://pretalx.com/media/avatars/J8BU77_ZJbib01.webp" class="w-[250px] h-[250px] object-cover rounded-[85px]"
+            alt="Raphael Bacolod - Image" width="250" height="250">
+        </div>
+        <div>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">Raphael Bacolod</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px]">Raphael Bacolod is the Director for Indonesia and the Philippines at the Austrian governmental agency, the Austrian Business Agency (ABA) – WORK in AUSTRIA. Raphael is an Austrian citizen and …</p>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
+        <div class="overflow-hidden flex-shrink-0 w-[250px] h-[250px]">
+          <img src="https://pretalx.com/media/avatars/FKMQYE_xu46GaV.webp" class="w-[250px] h-[250px] object-cover rounded-[85px]"
+            alt="MrValdez - Image" width="250" height="250">
+        </div>
+        <div>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">MrValdez</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px]">Sony Valdez has been programming for over 30 years. Professionally, he&#x27;s a backend developer who specializes in scaling and performance. He is one of Python Philippines founders. Over the years, …</p>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
+        <div class="overflow-hidden flex-shrink-0 w-[250px] h-[250px]">
+          <img src="https://pretalx.com/media/avatars/FLSGCD_G5WL1J9.webp" class="w-[250px] h-[250px] object-cover rounded-[85px]"
+            alt="Yuichiro Tachibana - Image" width="250" height="250">
+        </div>
+        <div>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">Yuichiro Tachibana</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px]">Yuichiro is a professional software developer with a deep passion for open source software. After working on software development for several machine learning startups, he joined Hugging Face in 2023. …</p>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
+        <div class="overflow-hidden flex-shrink-0 w-[250px] h-[250px]">
+          <img src="https://pretalx.com/media/avatars/WJLV9D_ViKjAxO.webp" class="w-[250px] h-[250px] object-cover rounded-[85px]"
+            alt="Marco - Image" width="250" height="250">
+        </div>
+        <div>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">Marco</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px]">I am a software engineer at Apify, and use both JavaScript and Python for my job.</p>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
+        <div class="overflow-hidden flex-shrink-0 w-[250px] h-[250px]">
+          <img src="https://pretalx.com/media/avatars/7TPWEU_z5Owozg.webp" class="w-[250px] h-[250px] object-cover rounded-[85px]"
+            alt="Tanisorn Jansamret (Greg) - Image" width="250" height="250">
+        </div>
+        <div>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">Tanisorn Jansamret (Greg)</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px]">Tanisorn Jansamret is a Solutions Architect at AWS based in Thailand, where he works with developers and organizations to design scalable cloud architectures and modern AI/ML platforms on AWS. His …</p>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
+        <div class="overflow-hidden flex-shrink-0 w-[250px] h-[250px]">
+          <img src="https://pretalx.com/media/avatars/H3M7XF_f9xJyHO.webp" class="w-[250px] h-[250px] object-cover rounded-[85px]"
+            alt="Shiva Bhusal - Image" width="250" height="250">
+        </div>
+        <div>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">Shiva Bhusal</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px]">Shiva grew up in Nepal and currently lives in Bellevue, USA. He works as a Software Engineer at Microsoft and is passionate about best practices, including writing clean and maintainable …</p>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
+        <div class="overflow-hidden flex-shrink-0 w-[250px] h-[250px]">
+          <img src="https://pretalx.com/media/avatars/JCRDJQ_w44WDJH.webp" class="w-[250px] h-[250px] object-cover rounded-[85px]"
+            alt="Anubhav Sanyal - Image" width="250" height="250">
+        </div>
+        <div>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">Anubhav Sanyal</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px]">**Anubhav Sanyal** is a Senior Software Engineer and open-source contributor passionate about building solutions and systems that make developers’ lives easier. He has previously spoken at **PyCon Malaysia 2025** and …</p>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
+        <div class="overflow-hidden flex-shrink-0 w-[250px] h-[250px]">
+          <img src="https://pretalx.com/media/avatars/KBUATG_t4raOF6.webp" class="w-[250px] h-[250px] object-cover rounded-[85px]"
+            alt="SOORAJ TS - Image" width="250" height="250">
+        </div>
+        <div>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">SOORAJ TS</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px]">**Sooraj** is a **Product Engineer at Strollby Inc**, where he focuses on building **scalable backend architectures** and driving performance-focused optimizations. He is an **open-source contributor** to frameworks like **Agno AGI** …</p>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
+        <div class="overflow-hidden flex-shrink-0 w-[250px] h-[250px]">
+          <img src="https://pretalx.com/media/avatars/KSJ7GV_jFAVq2q.webp" class="w-[250px] h-[250px] object-cover rounded-[85px]"
+            alt="Kirill Tribunskii - Image" width="250" height="250">
+        </div>
+        <div>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">Kirill Tribunskii</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px]">Kirill Tribunskii is a Python Development Lead focused on the architecture and development of reliable backend systems for ML-driven fintech services. His work centers on making large distributed systems maintainable, …</p>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
+        <div class="overflow-hidden flex-shrink-0 w-[250px] h-[250px]">
+          <img src="https://pretalx.com/media/avatars/KWTR93_sspFJG2.webp" class="w-[250px] h-[250px] object-cover rounded-[85px]"
+            alt="Takayuki Shimizukawa - Image" width="250" height="250">
+        </div>
+        <div>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">Takayuki Shimizukawa</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px]">He is a Accounting director of PyCon JP Association, a member of BeProud Corporation. He started using Python in 2003. In his work, he has been involved in the development …</p>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
+        <div class="overflow-hidden flex-shrink-0 w-[250px] h-[250px]">
+          <img src="https://pretalx.com/media/avatars/LQGKTK_isUsGH0.webp" class="w-[250px] h-[250px] object-cover rounded-[85px]"
+            alt="Christian Mark P. Francisco - Image" width="250" height="250">
+        </div>
+        <div>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">Christian Mark P. Francisco</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px]">Christian Mark P. Francisco is a third-year Computer Science student at National University - Dasmariñas and a former part-time Automation Engineer. He’s spent over five years learning, teaching, building, and …</p>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
+        <div class="overflow-hidden flex-shrink-0 w-[250px] h-[250px]">
+          <img src="https://pretalx.com/media/avatars/MLAD7F_ohCaC4X.webp" class="w-[250px] h-[250px] object-cover rounded-[85px]"
+            alt="Luis Caezar Ian Panganiban - Image" width="250" height="250">
+        </div>
+        <div>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">Luis Caezar Ian Panganiban</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px]">Ian is a driven data solutions developer specializing in the integration of geospatial intelligence across diverse systems and domains. His career spans research and engineering roles that bridge science, sustainability, …</p>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
+        <div class="overflow-hidden flex-shrink-0 w-[250px] h-[250px]">
+          <img src="https://pretalx.com/media/avatars/MXPGHU_wa9hEFT.webp" class="w-[250px] h-[250px] object-cover rounded-[85px]"
+            alt="Saurav Jain - Image" width="250" height="250">
+        </div>
+        <div>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">Saurav Jain</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px]">Saurav is a Senior Developer Advocate at Apify. He has built and managed various developer communities, starting developer relations programs from scratch and scaling them to support thousands of developers …</p>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
+        <div class="overflow-hidden flex-shrink-0 w-[250px] h-[250px]">
+          <img src="https://pretalx.com/media/avatars/NFGFHQ_PtkCOPj.webp" class="w-[250px] h-[250px] object-cover rounded-[85px]"
+            alt="Calvin Tsang - Image" width="250" height="250">
+        </div>
+        <div>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">Calvin Tsang</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px]">Calvin Tsang is the Vice Chairman of PyCon Hong Kong and a long-time community builder in the open-source ecosystem. He is also an active member of Open Source Hong Kong, …</p>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
+        <div class="overflow-hidden flex-shrink-0 w-[250px] h-[250px]">
+          <img src="https://pretalx.com/media/avatars/PTRYVC_rACmjbG.webp" class="w-[250px] h-[250px] object-cover rounded-[85px]"
+            alt="Christopher Dio Chavez - Image" width="250" height="250">
+        </div>
+        <div>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">Christopher Dio Chavez</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px]">Christopher Dio Chavez brings over 25 years of expertise in both offensive and defensive cybersecurity practices, establishing himself as a distinguished figure in the field. With multiple certifications from leading …</p>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
+        <div class="overflow-hidden flex-shrink-0 w-[250px] h-[250px]">
+          <img src="https://pretalx.com/media/avatars/PZB8RN_D3UZyzr.webp" class="w-[250px] h-[250px] object-cover rounded-[85px]"
+            alt="Jaydee N. Lucero - Image" width="250" height="250">
+        </div>
+        <div>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">Jaydee N. Lucero</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px]">**Jaydee Lucero** is currently a Senior Structural Engineer I at Abinales Associates Engineers + Consultants, where he specializes in the structural design of buildings of various heights. He has more …</p>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
+        <div class="overflow-hidden flex-shrink-0 w-[250px] h-[250px]">
+          <img src="https://pretalx.com/media/avatars/R8BNAN_gsSjJls.webp" class="w-[250px] h-[250px] object-cover rounded-[85px]"
+            alt="Arnel Jan Sarmiento - Image" width="250" height="250">
+        </div>
+        <div>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">Arnel Jan Sarmiento</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px]">Arnel is a Cloud Engineer and Python Developer with over four years of experience designing and building cloud-native, serverless systems at scale. As an AWS Certified professional, he specializes in …</p>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
+        <div class="overflow-hidden flex-shrink-0 w-[250px] h-[250px]">
+          <img src="https://pretalx.com/media/avatars/VNJ8DS_ihA2vXV.webp" class="w-[250px] h-[250px] object-cover rounded-[85px]"
+            alt="Briane Paul V. Samson - Image" width="250" height="250">
+        </div>
+        <div>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">Briane Paul V. Samson</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px]">Briane Paul V. Samson is an Associate Professor of Computer Science and Informatics in the Department of Software Technology, College of Computer Studies at De La Salle University. He is …</p>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
+        <div class="overflow-hidden flex-shrink-0 w-[250px] h-[250px]">
+          <img src="https://pretalx.com/media/avatars/S7VML9_szDEkA1.webp" class="w-[250px] h-[250px] object-cover rounded-[85px]"
+            alt="Samantha Vivien L. Servo - Image" width="250" height="250">
+        </div>
+        <div>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">Samantha Vivien L. Servo</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px]">Samantha is a junior cloud engineer at eCloudvalley Philippines. Actively involved in AWS organization and is a Community Builder in Data, she&#x27;s passionate about the convergence of medicine and technology, …</p>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
+        <div class="overflow-hidden flex-shrink-0 w-[250px] h-[250px]">
+          <img src="https://pretalx.com/media/avatars/TABDZE_LbegGDW.webp" class="w-[250px] h-[250px] object-cover rounded-[85px]"
+            alt="Dylan Lopez - Image" width="250" height="250">
+        </div>
+        <div>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">Dylan Lopez</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px]">Dylan is a Ph.D. candidate at Chung Yuan Christian University in Taiwan, where he focuses on quantum computing applications for the energy industry. He is a contributor and collaborator of …</p>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
+        <div class="overflow-hidden flex-shrink-0 w-[250px] h-[250px]">
+          <img src="https://pretalx.com/media/avatars/TVAVRQ_5QUOtUE.webp" class="w-[250px] h-[250px] object-cover rounded-[85px]"
+            alt="Michel Onasis S. Ogbinar - Image" width="250" height="250">
+        </div>
+        <div>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">Michel Onasis S. Ogbinar</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px]">Myk Ogbinar leads the Data &amp; Analytics Group at San Miguel Corporation, which drives enterprise-wide strategies in data, analytics, and AI. He recently earned his Master of Engineering in Artificial …</p>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
+        <div class="overflow-hidden flex-shrink-0 w-[250px] h-[250px]">
+          <img src="https://pretalx.com/media/avatars/TX8FQG_YrTa7jM.webp" class="w-[250px] h-[250px] object-cover rounded-[85px]"
+            alt="Auxten Wang - Image" width="250" height="250">
+        </div>
+        <div>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">Auxten Wang</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px]">Auxten - 👨🏻‍💻 Experience in RecSys, Database - Technical Director of ClickHouse core team - Principal Engineer in Shopee (ML Platform) - ❤️ Love Open Source! - Contributed to ClickHouse, …</p>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
+        <div class="overflow-hidden flex-shrink-0 w-[250px] h-[250px]">
+          <img src="https://pretalx.com/media/avatars/UM3CWP_7MVjMTx.webp" class="w-[250px] h-[250px] object-cover rounded-[85px]"
+            alt="nikkie - Image" width="250" height="250">
+        </div>
+        <div>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">nikkie</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px]">Takuya FUTATSUGI a.k.a. **nikkie** is a Machine Learning Engineer specializing in Natural Language Processing (NLP) at [Uzabase, inc.](https://www.uzabase.com/en/) in Tokyo. Starting his career as a software engineer in 2016, he …</p>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
+        <div class="overflow-hidden flex-shrink-0 w-[250px] h-[250px]">
+          <img src="https://pretalx.com/media/avatars/QU7SSM_iwPTQwk.webp" class="w-[250px] h-[250px] object-cover rounded-[85px]"
+            alt="Jayden Coventry - Image" width="250" height="250">
+        </div>
+        <div>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">Jayden Coventry</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px]">Customer Success Engineer at SerpApi</p>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
+        <div class="overflow-hidden flex-shrink-0 w-[250px] h-[250px]">
+          <img src="https://pretalx.com/media/avatars/V8YZ7S_mbJJTVz.webp" class="w-[250px] h-[250px] object-cover rounded-[85px]"
+            alt="Yu Saito - Image" width="250" height="250">
+        </div>
+        <div>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">Yu Saito</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px]">Yu Saito is currently working as a Solution Engineer for Azure at Microsoft Japan. Prior to joining Microsoft, Yu was a graduate student specializing in bioinformatics. During this time, he …</p>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
+        <div class="overflow-hidden flex-shrink-0 w-[250px] h-[250px]">
+          <img src="https://pretalx.com/media/avatars/WJZANY_DsONvhe.webp" class="w-[250px] h-[250px] object-cover rounded-[85px]"
+            alt="Gertrude Abagale - Image" width="250" height="250">
+        </div>
+        <div>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">Gertrude Abagale</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px]">Gertrude Abagale is a cybersecurity engineer and an active contributor to community-led open-source initiatives across Africa. She works extensively with Python to build secure backend systems and enterprise integrations. Beyond …</p>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
+        <div class="overflow-hidden flex-shrink-0 w-[250px] h-[250px]">
+          <img src="https://pretalx.com/media/avatars/YCTWZ7_61N4rmF.webp" class="w-[250px] h-[250px] object-cover rounded-[85px]"
+            alt="Dr. Raymond Tan - Image" width="250" height="250">
+        </div>
+        <div>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">Dr. Raymond Tan</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px]">Raymond R. Tan is a Distinguished Professor of Chemical Engineering and University Fellow of De La Salle University. He is a Fellow of The World Academy of Sciences and an …</p>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
+        <div class="overflow-hidden flex-shrink-0 w-[250px] h-[250px]">
+          <img src="https://pretalx.com/media/avatars/XHT9ZV_jFYFMbW.webp" class="w-[250px] h-[250px] object-cover rounded-[85px]"
+            alt="Hemangi Karchalkar - Image" width="250" height="250">
+        </div>
+        <div>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">Hemangi Karchalkar</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px]">Hemangi is a passionate Python developer and community contributor. She enjoys simplifying complex topics like Pydantic, FastAPI, and testing, and has spoken at events such as GIDS, PyCon Italy, and …</p>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
+        <div class="overflow-hidden flex-shrink-0 w-[250px] h-[250px]">
+          <img src="https://pretalx.com/media/avatars/XVM8TR_FTeacji.webp" class="w-[250px] h-[250px] object-cover rounded-[85px]"
+            alt="Tarun Jain - Image" width="250" height="250">
+        </div>
+        <div>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">Tarun Jain</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px]">Tarun Jain is a Founding Engineer, Google Developer Expert in AI, and Qdrant Distinguished Ambassador. Tarun has contributed to Google Summer of Code 2024 at Red Hen Lab and Google …</p>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
+        <div class="overflow-hidden flex-shrink-0 w-[250px] h-[250px]">
+          <img src="https://pretalx.com/media/avatars/YG99AS_mnkNrnN.webp" class="w-[250px] h-[250px] object-cover rounded-[85px]"
+            alt="Allen Y - Image" width="250" height="250">
+        </div>
+        <div>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">Allen Y</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px]">I’m Allen, Associate Software Engineer at Red Hat, focused on building scalable, high-performance backend systems using Python, GraphQL, Kubernetes, and cloud native tooling. I work across distributed systems, payments, event-driven …</p>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
+        <div class="overflow-hidden flex-shrink-0 w-[250px] h-[250px]">
+          <img src="https://pretalx.com/media/avatars/YU7YSY_Pql03fV.webp" class="w-[250px] h-[250px] object-cover rounded-[85px]"
+            alt="Vivek Keshore - Image" width="250" height="250">
+        </div>
+        <div>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">Vivek Keshore</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px]">Vivek Keshore is working with EPAM Systems as Software Architect. He is a Python engineer with 12+ years of experience building scalable systems, developer tools, and backend platforms. He has …</p>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="rounded-[24px] flex flex-col gap-5 w-full max-w-[100%] lg:max-w-[250px] grow items-center">
+        <div class="overflow-hidden flex-shrink-0 w-[250px] h-[250px]">
+          <img src="https://pretalx.com/media/avatars/YY9MKV_PslJh0l.webp" class="w-[250px] h-[250px] object-cover rounded-[85px]"
+            alt="Hayao Suzuki - Image" width="250" height="250">
+        </div>
+        <div>
+          <h3 class="font-bantayog text-brown-1 text-2xl uppercase">Hayao Suzuki</h3>
+          
+          
+          <p class="font-nunito text-brown-2 text-[13px]">A software engineer based in Japan. Holds a master&#x27;s degree in engineering from the University of Electro-Communications. Currently works as a software engineer at Tokyo Gas Co., Ltd. while also …</p>
+          
+        </div>
+      </div>
+      
+      
+    </div>
+  </div>
+  
+  <img src="/static/img/vectors/section-divider-04.svg" alt="Section Break" class="w-full py-0 my-0 z-10 cstm_bottom block divider-05">
+</section>
+
+
+        <!-- Announcement Section -->
+        
+        <!-- When? Where? Section -->
+        
+<section id="when-where"
+         class="py-24 px-[4%] bg-[url('/static/img/when-where-bg.jpg')] bg-cover bg-center">
+  <div class="w-full max-w-[1160px] mx-auto flex flex-col gap-10">
+    <div class="flex flex-col gap-4 sm:flex-row sm:justify-between sm:items-center">
+      <div class="">
+        <h2 class="font-bantayog text-[28px] text-[#F26D1D] leading-[130%]">WHEN? WHERE?</h2>
+        <p class="font-td_pinoy text-[35px] text-brown-1 leading-[130%] tracking-[2%]">March 21-23, 2026</p>
+        <p class="font-td_pinoy text-[35px] text-brown-1 leading-[130%] tracking-[2%]">De La Salle University (DLSU),</p>
+        <p class="font-td_pinoy text-[35px] text-brown-1 leading-[130%] tracking-[2%]">Malate, Manila</p>
+      </div>
+
+      <div class="flex flex-col justify-center gap-3.5">
+        <a href="https://ti.to/pythonph/pythonasia-2026/" target="_blank" class="rounded-lg bg-[#F26D1D] transition-all duration-300 px-6 py-4 md:py-[27px] md:px-[90px] text-white text-base md:text-[22px] leading-[100%] sm:leading-[120%] font-bantayog text-center">
+          GET TICKETS
+        </a>
+        
+      </div>
+
+    </div>
+    <div class="relative w-full pb-[56.25%] overflow-hidden rounded-[24px]">
+      <iframe class="absolute top-0 left-0 w-full h-full border-0"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d312.9943103756634!2d120.99462142200333!3d14.56338389191832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c97ed286459b%3A0x5927068d997eae2a!2sDe%20La%20Salle%20University%20Manila!5e0!3m2!1sen!2sph!4v1760281058137!5m2!1sen!2sph"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+        <!-- Sponsors Section -->
+        
+
+  <style>
+    .sponsor-card-overlay {
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+    .sponsor-logo-blur {
+      transition: filter 0.3s ease, opacity 0.3s ease;
+    }
+    .sponsor-pao-ribbon {
+      transition: filter 0.3s ease;
+    }
+    .sponsor-card-container:hover .sponsor-logo-blur {
+      filter: blur(8px);
+      opacity: 0.3;
+    }
+    .sponsor-card-container:hover .sponsor-pao-ribbon {
+      filter: blur(8px);
+    }
+    @supports not (backdrop-filter: blur(8px)) {
+      .sponsor-card-overlay {
+        background: #FFF3E5 !important;
+      }
+    }
+  </style>
+  <section id="sponsors" class="py-20 bg-[#FFF9F2] px-[4%]">
+    <div class="container mx-auto max-w-[1160px]">
+      <!-- Header with Python Mascots -->
+      <div class="relative mb-14">
+        <div class="flex justify-between items-end">
+          <div class="flex flex-col gap-6">
+            <h2 class="text-5xl md:text-6xl font-bold font-td_pinoy text-orange-2">
+              Special Thanks
+              <br />
+              to Our Sponsors
+            </h2>
+            <p class="text-lg font-nunito" style="color: #7c5e3b">
+              This event was made possible with the help of our generous sponsors
+            </p>
+
+          </div>
+          <img class="hidden md:block" src="/static/img/py_kalinga-w-band.png" alt="" width="300" height="300" />
+        </div>
+      </div>
+      
+        
+          <div class="mb-16">
+            <h3 class="text-2xl font-bold mb-8 uppercase font-bantayog font-bantayog text-brown-1">Organizer</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
+              
+                <div class="sponsor-card-container group relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-offwhite-3 p-8 cursor-pointer">
+                    
+                  
+                    <a href="https://altdsi.dlsu.edu.ph"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="w-full h-full flex items-center justify-center">
+                      <img src="https://res.cloudinary.com/dqiztz63j/image/upload/v1773129893/DSI-green-horizontal_1_j7tlr6.png"
+                           alt="DLSU ALTDSI"
+                           class="sponsor-logo-blur max-w-full max-h-32 object-contain"
+                           width="256" height="128" />
+                    </a>
+                  
+                  
+                    <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-offwhite-3/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
+                      <a href="https://altdsi.dlsu.edu.ph" target="_blank" rel="noopener noreferrer" class="overflow-y-auto h-[100%] flex items-center justify-center">
+                        <p class="text-sm text-center font-nunito" style="color: #7c5e3b">The DLSU Dr. Andrew L. Tan Data Science Institute pushes the limits of data science education and research in the Philippines through its focus on ethical data science, responsible AI, strengthening open data practices, human computing, quantum computing, tiny ML, computational social science, and urban and geospatial analytics.</p>
+                      </a>
+                    </div>
+                  
+                </div>
+              
+                <div class="sponsor-card-container group relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-offwhite-3 p-8 cursor-pointer">
+                    
+                  
+                    <a href="https://pythonasia.org"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="w-full h-full flex items-center justify-center">
+                      <img src="https://res.cloudinary.com/dqiztz63j/image/upload/v1773130385/PAO_-_horizontal_wordmark_logo_bourin.png"
+                           alt="PAO"
+                           class="sponsor-logo-blur max-w-full max-h-32 object-contain"
+                           width="256" height="128" />
+                    </a>
+                  
+                  
+                    <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-offwhite-3/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
+                      <a href="https://pythonasia.org" target="_blank" rel="noopener noreferrer" class="overflow-y-auto h-[100%] flex items-center justify-center">
+                        <p class="text-sm text-center font-nunito" style="color: #7c5e3b">Strengthening Python Communities Across Asia</p>
+                      </a>
+                    </div>
+                  
+                </div>
+              
+                <div class="sponsor-card-container group relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-offwhite-3 p-8 cursor-pointer">
+                    
+                  
+                    <a href="https://python.ph"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="w-full h-full flex items-center justify-center">
+                      <img src="https://res.cloudinary.com/dqiztz63j/image/upload/v1773130233/Group_4024_x6arwt.png"
+                           alt="PythonPH"
+                           class="sponsor-logo-blur max-w-full max-h-32 object-contain"
+                           width="256" height="128" />
+                    </a>
+                  
+                  
+                    <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-offwhite-3/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
+                      <a href="https://python.ph" target="_blank" rel="noopener noreferrer" class="overflow-y-auto h-[100%] flex items-center justify-center">
+                        <p class="text-sm text-center font-nunito" style="color: #7c5e3b">Inspiring Filipinos to excel in their craft through Python and open source.</p>
+                      </a>
+                    </div>
+                  
+                </div>
+              
+            </div>
+          </div>
+        
+      
+        
+          <div class="mb-16">
+            <h3 class="text-2xl font-bold mb-8 uppercase font-bantayog font-bantayog text-brown-1">Keystone Sponsor</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
+              
+                <div class="sponsor-card-container group relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-offwhite-3 p-8 cursor-pointer">
+                    
+                  
+                    <a href="https://serpapi.com"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="w-full h-full flex items-center justify-center">
+                      <img src="https://res.cloudinary.com/dqiztz63j/image/upload/v1770665219/SerpAPI_-_color_horizontal_1_inxrot.png"
+                           alt="SerpAPI"
+                           class="sponsor-logo-blur max-w-full max-h-32 object-contain"
+                           width="256" height="128" />
+                    </a>
+                  
+                  
+                    <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-offwhite-3/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
+                      <a href="https://serpapi.com" target="_blank" rel="noopener noreferrer" class="overflow-y-auto h-[100%] flex items-center justify-center">
+                        <p class="text-sm text-center font-nunito overflow-y-auto h-[100%]" style="color: #7c5e3b">SerpApi is a real-time API to access Google search results. We handle proxies, solve captchas, and parse all rich structured data for you.</p>
+                      </a>
+                    </div>
+                  
+                </div>
+              
+            </div>
+          </div>
+        
+      
+        
+          <div class="mb-16">
+            <h3 class="text-2xl font-bold mb-8 uppercase font-bantayog font-bantayog text-brown-1">Platinum Sponsor</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
+              
+                <div class="sponsor-card-container group relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-offwhite-3 p-8 cursor-pointer">
+                  
+                  <img
+                    src="/static/img/vectors/pao-ribbon.svg"
+                    alt="PAO Ribbon"
+                    class="sponsor-pao-ribbon absolute top-0 right-[20px] w-[50px] z-20">
+                  
+                  
+                    <a href="https://aws.amazon.com"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="w-full h-full flex items-center justify-center">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1280px-Amazon_Web_Services_Logo.svg.png"
+                           alt="Amazon Web Services (AWS)"
+                           class="sponsor-logo-blur max-w-full max-h-32 object-contain"
+                           width="256" height="128" />
+                    </a>
+                  
+                  
+                    <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-offwhite-3/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
+                      <a href="https://aws.amazon.com" target="_blank" rel="noopener noreferrer" class="overflow-y-auto h-[100%] flex items-center justify-center">
+                        <p class="text-sm text-center font-nunito overflow-y-auto h-[100%]" style="color: #7c5e3b">Amazon Web Services (AWS) is the world’s most comprehensive and broadly adopted cloud, offering over 200 fully featured services from data centers globally. Millions of customers—including the fastest-growing startups, largest enterprises, and leading government agencies—are using AWS to lower costs, become more agile, and innovate faster.</p>
+                      </a>
+                    </div>
+                  
+                </div>
+              
+            </div>
+          </div>
+        
+      
+        
+          <div class="mb-16">
+            <h3 class="text-2xl font-bold mb-8 uppercase font-bantayog font-bantayog text-brown-1">Platinum Partner</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
+              
+                <div class="sponsor-card-container group relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-offwhite-3 p-8 cursor-pointer">
+                  
+                  
+                    <a href="https://aba.gv.at/en/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="w-full h-full flex items-center justify-center">
+                      <img src="https://res.cloudinary.com/dqiztz63j/image/upload/v1770991826/ABA_Logo_png_1_shdmiq.png"
+                           alt="ABA"
+                           class="sponsor-logo-blur max-w-full max-h-32 object-contain"
+                           width="256" height="128" />
+                    </a>
+                  
+                  
+                    <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-offwhite-3/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
+                      <a href="https://aba.gv.at/en/" target="_blank" rel="noopener noreferrer" class="overflow-y-auto h-[100%] flex items-center justify-center">
+                        <p class="text-sm text-center font-nunito overflow-y-auto h-[100%]" style="color: #7c5e3b">Your easy access to Austria.</p>
+                      </a>
+                    </div>
+                  
+                </div>
+              
+            </div>
+          </div>
+        
+      
+        
+          <div class="mb-16">
+            <h3 class="text-2xl font-bold mb-8 uppercase font-bantayog font-bantayog text-brown-1">Titanium Sponsor</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
+              
+                <div class="sponsor-card-container group relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-offwhite-3 p-8 cursor-pointer">
+                    
+                    <img
+                      src="/static/img/vectors/pao-ribbon.svg"
+                      alt="PAO Ribbon"
+                      class="sponsor-pao-ribbon absolute top-0 right-[20px] w-[50px] z-20"
+                    >
+                    
+                  
+                    <a href="https://hennge.com"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="w-full h-full flex items-center justify-center">
+                      <img src="https://res.cloudinary.com/dqiztz63j/image/upload/v1770665074/hennge_logo_black_horizontal_vvutvx.png"
+                           alt="Hennge"
+                           class="sponsor-logo-blur max-w-full max-h-32 object-contain"
+                           width="256" height="128" />
+                    </a>
+                  
+                  
+                    <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-offwhite-3/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
+                      <a href="https://hennge.com" target="_blank" rel="noopener noreferrer" class="overflow-y-auto h-[100%] flex items-center justify-center">
+                        <p class="text-sm text-center font-nunito overflow-y-auto h-[100%]" style="color: #7c5e3b">HENNGE is a Tokyo-based cloud security company guided by the mission of liberation of technology. We develop HENNGE One, Japan’s leading cloud security service, trusted by thousands of companies and millions of users worldwide. Engineers work in a global, English-first environment where experimentation is encouraged and mistakes are seen as part of learning. We build secure systems at real-world scale while continuously improving together.</p>
+                      </a>
+                    </div>
+                  
+                </div>
+              
+                <div class="sponsor-card-container group relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-offwhite-3 p-8 cursor-pointer">
+                    
+                  
+                    <a href="https://www.quantrics.com"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="w-full h-full flex items-center justify-center">
+                      <img src="https://res.cloudinary.com/dqiztz63j/image/upload/v1771823319/NQX_-_formerly_Quantrix_-_transparent_mod9c1.png"
+                           alt="Quantrics (NQX)"
+                           class="sponsor-logo-blur max-w-full max-h-32 object-contain"
+                           width="256" height="128" />
+                    </a>
+                  
+                  
+                    <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-offwhite-3/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
+                      <a href="https://www.quantrics.com" target="_blank" rel="noopener noreferrer" class="overflow-y-auto h-[100%] flex items-center justify-center">
+                        <p class="text-sm text-center font-nunito overflow-y-auto h-[100%]" style="color: #7c5e3b">NQX Philippines (formerly Quantrics) is redefining customer experience by bringing together the expertise of a global leader and the passion of world-class Filipino talent. With roots in Canada and a strong hub in the Philippines, we are part of NQX’s 10,000-strong team, powering over 20 million customer interactions each year across more than 120 call types.
+
+At NQX, we don’t just handle interactions—we create meaningful connections that inspire trust, strengthen relationships, and help build a more connected world.</p>
+                      </a>
+                    </div>
+                  
+                </div>
+              
+            </div>
+          </div>
+        
+      
+        
+          <div class="mb-16">
+            <h3 class="text-2xl font-bold mb-8 uppercase font-bantayog font-bantayog text-brown-1">Gold Sponsor</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
+              
+                <div class="sponsor-card-container group relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-offwhite-3 p-8 cursor-pointer">
+                    
+                  
+                    <a href="https://clickhouse.com"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="w-full h-full flex items-center justify-center">
+                      <img src="https://res.cloudinary.com/dqiztz63j/image/upload/v1768582442/ClickHouse_Logo_Black_300dpi_FNL_xx7uvj.png"
+                           alt="ClickHouse"
+                           class="sponsor-logo-blur max-w-full max-h-32 object-contain"
+                           width="256" height="128" />
+                    </a>
+                  
+                  
+                    <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-offwhite-3/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
+                      <a href="https://clickhouse.com" target="_blank" rel="noopener noreferrer" class="overflow-y-auto h-[100%] flex items-center justify-center">
+                        <p class="text-sm text-center font-nunito overflow-y-auto h-[100%]" style="color: #7c5e3b">ClickHouse Cloud is the fastest and most resource-efficient real-time database and data warehouse, optimized for diverse data-intensive workloads. Trusted by enterprises globally, ClickHouse Cloud use cases range from interactive user-facing dashboards to ad-hoc historical analyses over petabytes of data. It is available through open-source or in AWS, GCP, and Microsoft Azure.</p>
+                      </a>
+                    </div>
+                  
+                </div>
+              
+            </div>
+          </div>
+        
+      
+        
+          <div class="mb-16">
+            <h3 class="text-2xl font-bold mb-8 uppercase font-bantayog font-bantayog text-brown-1">Silver Sponsor</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
+              
+                <div class="sponsor-card-container group relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-offwhite-3 p-8 cursor-pointer">
+                    
+                  
+                    <a href="https://apify.com"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="w-full h-full flex items-center justify-center">
+                      <img src="https://res.cloudinary.com/dqiztz63j/image/upload/v1769582252/apify-wordmark-dark-512x141_cqcxeu.svg"
+                           alt="Apify"
+                           class="sponsor-logo-blur max-w-full max-h-32 object-contain"
+                           width="256" height="128" />
+                    </a>
+                  
+                  
+                    <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-offwhite-3/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
+                      <a href="https://apify.com" target="_blank" rel="noopener noreferrer" class="overflow-y-auto h-[100%] flex items-center justify-center">
+                        <p class="text-sm text-center font-nunito overflow-y-auto h-[100%]" style="color: #7c5e3b">Get web data. Build automations.
+
+Apify is the largest marketplace of web data extraction and automation tools, enabling businesses to get data from social media, ecommerce, search engines, maps, travel sites, or any other website.</p>
+                      </a>
+                    </div>
+                  
+                </div>
+              
+                <div class="sponsor-card-container group relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-offwhite-3 p-8 cursor-pointer">
+                    
+                  
+                    <a href="https://codehappy.ph"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="w-full h-full flex items-center justify-center">
+                      <img src="https://res.cloudinary.com/dqiztz63j/image/upload/v1762771270/CodeHappy_colored_1_p2xlnf.png"
+                           alt="CodeHappy"
+                           class="sponsor-logo-blur max-w-full max-h-32 object-contain"
+                           width="256" height="128" />
+                    </a>
+                  
+                  
+                    <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-offwhite-3/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
+                      <a href="https://codehappy.ph" target="_blank" rel="noopener noreferrer" class="overflow-y-auto h-[100%] flex items-center justify-center">
+                        <p class="text-sm text-center font-nunito overflow-y-auto h-[100%]" style="color: #7c5e3b">CodeHappy is a grassroots business that specializes in Python training that targets your needs. Their programs emphasize practical data skills and key software engineering expertise.</p>
+                      </a>
+                    </div>
+                  
+                </div>
+              
+                <div class="sponsor-card-container group relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-offwhite-3 p-8 cursor-pointer">
+                    
+                  
+                    <a href="https://www.codev.com/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="w-full h-full flex items-center justify-center">
+                      <img src="https://res.cloudinary.com/dqiztz63j/image/upload/v1771923354/PRIMARY-logo-codev-red_2_ngqiob.png"
+                           alt="CoDev"
+                           class="sponsor-logo-blur max-w-full max-h-32 object-contain"
+                           width="256" height="128" />
+                    </a>
+                  
+                  
+                    <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-offwhite-3/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
+                      <a href="https://www.codev.com/" target="_blank" rel="noopener noreferrer" class="overflow-y-auto h-[100%] flex items-center justify-center">
+                        <p class="text-sm text-center font-nunito overflow-y-auto h-[100%]" style="color: #7c5e3b">CoDev connects ambitious professionals with top U.S. companies, opening doors to global careers built for growth. We provide access to high-impact projects, competitive compensation, and meaningful work that elevates your skills on an international stage.
+
+Beyond opportunity, we offer personalized support — from tailored role matching to continuous learning — so your growth never stops. Backed by accessible leadership and a strong professional community, CoDev is a workplace where you gain global exposure, real support, and the momentum to thrive.</p>
+                      </a>
+                    </div>
+                  
+                </div>
+              
+                <div class="sponsor-card-container group relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-offwhite-3 p-8 cursor-pointer">
+                    
+                  
+                    <a href="https://opswerks.com"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="w-full h-full flex items-center justify-center">
+                      <img src="https://res.cloudinary.com/dqiztz63j/image/upload/v1771823763/OpsWerksLogo_FullColor_1_ok2f6p.png"
+                           alt="OpsWerks"
+                           class="sponsor-logo-blur max-w-full max-h-32 object-contain"
+                           width="256" height="128" />
+                    </a>
+                  
+                  
+                    <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-offwhite-3/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
+                      <a href="https://opswerks.com" target="_blank" rel="noopener noreferrer" class="overflow-y-auto h-[100%] flex items-center justify-center">
+                        <p class="text-sm text-center font-nunito overflow-y-auto h-[100%]" style="color: #7c5e3b">There’s a reason we spell werk differently—it’s because WE is at the core of everything we do. Here, the power of relationships fuels us—learning about each other, championing each other, and helping each other do better. Because the stronger we are together, the better we can serve the operational teams we partner with.</p>
+                      </a>
+                    </div>
+                  
+                </div>
+              
+                <div class="sponsor-card-container group relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-offwhite-3 p-8 cursor-pointer">
+                    
+                  
+                    <a href="https://www.reedelsevier.com.ph"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="w-full h-full flex items-center justify-center">
+                      <img src="https://res.cloudinary.com/dqiztz63j/image/upload/v1769503219/FINAL_Interim_Logo_2023_CMYK_FULL_COLOR_flfvvc.png"
+                           alt="Reed Elsevier (RELX)"
+                           class="sponsor-logo-blur max-w-full max-h-32 object-contain"
+                           width="256" height="128" />
+                    </a>
+                  
+                  
+                    <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-offwhite-3/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
+                      <a href="https://www.reedelsevier.com.ph" target="_blank" rel="noopener noreferrer" class="overflow-y-auto h-[100%] flex items-center justify-center">
+                        <p class="text-sm text-center font-nunito overflow-y-auto h-[100%]" style="color: #7c5e3b">RELX | Reed Elsevier is the shared services arm of RELX, a global provider of information-based analytics and decision tools for professional and business customers.
+
+RELX | Reed Elsevier is proud to be a recognized employer of choice for providing future-ready careers to highly talented and dedicated professionals in the fields of Legal, Technology, Finance and Accounting, Sales, Marketing, Human Resources, and Customer Support.</p>
+                      </a>
+                    </div>
+                  
+                </div>
+              
+            </div>
+          </div>
+        
+      
+        
+          <div class="mb-16">
+            <h3 class="text-2xl font-bold mb-8 uppercase font-bantayog"
+                style="color: #7c5e3b">Coffee Sponsor</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
+              
+                <div class="sponsor-card-container group relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-offwhite-3 p-8 cursor-pointer">
+                    
+                  
+                    <a href="https://www.reedelsevier.com.ph"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="w-full h-full flex items-center justify-center">
+                      <img src="https://res.cloudinary.com/dqiztz63j/image/upload/v1769503219/FINAL_Interim_Logo_2023_CMYK_FULL_COLOR_flfvvc.png"
+                           alt="Reed Elsevier (RELX)"
+                           class="sponsor-logo-blur max-w-full max-h-32 object-contain"
+                           width="256" height="128" />
+                    </a>
+                  
+                  
+                    <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-offwhite-3/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
+                      <a href="https://www.reedelsevier.com.ph" target="_blank" rel="noopener noreferrer" class="overflow-y-auto h-[100%] flex items-center justify-center">
+                        <p class="text-sm text-center font-nunito overflow-y-auto h-[100%]" style="color: #7c5e3b">RELX | Reed Elsevier is the shared services arm of RELX, a global provider of information-based analytics and decision tools for professional and business customers.
+
+RELX | Reed Elsevier is proud to be a recognized employer of choice, providing future-ready careers to highly talented and dedicated professionals across Technology, Sales, Legal, Finance and Accounting, Marketing, Human Resources, and Customer Support.
+
+RELX | Reed Elsevier is part of Inquirer and Statista’s Top 50 Best Employers in the Philippines and is recognized in the Top 25 Inspiring Workplaces in the world.</p>
+                      </a>
+                    </div>
+                  
+                </div>
+              
+            </div>
+          </div>
+        
+      
+        
+          <div class="mb-16">
+            <h3 class="text-2xl font-bold mb-8 uppercase font-bantayog"
+                style="color: #7c5e3b">Education Summit Sponsor</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
+              
+              <div class="sponsor-card-container group relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-offwhite-3 p-8 cursor-pointer">
+                
+              
+                <a href="https://codehappy.ph"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="w-full h-full flex items-center justify-center">
+                  <img src="https://res.cloudinary.com/dqiztz63j/image/upload/v1762771270/CodeHappy_colored_1_p2xlnf.png"
+                       alt="CodeHappy"
+                       class="sponsor-logo-blur max-w-full max-h-32 object-contain"
+                       width="256" height="128" />
+                </a>
+              
+              
+                <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-offwhite-3/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
+                  <a href="https://codehappy.ph" target="_blank" rel="noopener noreferrer" class="overflow-y-auto h-[100%] flex items-center justify-center">
+                    <p class="text-sm text-center font-nunito overflow-y-auto h-[100%]" style="color: #7c5e3b">CodeHappy is a grassroots business that specializes in Python training that targets your needs. Their programs emphasize practical data skills and key software engineering expertise.</p>
+                  </a>
+                </div>
+              
+            </div>
+              
+            </div>
+          </div>
+
+        
+      
+        
+          <div class="mb-16">
+            <h3 class="text-2xl font-bold mb-8 uppercase font-bantayog font-bantayog text-brown-1">Community Partner</h3>
+            <div class="grid md:grid-cols-4 gap-8 items-center">
+              
+                <div class="sponsor-card-container group relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-offwhite-3 p-8 cursor-pointer">
+                    
+                  
+                    <a href="https://airwebframework.org"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="w-full h-full flex items-center justify-center">
+                      <img src="https://res.cloudinary.com/dqiztz63j/image/upload/v1771820342/air_zthyft.png"
+                           alt="AIR web framework"
+                           class="sponsor-logo-blur max-w-full max-h-32 object-contain"
+                           width="256" height="128" />
+                    </a>
+                  
+                  
+                    <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-offwhite-3/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
+                      <a href="https://airwebframework.org" target="_blank" rel="noopener noreferrer" class="overflow-y-auto h-[100%] flex items-center justify-center">
+                        <p class="text-sm text-center font-nunito overflow-y-auto h-[100%]" style="color: #7c5e3b">Air is the first web framework designed for AI to write. Created by Daniel and Audrey Roy Greenfeld (authors of Two Scoops of Django), Air combines HTML-as-Python, built-in HTMX, and a one-file-to-production philosophy. It runs anywhere Python runs, with no hosting lock-in. MIT licensed, free forever, and built by contributors from the Philippines, United States, Canada, Israel, Uruguay, Netherlands, France, Spain, Switzerland, Scotland, India, Bangladesh, Vietnam, Qatar, and Russia.</p>
+                      </a>
+                    </div>
+                  
+                </div>
+              
+                <div class="sponsor-card-container group relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-offwhite-3 p-8 cursor-pointer">
+                    
+                  
+                    <a href="https://dataengineering.ph/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="w-full h-full flex items-center justify-center">
+                      <img src="https://res.cloudinary.com/dqiztz63j/image/upload/v1768392630/Data_Engineering_Pilipinas_3_ydpqe3.png"
+                           alt="Data Engineering Pilipinas (DEP)"
+                           class="sponsor-logo-blur max-w-full max-h-32 object-contain"
+                           width="256" height="128" />
+                    </a>
+                  
+                  
+                    <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-offwhite-3/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
+                      <a href="https://dataengineering.ph/" target="_blank" rel="noopener noreferrer" class="overflow-y-auto h-[100%] flex items-center justify-center">
+                        <p class="text-sm text-center font-nunito overflow-y-auto h-[100%]" style="color: #7c5e3b">Data Engineering Pilipinas, a vibrant PyData community in the Philippines, is dedicated to advancing data engineering knowledge and practices. Founded July 16, 2023, our community has rapidly grown, now boasting nearly 38,000 Facebook group members.</p>
+                      </a>
+                    </div>
+                  
+                </div>
+              
+                <div class="sponsor-card-container group relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-offwhite-3 p-8 cursor-pointer">
+                    
+                  
+                    <a href="https://www.durianpy.org/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="w-full h-full flex items-center justify-center">
+                      <img src="https://res.cloudinary.com/dqiztz63j/image/upload/v1768392817/durianpy-logo_b1jhnu.svg"
+                           alt="DurianPy"
+                           class="sponsor-logo-blur max-w-full max-h-32 object-contain"
+                           width="256" height="128" />
+                    </a>
+                  
+                  
+                    <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-offwhite-3/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
+                      <a href="https://www.durianpy.org/" target="_blank" rel="noopener noreferrer" class="overflow-y-auto h-[100%] flex items-center justify-center">
+                        <p class="text-sm text-center font-nunito overflow-y-auto h-[100%]" style="color: #7c5e3b">DurianPy is Davao City’s grassroots volunteer-driven Python community committed to growing local tech talent. Through hands-on meetups, workshops, and community trainings, we help students, educators, and professionals build real projects and contribute to open source. Our mission is to elevate Davao’s tech scene and support nation-building by turning curiosity into practical skills, collaboration, and community impact.</p>
+                      </a>
+                    </div>
+                  
+                </div>
+              
+                <div class="sponsor-card-container group relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-offwhite-3 p-8 cursor-pointer">
+                    
+                  
+                    <a href="https://www.ftwfoundation.org"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="w-full h-full flex items-center justify-center">
+                      <img src="https://res.cloudinary.com/dqiztz63j/image/upload/v1770664524/FTW_Logo_01_blue_eihqt6.png"
+                           alt="FTW"
+                           class="sponsor-logo-blur max-w-full max-h-32 object-contain"
+                           width="256" height="128" />
+                    </a>
+                  
+                  
+                    <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-offwhite-3/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
+                      <a href="https://www.ftwfoundation.org" target="_blank" rel="noopener noreferrer" class="overflow-y-auto h-[100%] flex items-center justify-center">
+                        <p class="text-sm text-center font-nunito overflow-y-auto h-[100%]" style="color: #7c5e3b">FTW Foundation provides opportunities for women who dream of switching into tech roles but may not yet have the resources and opportunity to do so. FTW Foundation is building a movement.</p>
+                      </a>
+                    </div>
+                  
+                </div>
+              
+                <div class="sponsor-card-container group relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-offwhite-3 p-8 cursor-pointer">
+                    
+                  
+                    <a href="https://www.pizzapy.ph"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="w-full h-full flex items-center justify-center">
+                      <img src="https://res.cloudinary.com/dqiztz63j/image/upload/v1768393321/pizzapyhorizontal-primary-black_yq4skx.png"
+                           alt="PizzaPy"
+                           class="sponsor-logo-blur max-w-full max-h-32 object-contain"
+                           width="256" height="128" />
+                    </a>
+                  
+                  
+                    <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-offwhite-3/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
+                      <a href="https://www.pizzapy.ph" target="_blank" rel="noopener noreferrer" class="overflow-y-auto h-[100%] flex items-center justify-center">
+                        <p class="text-sm text-center font-nunito overflow-y-auto h-[100%]" style="color: #7c5e3b">We are a vibrant community of Python enthusiasts in Cebu, Philippines. Our diverse membership includes Professionals, Students, Career-Shifters, Enthusiasts, and many other people in all walks of life. All with a common interest in Python and Tech.</p>
+                      </a>
+                    </div>
+                  
+                </div>
+              
+                <div class="sponsor-card-container group relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-offwhite-3 p-8 cursor-pointer">
+                    
+                  
+                    <a href="https://2025.pycon.id/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="w-full h-full flex items-center justify-center">
+                      <img src="https://res.cloudinary.com/dqiztz63j/image/upload/v1768393565/PythonID_Logo_non_Text_1_enyaco.png"
+                           alt="PyCon ID"
+                           class="sponsor-logo-blur max-w-full max-h-32 object-contain"
+                           width="256" height="128" />
+                    </a>
+                  
+                  
+                    <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-offwhite-3/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
+                      <a href="https://2025.pycon.id/" target="_blank" rel="noopener noreferrer" class="overflow-y-auto h-[100%] flex items-center justify-center">
+                        <p class="text-sm text-center font-nunito overflow-y-auto h-[100%]" style="color: #7c5e3b">Python Conference Indonesia or PyCon ID is annual conference where Python enthusiasts share their knowledge with the others, especially in Indonesia regional.</p>
+                      </a>
+                    </div>
+                  
+                </div>
+              
+                <div class="sponsor-card-container group relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-offwhite-3 p-8 cursor-pointer">
+                    
+                  
+                    <a href="https://tw.pycon.org"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="w-full h-full flex items-center justify-center">
+                      <img src="https://res.cloudinary.com/dqiztz63j/image/upload/v1768393135/PyCon_TW_1_nodan8.png"
+                           alt="PyCon TW"
+                           class="sponsor-logo-blur max-w-full max-h-32 object-contain"
+                           width="256" height="128" />
+                    </a>
+                  
+                  
+                    <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-offwhite-3/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
+                      <a href="https://tw.pycon.org" target="_blank" rel="noopener noreferrer" class="overflow-y-auto h-[100%] flex items-center justify-center">
+                        <p class="text-sm text-center font-nunito overflow-y-auto h-[100%]" style="color: #7c5e3b">PyCon Taiwan is an annual convention in Taiwan for the discussion and promotion of the Python programming language. It is held by enthusiasts and focuses on Python technology and its versatile applications. We welcome people who are interested in Python to join PyCon Taiwan to share knowledge, exchange ideas, make connections and to help us grow our network.</p>
+                      </a>
+                    </div>
+                  
+                </div>
+              
+                <div class="sponsor-card-container group relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-offwhite-3 p-8 cursor-pointer">
+                    
+                  
+                    <a href="https://pyladiesmanila.github.io/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="w-full h-full flex items-center justify-center">
+                      <img src="https://res.cloudinary.com/dqiztz63j/image/upload/v1768392399/PyLadies_Manila-circle-bg-horizontal_4_pvdnme.png"
+                           alt="PyLadies Manila"
+                           class="sponsor-logo-blur max-w-full max-h-32 object-contain"
+                           width="256" height="128" />
+                    </a>
+                  
+                  
+                    <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-offwhite-3/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
+                      <a href="https://pyladiesmanila.github.io/" target="_blank" rel="noopener noreferrer" class="overflow-y-auto h-[100%] flex items-center justify-center">
+                        <p class="text-sm text-center font-nunito overflow-y-auto h-[100%]" style="color: #7c5e3b">A women&#x27;s mentorship group focused on leadership and active involvement in the Python open-source community.
+
+The group started back in November 2014 with less than 10 girls meeting for coffee. From then on, they started to organize events to advocate Women In Tech.</p>
+                      </a>
+                    </div>
+                  
+                </div>
+              
+                <div class="sponsor-card-container group relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-offwhite-3 p-8 cursor-pointer">
+                    
+                  
+                    <a href="https://www.facebook.com/pytsada"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="w-full h-full flex items-center justify-center">
+                      <img src="https://res.cloudinary.com/dqiztz63j/image/upload/v1769418466/PyTsada-Logo-word_1_vvq6vu.png"
+                           alt="PyTsada"
+                           class="sponsor-logo-blur max-w-full max-h-32 object-contain"
+                           width="256" height="128" />
+                    </a>
+                  
+                  
+                    <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-offwhite-3/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
+                      <a href="https://www.facebook.com/pytsada" target="_blank" rel="noopener noreferrer" class="overflow-y-auto h-[100%] flex items-center justify-center">
+                        <p class="text-sm text-center font-nunito overflow-y-auto h-[100%]" style="color: #7c5e3b">PyTsada is an ITG-X focus/study and advocacy group for the Python programming language in Cagayan de Oro (CDO)</p>
+                      </a>
+                    </div>
+                  
+                </div>
+              
+                <div class="sponsor-card-container group relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-offwhite-3 p-8 cursor-pointer">
+                    
+                  
+                    <a href="https://www.qcsp.ph"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="w-full h-full flex items-center justify-center">
+                      <img src="https://res.cloudinary.com/dqiztz63j/image/upload/v1771822548/Horizontal_vctgry.png"
+                           alt="QCSP"
+                           class="sponsor-logo-blur max-w-full max-h-32 object-contain"
+                           width="256" height="128" />
+                    </a>
+                  
+                  
+                    <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-offwhite-3/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
+                      <a href="https://www.qcsp.ph" target="_blank" rel="noopener noreferrer" class="overflow-y-auto h-[100%] flex items-center justify-center">
+                        <p class="text-sm text-center font-nunito overflow-y-auto h-[100%]" style="color: #7c5e3b">The Quantum Computing Society of the Philippines (QCSP), also known as OneQuantum Philippines, is the nation’s leading non-profit dedicated to building a quantum-ready ecosystem.
+The Society bridges academia, government, and industry through several key initiatives, including lecture series with universities, summits and hackathons, as well as infrastructure collaborations for hardware and research.</p>
+                      </a>
+                    </div>
+                  
+                </div>
+              
+            </div>
+          </div>
+        
+      
+        
+          <div class="mb-16">
+            <h3 class="text-2xl font-bold mb-8 uppercase font-bantayog"
+                style="color: #7c5e3b">Academic Partner</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
+              
+              <div class="sponsor-card-container group relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-offwhite-3 p-8 cursor-pointer">
+                
+              
+                <a href="https://www.csu.edu.ph"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="w-full h-full flex items-center justify-center">
+                  <img src="https://res.cloudinary.com/dqiztz63j/image/upload/v1772126632/csulogo_xjooh1.png"
+                      alt="Cagayan State University"
+                      class="sponsor-logo-blur max-w-full max-h-32 object-contain"
+                      width="256" height="128" />
+                </a>
+              
+              
+                <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-offwhite-3/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
+                  <a href="https://www.csu.edu.ph" target="_blank" rel="noopener noreferrer" class="overflow-y-auto h-[100%] flex items-center justify-center">
+                    <p class="text-sm text-center font-nunito overflow-y-auto h-[100%]" style="color: #7c5e3b">Cagayan State University (known as CSU), was established through a Presidential Decree No. 1436
+
+CSU operates nine satellite campuses and two extension campuses strategically located across the three Congressional Districts of Cagayan Province. Each campus is administered by a Campus Executive Officer(CEO). CSU Andrews Campus, established in Caritan Sur, Tuguegarao City, Cagayan, serves as the main campus and houses the central administration of the university.</p>
+                  </a>
+                </div>
+              
+            </div>
+              
+              <div class="sponsor-card-container group relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-offwhite-3 p-8 cursor-pointer">
+                
+              
+                <a href="https://www.makatihope.edu.ph"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="w-full h-full flex items-center justify-center">
+                  <img src="https://www.makatihope.edu.ph/images/mhcs-logo.png"
+                      alt="Makati Hope Christian School Ortigas"
+                      class="sponsor-logo-blur max-w-full max-h-32 object-contain"
+                      width="256" height="128" />
+                </a>
+              
+              
+                <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-offwhite-3/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
+                  <a href="https://www.makatihope.edu.ph" target="_blank" rel="noopener noreferrer" class="overflow-y-auto h-[100%] flex items-center justify-center">
+                    <p class="text-sm text-center font-nunito overflow-y-auto h-[100%]" style="color: #7c5e3b">Makati Hope Christian School, established in 1985, a private and non-sectarian Educational institution that offers the K to 12 program. In addition to the curriculum prescribed by the Department of Education, it offers Chinese Language, Arts, Computer Courses, Accounting and Bible subjects.</p>
+                  </a>
+                </div>
+              
+            </div>
+              
+              <div class="sponsor-card-container group relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-offwhite-3 p-8 cursor-pointer">
+                
+              
+                <a href="https://irc.pshs.edu.ph/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="w-full h-full flex items-center justify-center">
+                  <img src="https://pshsirc.online/images/pshs_logo.png"
+                      alt="Philippine Science High School Ilocos Region Campus"
+                      class="sponsor-logo-blur max-w-full max-h-32 object-contain"
+                      width="256" height="128" />
+                </a>
+              
+              
+                <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-offwhite-3/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
+                  <a href="https://irc.pshs.edu.ph/" target="_blank" rel="noopener noreferrer" class="overflow-y-auto h-[100%] flex items-center justify-center">
+                    <p class="text-sm text-center font-nunito overflow-y-auto h-[100%]" style="color: #7c5e3b">Philippine Science High School – Ilocos Region Campus (PSHS-IRC)
+As a premier specialized public high school under the Department of Science and Technology (DOST), PSHS-IRC is dedicated to nurturing the next generation of Filipino scientists, engineers, and innovators. Located in San Ildefonso, Ilocos Sur, the campus provides a world-class STEM curriculum to the region’s most gifted students, fostering a culture of academic excellence, integrity, and service to the nation.</p>
+                  </a>
+                </div>
+              
+            </div>
+              
+              <div class="sponsor-card-container group relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-offwhite-3 p-8 cursor-pointer">
+                
+              
+                <a href="https://tip.edu.ph"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="w-full h-full flex items-center justify-center">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/T.I.P._Logo.png/250px-T.I.P._Logo.png"
+                      alt="Technological Institute of the Philippines"
+                      class="sponsor-logo-blur max-w-full max-h-32 object-contain"
+                      width="256" height="128" />
+                </a>
+              
+              
+                <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-offwhite-3/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
+                  <a href="https://tip.edu.ph" target="_blank" rel="noopener noreferrer" class="overflow-y-auto h-[100%] flex items-center justify-center">
+                    <p class="text-sm text-center font-nunito overflow-y-auto h-[100%]" style="color: #7c5e3b">The Technological Institute of the Philippines (T.I.P.) is one of the country’s premier engineering institutions which also offers programs in computing, architecture, business, education, and the arts. T.I.P. also offers senior high school and graduate studies in selected engineering and computing disciplines.</p>
+                  </a>
+                </div>
+              
+            </div>
+              
+              <div class="sponsor-card-container group relative flex h-48 items-center justify-center overflow-hidden rounded-lg bg-offwhite-3 p-8 cursor-pointer">
+                
+              
+                <a href="https://tutorialsdojo.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="w-full h-full flex items-center justify-center">
+                  <img src="https://td-portal-cdn.tutorialsdojo.com/wp-content/uploads/avatars/2/610633b480e10-bpfull.png"
+                      alt="Tutorials Dojo"
+                      class="sponsor-logo-blur max-w-full max-h-32 object-contain"
+                      width="256" height="128" />
+                </a>
+              
+              
+                <div class="sponsor-card-overlay absolute inset-0 flex items-center justify-center p-4 bg-offwhite-3/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 rounded-lg">
+                  <a href="https://tutorialsdojo.com" target="_blank" rel="noopener noreferrer" class="overflow-y-auto h-[100%] flex items-center justify-center">
+                    <p class="text-sm text-center font-nunito overflow-y-auto h-[100%]" style="color: #7c5e3b">Tutorials Dojo is a popular EdTech platform and AWS Digital Training Partner specializing in high-quality IT certification preparation. Founded in Manila, Philippines, it has become a go-to resource for professionals aiming to pass exams for major cloud providers like AWS, Microsoft Azure, and Google Cloud Platform.</p>
+                  </a>
+                </div>
+              
+            </div>
+              
+            </div>
+          </div>
+        
+      
+    </div>
+  </section>
+
+
+        <div class="coc_footer_wrapper relative">
+        <!-- Code of Conduct Section -->
+        
+
+<section id="code-of-conduct" class="py-24">
+    <div class="container mx-auto px-[4%]">
+        <!-- Header -->
+        <div class="text-center mb-16">
+            <h2 class="text-5xl md:text-6xl font-bold mb-12 font-td_pinoy text-orange-2">Code of Conduct</h2>
+        </div>
+
+        <!-- Intro Text -->
+        <div class="text-center mb-12 max-w-5xl mx-auto">
+            <p class="text-3xl md:text-4xl uppercase font-semibold tracking-wide font-bantayog text-brown-1">
+                PythonAsia is a community conference intended for
+                collaboration in the developer community.
+            </p>
+        </div>
+
+        <!-- Main Content Grid -->
+        <div class="grid md:grid-cols-2 gap-12 mb-20 max-w-5xl mx-auto">
+            <div class="text-center md:text-left xl:text-left">
+                <p class="text-lg leading-relaxed font-nunito text-brown-2 font-normal">
+                    We value the participation of each member of the Python community and want all
+                    attendees to have an enjoyable and fulfilling experience. Accordingly, all attendees
+                    are expected to show respect and courtesy to other attendees throughout the conference
+                    and at all conference events, whether officially sponsored by PythonPH and
+                    Python Asia Organization (PAO) or not.
+                </p>
+            </div>
+            <div class="text-center md:text-left xl:text-left">
+                <p class="text-lg leading-relaxed font-nunito text-brown-2 font-normal">
+                    To make clear what is expected, all delegates/attendees, speakers, exhibitors,
+                    organizers and volunteers at any PythonAsia event are required to conform to the
+                    following Code of Conduct. Organizers will enforce this code throughout the event.<br>
+                    <a class="font-bantayog text-orange-2 uppercase underline cursor-pointer" href="/code-of-conduct/">Read the Full Code of Conduct</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="mb-20 max-w-5xl mx-auto">
+            <h3 class="text-3xl md:text-4xl font-bold text-center mb-2 font-bantayog text-brown-1">CONTACT INFORMATION</h3>
+            <p class="text-lg leading-relaxed font-nunito text-brown-2 font-normal text-center">
+                If you believe that someone is violating the code of conduct, or have any other concerns,
+                please contact a member of the PythonAsia 2026 Code of Conduct workgroup immediately.
+                They can be reached by emailing <a class="font-bantayog text-orange-2 uppercase underline cursor-pointer" href="mailto:coc@python.ph">coc@python.ph</a>
+            </p>
+        </div>
+
+        <!-- License -->
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-3xl md:text-4xl font-bold text-center mb-2 font-bantayog text-brown-1">LICENSE</h3>
+            <p class="text-lg leading-relaxed font-nunito text-brown-2 font-normal text-center">
+                This Code of Conduct is based on the PyCon US 2015 CoC, and is licensed under a Creative Commons Attribution 3.0 Unported License.
+            </p>
+        </div>
+    </div>
+</section>
+
+        <!-- Footer Section -->
+        
+
+<footer class="flex flex-col items-center pt-12">
+    <!-- PythonAsia 2026 Branding -->
+    <img src="/static/img/vectors/python-asia-branding.png" class="mt-10 p-5" alt="Footer" width="600">
+
+    <!-- Action Links -->
+    
+
+    <!-- Contact Message -->
+    <p class="text-brown-2 text-base mt-4 mb-4 font-nunito text-center px-5">
+        Message us at <a href="mailto:conference-2026@pythonasia.org"
+            class="text-orange-2 underline font-normal">conference-2026@pythonasia.org</a> for questions and inquiries
+    </p>
+
+    <!-- Social Media Icons -->
+    <div class="flex gap-4 mb-4 px-5" style="z-index: 2;">
+        <a href="https://www.facebook.com/pyconph" target="_blank" class="hover:opacity-70 transition-opacity" aria-label="Facebook">
+            <img src="https://cdn.simpleicons.org/facebook/7C5E3B" alt="Facebook" class="w-6 h-6" width="24"
+                height="24">
+        </a>
+        <a href="https://github.com/pythonph" target="_blank" class="hover:opacity-70 transition-opacity" aria-label="GitHub">
+            <img src="https://cdn.simpleicons.org/github/7C5E3B" alt="GitHub" class="w-6 h-6" width="24" height="24">
+        </a>
+        <a href="https://x.com/pythonph" target="_blank" class="hover:opacity-70 transition-opacity" aria-label="X">
+            <img src="https://cdn.simpleicons.org/x/7C5E3B" alt="X" class="w-6 h-6" width="24" height="24">
+        </a>
+        <a href="https://www.instagram.com/pythonph/" target="_blank" class="hover:opacity-70 transition-opacity" aria-label="Instagram">
+            <img src="https://cdn.simpleicons.org/instagram/7C5E3B" alt="Instagram" class="w-6 h-6" width="24"
+                height="24">
+        </a>
+    </div>
+
+    <!-- Built With Text -->
+    <p class="text-brown-2 text-sm mb-8 font-nunito px-5" style="z-index: 2;">
+        This site is built using Django.
+    </p>
+
+    <div class="relative w-full h-[800px] lg:h-[950px] lg:mt-[-20px] z-0">
+        <img src="/static/img/footer/pytonio.svg" alt="Left Snake"
+            class="absolute left-0 mb-[-10px] bottom-72 2xl:bottom-80 w-[670px] hidden lg:block footer-snake-left" width="670"
+            height="400">
+        <img src="/static/img/footer/pytria.svg" alt="Right Snake"
+            class="absolute right-0 mb-[-10px] bottom-72 2xl:bottom-80 w-[670px] hidden lg:block footer-snake-right" width="670"
+            height="400">
+        <img src="/static/img/footer/pot.svg" alt="Pot"
+            class="absolute bottom-80 left-1/2 lg:ml-[-70px] -translate-x-1/2 w-[500px] lg:w-[574.49px] z-10"
+            width="575" height="575">
+        <img src="/static/img/footer/base.svg" alt="Bottom Base"
+            class="absolute bottom-0 left-0 right-0 lg:w-full z-0 hidden lg:block" width="1920" height="200">
+
+        <div
+            class="absolute bottom-0 lg:bottom-20 w-full text-center flex flex-col items-center justify-center z-30 py-6 bg-[#F26D1D] lg:bg-[unset]">
+            <h3 class="text-white font-bold mb-2 text-2xl">CO-ORGANIZED BY</h3>
+            <div class="flex flex-col md:flex-row items-center justify-center md:space-x-8 space-y-4 md:space-y-0 mt-2">
+                <img src="/static/img/footer/pythonph.svg" alt="PythonPH" class="h-12 md:h-[60px]" width="210"
+                    height="60">
+                <img src="/static/img/footer/pythonasia.svg" alt="Python Asia Organization"
+                    class="h-12 md:h-[60px]" width="320" height="60">
+                <img src="/static/img/footer/dlsu.svg" alt="DLSU" class="h-12 md:h-[60px]" width="110"
+                    height="60">
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+
+        </div>
+    </div>
+</main>
+
+    
+
+
+
+
+</body>
+
+</html>

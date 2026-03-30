@@ -1,0 +1,889 @@
+{
+  "count": 113,
+  "next": null,
+  "previous": null,
+  "results": [
+    {
+      "code": "8ZRKXU",
+      "name": "David Mertz, Ph.D.",
+      "biography": "David is Principal Software and Security Architect of Service Employees International Union, one of the largest and most progressive unions in the United States. He served as a Director of the Python Software Foundation and chair of a number of its committees for many years. He created the data science training program for Anaconda Inc. and was a senior trainer for them. Before that, he worked for 8 years with D. E. Shaw Research, who built the world's fastest, highly-specialized supercomputer for performing molecular dynamics.\r\n\r\nDavid's columns, Charming Python and XML Matters, written in the 2000s, were the most widely read articles in the Python world. He has written 7 books in Python or adjacent topics for Manning, Packt, O'Reilly, Addison-Wesley, and Lulu Press, and has given keynote addresses at numerous international programming conferences.",
+      "submissions": [
+        "HRBDHR"
+      ],
+      "avatar_url": "https://pretalx.com/media/avatars/8ZRKXU_HEyyqXr.webp",
+      "answers": [
+        497329,
+        497330,
+        497331,
+        497332
+      ],
+      "email": "david.mertz+pythonasia@gmail.com",
+      "timezone": "Asia/Manila",
+      "locale": "en",
+      "has_arrived": false,
+      "internal_notes": ""
+    },
+    {
+      "code": "A39GJW",
+      "name": "naohide_a",
+      "biography": "I work as an engineer at Tokyo Gas Co., Ltd.\r\nTokyo Gas is a very old company with a 140-year history, but we are currently in the process of advancing DX by promoting in-house system development.",
+      "submissions": [
+        "3EU3VA"
+      ],
+      "avatar_url": "https://pretalx.com/media/avatars/A39GJW_7nQeGNr.webp",
+      "answers": [
+        454933,
+        454932,
+        454934,
+        454935
+      ],
+      "email": "n.anahara@tokyo-gas.co.jp",
+      "timezone": "Asia/Tokyo",
+      "locale": "ja-jp",
+      "has_arrived": false,
+      "internal_notes": ""
+    },
+    {
+      "code": "BANUN3",
+      "name": "Piti Champeethong",
+      "biography": "I've been working with databases and software development for 20 years. Currently, I'm a MongoDB senior consulting engineer based in Singapore. I've previously spoken at conferences such as PyCon APAC 2025, PyCon Lithuania 2025, PyCon SG 2025, PyCon Thailand 2025, and Global Azure Thailand 2025. I\u2019m also part of the community leader team for the MongoDB and PyLanna User Group in Thailand, which brings together over 3,000 developers.",
+      "submissions": [
+        "CB8MXS",
+        "NBEK3L"
+      ],
+      "avatar_url": "https://pretalx.com/media/avatars/BANUN3_3EZaIFi.webp",
+      "answers": [
+        466530,
+        466531,
+        466532,
+        466533
+      ],
+      "email": "pitichampeethong@gmail.com",
+      "timezone": "EST",
+      "locale": "en",
+      "has_arrived": false,
+      "internal_notes": ""
+    },
+    {
+      "code": "BBNMGQ",
+      "name": "Rodelene Joy Leonorio",
+      "biography": "Rodelene Joy Leonorio is a Licensed Professional Teacher and a graduate of the Philippine Normal University, where she earned her Bachelor\u2019s degree in Education with a major in TLE and a specialization in ICT. She currently works as a Computer and TLE teacher, with a strong focus on robotics and programming using Python. Joy continues to build her expertise by pursuing a Master of Science in Information Technology at De La Salle University, where her academic interests center on technology integration and AI literacy.",
+      "submissions": [
+        "7MK9YG",
+        "AWZHNN",
+        "N3HCZD",
+        "PUWTSH"
+      ],
+      "avatar_url": "https://pretalx.com/media/avatars/BBNMGQ_ZOEYh5v.webp",
+      "answers": [
+        469684,
+        469685,
+        469686,
+        469687
+      ],
+      "email": "leonorio.rodelenejoy@gmail.com",
+      "timezone": "Asia/Manila",
+      "locale": "en",
+      "has_arrived": false,
+      "internal_notes": ""
+    },
+    {
+      "code": "BJBKJM",
+      "name": "Romar Mayer R. Micabalo",
+      "biography": "A technology veteran with more than 20 years in the tech industry managing cloud-based infrastructure and highly technical teams.\r\n\r\nAn open source evangelist and organizer/volunteer for various tech communities in Northern Mindanao.",
+      "submissions": [
+        "GHHRQF"
+      ],
+      "avatar_url": "https://pretalx.com/media/avatars/BJBKJM_yRkltiR.webp",
+      "answers": [
+        459434,
+        459435,
+        459436,
+        459437
+      ],
+      "email": "hardwyrd@gmail.com",
+      "timezone": "Asia/Manila",
+      "locale": "en",
+      "has_arrived": false,
+      "internal_notes": ""
+    },
+    {
+      "code": "CEHB8A",
+      "name": "Petr Andreev",
+      "biography": "Specializes in CPython internals, optimization, and high-performance computing. Driven by GPU acceleration, CPU vectorization. Evolved from ML systems to CPython core research engineer. 8+ years leading teams in AI, maths, and physics. PyCon speaker: Free Threading: Future of CPython. Lecturer at Moscow Institute of Physics and Technology \u2013 top 1 Russian university. Open to talks and collaboration.",
+      "submissions": [
+        "CMWWJS",
+        "EPBASL",
+        "LEWLWV",
+        "NU3NBJ",
+        "PCAG7P"
+      ],
+      "avatar_url": "https://pretalx.com/media/avatars/CEHB8A_cKxF7r2.webp",
+      "answers": [
+        468980,
+        468979,
+        468981,
+        468982
+      ],
+      "email": "petr96andreev@outlook.com",
+      "timezone": "Pacific/Auckland",
+      "locale": "en",
+      "has_arrived": false,
+      "internal_notes": ""
+    },
+    {
+      "code": "D89MDE",
+      "name": "Shahmir Varqha",
+      "biography": "Shahmir is a software engineer at CoreWeave, focused on building the SQL and tables experience for marimo. Previously, he worked on Grab\u2019s enterprise platform and has a strong interest in all things data. He began as an open source contributor in 2024 and was brought in full time a few months later. Outside of work, he enjoys rock music and hot chocolate.",
+      "submissions": [
+        "WAJU7J"
+      ],
+      "avatar_url": "https://pretalx.com/media/avatars/D89MDE_phMWdtZ.webp",
+      "answers": [
+        468895,
+        468894,
+        468896,
+        468897
+      ],
+      "email": "sham9871@gmail.com",
+      "timezone": "Asia/Manila",
+      "locale": "en",
+      "has_arrived": false,
+      "internal_notes": ""
+    },
+    {
+      "code": "DCF9TY",
+      "name": "keiko kamijo",
+      "biography": "I work as a software engineer, mainly on test automation, CI/CD tooling, and authorization systems for production services.",
+      "submissions": [
+        "9YYPZU"
+      ],
+      "avatar_url": "https://pretalx.com/media/avatars/DCF9TY_5cgOLqz.webp",
+      "answers": [
+        463311,
+        463312,
+        463313,
+        463314
+      ],
+      "email": "kei27182818@gmail.com",
+      "timezone": "Asia/Tokyo",
+      "locale": "ja-jp",
+      "has_arrived": false,
+      "internal_notes": ""
+    },
+    {
+      "code": "DDF7LU",
+      "name": "Charibeth Cheng",
+      "biography": "Chari Cheng is the Associate Dean and a professor at the College of Computer Studies, De La\r\nSalle University. A local pioneer in her field, she co-founded Senti AI and is a recognized expert\r\nin Natural Language Processing (NLP). Since 2003, her work has been driven by a passion for\r\nthe digitization and better representation of Philippine languages.\r\n\r\nHer contributions to the field have been widely recognized. She contributed to a 2020 Asian\r\nDevelopment Bank project that developed NLP tools for monitoring the Sustainable\r\nDevelopment Goals (SDGs). For her work on multilingual machine translation, she received the\r\n2024 Imminent Research Grant from Translated, Inc., as the only Asian recipient that year. This\r\nyear, she received 2 grants from Google to support her team\u2019s work on the development of the\r\nmodels for Philippine languages.\r\n\r\nBeyond academia, Chari is an active consultant on AI system design, evaluation, and impact\r\nassessment. She is also a strong advocate for community collaboration, regularly sharing her\r\nteam\u2019s resources through talks and open repositories to support the broader NLP community.",
+      "submissions": [
+        "L3RNT9"
+      ],
+      "avatar_url": "https://pretalx.com/media/avatars/DDF7LU_SCH3gr5.webp",
+      "answers": [
+        495404,
+        495405,
+        495406,
+        495407
+      ],
+      "email": "charibeth.cheng@dlsu.edu.ph",
+      "timezone": "UTC",
+      "locale": "en",
+      "has_arrived": false,
+      "internal_notes": ""
+    },
+    {
+      "code": "DQ7DSL",
+      "name": "Neil Riego",
+      "biography": "Neil Riego, is a Software Engineer, excels in crafting innovative solutions. Currently serving as a Tech Lead at Control Flow Labs. Neil's diverse portfolio includes roles as a Career Coach at Kadakareer and a proud GDSC Alumni.\r\n\r\nNeil's dedication to leveraging technology for community betterment is evident through his leadership roles as the Vice President for Technology at DEVCON Manila and an AWS User Group Meetup Lead. Additionally, he actively participates as a volunteer at Python Philippines and Google Developer Groups Cloud Manila Events, fostering connections within the tech community.",
+      "submissions": [
+        "LJ7GWD"
+      ],
+      "avatar_url": "https://pretalx.com/media/avatars/DQ7DSL_xqlGDlu.webp",
+      "answers": [
+        461011,
+        461010,
+        461012,
+        461013
+      ],
+      "email": "neilchristianriego3@gmail.com",
+      "timezone": "Asia/Manila",
+      "locale": "en",
+      "has_arrived": false,
+      "internal_notes": ""
+    },
+    {
+      "code": "ENX7FA",
+      "name": "Rafiqul Hasan",
+      "biography": "A seasoned software engineer with over 10 years of experience designing and delivering high-performance, scalable software systems. Currently works as a Senior Lead Engineer at bKash Limited, focusing on building reliable backend platforms at scale.",
+      "submissions": [
+        "9GHXFJ",
+        "9ZFEFX",
+        "RYNLUZ"
+      ],
+      "avatar_url": "https://pretalx.com/media/avatars/ENX7FA_FG2LaVS.webp",
+      "answers": [
+        456864,
+        456865,
+        456866,
+        456867
+      ],
+      "email": "shopnilsazal@gmail.com",
+      "timezone": "Asia/Jakarta",
+      "locale": "en",
+      "has_arrived": false,
+      "internal_notes": ""
+    },
+    {
+      "code": "FKMQYE",
+      "name": "MrValdez",
+      "biography": "Sony Valdez has been programming for over 30 years. Professionally, he's a backend developer who specializes in scaling and performance.\r\n\r\nHe is one of Python Philippines founders. Over the years, he has given numerous Python talks and workshops around the country.\r\n\r\nDuring talks, he has a Luchador persona called MrValdez. While Luchadores are known for physical wrestling, MrValdez came from a world where they perform as programmers. \r\n\r\nHaving accidentally transported here by a strange Python program, MrValdez hopes to one day return to his reality. \r\n\r\nHe is mostly harmless.",
+      "submissions": [
+        "7AFJKE",
+        "ACSD78"
+      ],
+      "avatar_url": "https://pretalx.com/media/avatars/FKMQYE_xu46GaV.webp",
+      "answers": [
+        469752,
+        469751,
+        469753,
+        469754
+      ],
+      "email": "shunyvaldez@gmail.com",
+      "timezone": "Asia/Tokyo",
+      "locale": "en",
+      "has_arrived": false,
+      "internal_notes": ""
+    },
+    {
+      "code": "FLSGCD",
+      "name": "Yuichiro Tachibana",
+      "biography": "Yuichiro is a professional software developer with a deep passion for open source software. After working on software development for several machine learning startups, he joined Hugging Face in 2023.\r\nHe develops and maintains several OSS projects, including Stlite, Gradid-Lite, Transformers.js.py, and Awesome Emacs Keymap, and contributes to other OSS projects such as Streamlit and Gradio.",
+      "submissions": [
+        "SYAEEJ",
+        "TYYEBW"
+      ],
+      "avatar_url": "https://pretalx.com/media/avatars/FLSGCD_G5WL1J9.webp",
+      "answers": [
+        469728,
+        469729,
+        469730,
+        469731
+      ],
+      "email": "t.yic.yt@gmail.com",
+      "timezone": "UTC",
+      "locale": "en",
+      "has_arrived": false,
+      "internal_notes": ""
+    },
+    {
+      "code": "GXGK9U",
+      "name": "Donnie",
+      "biography": "Donnie Prakoso is a software engineer, self-proclaimed barista, caf\u00e9 racer enthusiast, and Principal Developer Advocate at AWS covering ASEAN and AEM, and based in Singapore.\r\n\r\nWith more than 17 years of experience in the technology industry, from telecommunications, banking to startups, he's now focusing on helping developers to understand varieties of technology to transform their ideas into execution.\r\n\r\nHe loves coffee \u2615\ufe0f and any discussion of any topics from microservices to machine learning.",
+      "submissions": [
+        "QBVLFG"
+      ],
+      "avatar_url": "https://pretalx.com/media/avatars/GXGK9U_bhwhCJb.webp",
+      "answers": [
+        497406,
+        497405,
+        497407,
+        497408
+      ],
+      "email": "donnie.prakoso@gmail.com",
+      "timezone": "Asia/Manila",
+      "locale": "en",
+      "has_arrived": false,
+      "internal_notes": ""
+    },
+    {
+      "code": "H3M7XF",
+      "name": "Shiva Bhusal",
+      "biography": "Shiva grew up in Nepal and currently lives in Bellevue, USA. He works as a Software Engineer at Microsoft and is passionate about best practices, including writing clean and maintainable code, and building reliable and resilient systems. In addition to software engineering, he loves playing cricket and practicing poetry.",
+      "submissions": [
+        "PUS9P7"
+      ],
+      "avatar_url": "https://pretalx.com/media/avatars/H3M7XF_f9xJyHO.webp",
+      "answers": [
+        457143,
+        457142,
+        457144,
+        457145
+      ],
+      "email": "civabhusal@gmail.com",
+      "timezone": "UTC",
+      "locale": "en",
+      "has_arrived": false,
+      "internal_notes": ""
+    },
+    {
+      "code": "JCRDJQ",
+      "name": "Anubhav Sanyal",
+      "biography": "**Anubhav Sanyal** is a Senior Software Engineer and open-source contributor passionate about building solutions and systems that make developers\u2019 lives easier.  \r\n\r\nHe has previously spoken at **PyCon Malaysia 2025** and **PyCon Indonesia 2025**, where he shared his journey creating *RedCoffee* - a Python-based reporting CLI for SonarQube.  \r\n\r\nAt PyCon Asia 2026, he brings his experience in automation and cloud architecture to explore how Python can enable resilient, configuration-driven, and portable application design.  \r\n\r\nWhen Anubhav isn\u2019t coding, he\u2019s either watching documentaries or planning his next solo trip. He loves learning about different cultures and is deeply fond of the warmth of Asian hospitality. He travels extensively across Asia, with **Japan** being his greatest inspiration - motivating him to design systems and solutions that are simple yet powerful, with people at the heart of every design.",
+      "submissions": [
+        "KTG7EW"
+      ],
+      "avatar_url": "https://pretalx.com/media/avatars/JCRDJQ_w44WDJH.webp",
+      "answers": [
+        463566,
+        463565,
+        463567,
+        463568
+      ],
+      "email": "princebest3@rediffmail.com",
+      "timezone": "Asia/Manila",
+      "locale": "en",
+      "has_arrived": false,
+      "internal_notes": ""
+    },
+    {
+      "code": "KBUATG",
+      "name": "SOORAJ TS",
+      "biography": "**Sooraj** is a **Product Engineer at Strollby Inc**, where he focuses on building **scalable backend architectures** and driving performance-focused optimizations.\r\nHe is an **open-source contributor** to frameworks like **Agno AGI** and **Google ADK**, and an **active speaker** at community events \u2014 including **PyData Global 2025** and the **Trivandrum Python Community** \u2014 where he shares insights on **backend architecture**, **AI systems**, and **developer productivity tools**.\r\n\r\nHe was also a **finalist in the Python Code Jam 2025**, recognized for his out of the box solutions",
+      "submissions": [
+        "3TLVGQ",
+        "BVMAMJ",
+        "EPPELW",
+        "GRYJJR",
+        "ML9NWV",
+        "U3CX9B"
+      ],
+      "avatar_url": "https://pretalx.com/media/avatars/KBUATG_t4raOF6.webp",
+      "answers": [
+        469295,
+        469296,
+        469297,
+        469298
+      ],
+      "email": "sjts007@gmail.com",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "has_arrived": false,
+      "internal_notes": ""
+    },
+    {
+      "code": "KSJ7GV",
+      "name": "Kirill Tribunskii",
+      "biography": "Kirill Tribunskii is a Python Development Lead focused on the architecture and development of reliable backend systems for ML-driven fintech services. His work centers on making large distributed systems maintainable, keeping CI/CD pipelines dependable, and treating everyday engineering discipline as the foundation for long-term project health. He enjoys attending meetups and conferences to connect with tech and security professionals, exchange ideas, and explore innovative approaches to development.",
+      "submissions": [
+        "HS97ZU"
+      ],
+      "avatar_url": "https://pretalx.com/media/avatars/KSJ7GV_jFAVq2q.webp",
+      "answers": [
+        468692,
+        468691,
+        468693,
+        468694
+      ],
+      "email": "kirtrib@gmail.com",
+      "timezone": "Asia/Manila",
+      "locale": "en",
+      "has_arrived": false,
+      "internal_notes": ""
+    },
+    {
+      "code": "KWTR93",
+      "name": "Takayuki Shimizukawa",
+      "biography": "He is a Accounting director of PyCon JP Association, a member of BeProud Corporation.\r\nHe started using Python in 2003. In his work, he has been involved in the development of company services as a software engineer, working on a wide range of projects from top to bottom. As an individual, he organizes Python-related events such as Python mini Hack-a-thon and Sphinx-users.jp in Japan, and disseminates technical information through conferences, books, and OSS development. He has written and translated several books, including \"Expert Python Programming 4th Edition (2023)\", \"The Self-taught Computer Scientist (2022)\", \"Let's Start Sphinx, 3rd Edition (2022)\", \"Self-Driving Programmer (2020)\", \"The Self-Taught Programmer (2018)\".",
+      "submissions": [
+        "JANRUS",
+        "SHDM83"
+      ],
+      "avatar_url": "https://pretalx.com/media/avatars/KWTR93_sspFJG2.webp",
+      "answers": [
+        454651,
+        454650,
+        454652,
+        454653
+      ],
+      "email": "shimizukawa@gmail.com",
+      "timezone": "Asia/Tokyo",
+      "locale": "ja-jp",
+      "has_arrived": false,
+      "internal_notes": ""
+    },
+    {
+      "code": "LQGKTK",
+      "name": "Christian Mark P. Francisco",
+      "biography": "Christian Mark P. Francisco is a third-year Computer Science student at National University - Dasmari\u00f1as and a former part-time Automation Engineer. He\u2019s spent over five years learning, teaching, building, and occasionally geeking out over Python. He is a Devcon Kids Manila Lead Learner, has spoken at various talks and events, and is a self-proclaimed Acolyte Wizard. Christian firmly believes that knowledge should be free, accessible, and shared\u2014preferably with a bit of curiosity and fun along the way.",
+      "submissions": [
+        "AYXAFM",
+        "CYWSGJ"
+      ],
+      "avatar_url": "https://pretalx.com/media/avatars/LQGKTK_isUsGH0.webp",
+      "answers": [
+        454606,
+        454605,
+        454607,
+        454608
+      ],
+      "email": "margiehouses@gmail.com",
+      "timezone": "Asia/Manila",
+      "locale": "en",
+      "has_arrived": false,
+      "internal_notes": ""
+    },
+    {
+      "code": "MLAD7F",
+      "name": "Luis Caezar Ian Panganiban",
+      "biography": "Ian is a driven data solutions developer specializing in the integration of geospatial intelligence across diverse systems and domains. His career spans research and engineering roles that bridge science, sustainability, and digital transformation. Ian has contributed to ocean renewable energy initiatives, led geospatial software development, and architected cloud infrastructure for a geoscience AI startup. He currently serves as a machine learning engineer at a solar design software company, advancing its mission to power the world with sunshine through intelligent, data-driven solutions.",
+      "submissions": [
+        "C9HX99"
+      ],
+      "avatar_url": "https://pretalx.com/media/avatars/MLAD7F_ohCaC4X.webp",
+      "answers": [
+        465686,
+        465687,
+        465688,
+        465689
+      ],
+      "email": "hi@lkpanganiban.com",
+      "timezone": "Asia/Manila",
+      "locale": "en",
+      "has_arrived": false,
+      "internal_notes": ""
+    },
+    {
+      "code": "MXPGHU",
+      "name": "Saurav Jain",
+      "biography": "Saurav is a Senior Developer Advocate at Apify. He has built and managed various developer communities, starting developer relations programs from scratch and scaling them to support thousands of developers globally.\r\n\r\nHis experience as a speaker at various conferences worldwide, spanning four continents and 25+ countries, has helped thousands of developers learn more about Apify's creator economy and earn money through their monetization skills.\r\n\r\nHe loves to explore new technologies, talk with developers, and travel.",
+      "submissions": [
+        "9MV3JS"
+      ],
+      "avatar_url": "https://pretalx.com/media/avatars/MXPGHU_wa9hEFT.webp",
+      "answers": [
+        468277,
+        468278,
+        468279,
+        468280
+      ],
+      "email": "souravjain540@gmail.com",
+      "timezone": "UTC",
+      "locale": "en",
+      "has_arrived": false,
+      "internal_notes": ""
+    },
+    {
+      "code": "NFGFHQ",
+      "name": "Calvin Tsang",
+      "biography": "Calvin Tsang is the Vice Chairman of PyCon Hong Kong and a long-time community builder in the open-source ecosystem. He is also an active member of Open Source Hong Kong, supporting initiatives that promote open collaboration and Python adoption in Asia.\r\nWith years of experience in event organization, sponsorship strategy, and volunteer engagement, Calvin focuses on building sustainable structures behind community-driven conferences.",
+      "submissions": [
+        "9YWZBF"
+      ],
+      "avatar_url": "https://pretalx.com/media/avatars/NFGFHQ_PtkCOPj.webp",
+      "answers": [
+        460726,
+        460727,
+        460728,
+        460729
+      ],
+      "email": "calvin@opensource.hk",
+      "timezone": "UTC",
+      "locale": "en",
+      "has_arrived": false,
+      "internal_notes": ""
+    },
+    {
+      "code": "PFEFTZ",
+      "name": "Jay Miller",
+      "biography": "Jay is a Staff Developer Advocate at Aiven. Jay is also the founder of Black Python Devs where they work to extend the reach of Python communities, projects, and organizations to Black developers around the globe. Jay has served as a keynote speaker in the Python Community and when away from the keyboard can often be found cheering on their favorite baseball team.",
+      "submissions": [
+        "ARYPDT"
+      ],
+      "avatar_url": "https://pretalx.com/media/avatars/PFEFTZ_glsD2Ih.webp",
+      "answers": [
+        495401,
+        495400,
+        495402,
+        495403
+      ],
+      "email": "kjaymiller@gmail.com",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "has_arrived": false,
+      "internal_notes": ""
+    },
+    {
+      "code": "PTRYVC",
+      "name": "Christopher Dio Chavez",
+      "biography": "Christopher Dio Chavez brings over 25 years of expertise in both offensive and defensive cybersecurity practices, establishing himself as a distinguished figure in the field. With multiple certifications from leading cybersecurity vendors, Chris is not only an EC-Council Instructor (CEI) but also a PECB Certified Trainer, demonstrating his commitment to both professional excellence and teaching.\r\n\r\nChris has made invaluable contributions as a consultant, partnering with a wide array of private and government entities across the Philippines. His work spans information security, digital forensics, and incident response, with a proven track record of enhancing the security posture of organizations. As Chief Hacking and Defense Officer in the IT sector, he has played a pivotal role in defending and securing digital ecosystems.\r\n\r\nA dedicated educator, Chris collaborates with EC-Council and PECB training centers in the Philippines to shape the next generation of cybersecurity professionals. His influence extends globally, as evidenced by his inclusion in the prestigious TryHackMe Worldwide Hall of Fame, where he ranks as the #1 cybersecurity professional in the Philippines and among the top 20 globally out of over 4 million members.\r\n\r\nChris\u2019s diverse career spans industries such as gaming, technology, telecommunications, oil and gas, military defense, and intelligence. His international contributions also include co-developing a cybersecurity examination in collaboration with subject matter experts, sponsored by Prometric in London.\r\n\r\nIn 2025, Chris further solidified his local and international standing by speaking at the Australian Information Security Association (AISA), DEFCON, C0C0N, DICT CERTCON, BLACKHAT MEA 2025 Hacking Conference, sharing insights on advanced cyber defense strategies and threat intelligence.\r\n\r\nWith a passion for continuous innovation and a relentless commitment to securing digital ecosystems, Christopher Dio Chavez remains a driving force in cybersecurity, protecting critical infrastructures across multiple sectors.",
+      "submissions": [
+        "BMYYC3",
+        "H3UYE3",
+        "RZE9JN",
+        "ZXFDCC"
+      ],
+      "avatar_url": "https://pretalx.com/media/avatars/PTRYVC_rACmjbG.webp",
+      "answers": [
+        463578,
+        463579,
+        463580,
+        463581
+      ],
+      "email": "chrischavez@protonmail.com",
+      "timezone": "Asia/Manila",
+      "locale": "en",
+      "has_arrived": false,
+      "internal_notes": ""
+    },
+    {
+      "code": "PZB8RN",
+      "name": "Jaydee N. Lucero",
+      "biography": "**Jaydee Lucero** is currently a Senior Structural Engineer I at Abinales Associates Engineers + Consultants, where he specializes in the structural design of buildings of various heights. He has more than 7 years of experience in the structural engineering industry, and more than 4 years in the academe and review centers. He graduated _magna cum laude_ from the University of the Philippines Diliman in June 2018, and ranked 1st in the Philippine civil engineering licensure examination in November of the same year with an overall rating of 97.2%. His specializations are structural analysis, reinforced concrete design, finite element analysis, mathematics and engineering sciences, and programming in C (10+ years) and Python (1+ year) languages. You may add him on [LinkedIn](https://www.linkedin.com/in/jaydee-lucero-977070200/).",
+      "submissions": [
+        "APVMWA"
+      ],
+      "avatar_url": "https://pretalx.com/media/avatars/PZB8RN_D3UZyzr.webp",
+      "answers": [
+        454612,
+        454613,
+        454614,
+        454615
+      ],
+      "email": "jaydee.lucero@gmail.com",
+      "timezone": "Asia/Manila",
+      "locale": "en",
+      "has_arrived": false,
+      "internal_notes": ""
+    },
+    {
+      "code": "R8BNAN",
+      "name": "Arnel Jan Sarmiento",
+      "biography": "Arnel is a Cloud Engineer and Python Developer with over four years of experience designing and building cloud-native, serverless systems at scale. As an AWS Certified professional, he specializes in creating secure APIs, scalable data pipelines, and AI-driven backend services that power real-time applications across fintech, health tech, and infrastructure-focused projects. He collaborates with globally distributed teams on high-impact work while also leading DurianPy, Davao\u2019s official Python User Group. Through this community, he champions developer mentorship, technical learning, and open collaboration to advance the region\u2019s growing Python ecosystem.",
+      "submissions": [
+        "9FGLZD",
+        "MFQLD3"
+      ],
+      "avatar_url": "https://pretalx.com/media/avatars/R8BNAN_gsSjJls.webp",
+      "answers": [
+        469629,
+        469630,
+        469631,
+        469632
+      ],
+      "email": "rneljan@gmail.com",
+      "timezone": "Asia/Jakarta",
+      "locale": "en",
+      "has_arrived": false,
+      "internal_notes": ""
+    },
+    {
+      "code": "S7VML9",
+      "name": "Samantha Vivien L. Servo",
+      "biography": "Samantha is a junior cloud engineer at eCloudvalley Philippines. Actively involved in AWS organization and is a Community Builder in Data, she's passionate about the convergence of medicine and technology, particularly data science. Samantha aims to contribute to advancements in these dynamic fields.",
+      "submissions": [
+        "LBS7AB"
+      ],
+      "avatar_url": "https://pretalx.com/media/avatars/S7VML9_szDEkA1.webp",
+      "answers": [
+        466538,
+        466537,
+        466539,
+        466540
+      ],
+      "email": "samanthaservo09@gmail.com",
+      "timezone": "Asia/Manila",
+      "locale": "en",
+      "has_arrived": false,
+      "internal_notes": ""
+    },
+    {
+      "code": "TABDZE",
+      "name": "Dylan Lopez",
+      "biography": "Dylan is a Ph.D. candidate at Chung Yuan Christian University in Taiwan, where he focuses on quantum computing applications for the energy industry. He is a contributor and collaborator of NVIDIA AI Technology Center (NVAITC), where he worked on use cases and technical academic content. Dylan has been a Pythonista for 8 years, where he mainly used Python for AI, Data Science, and Quantum Computing for research and product development. Recently, he has dedicated his time to teaching and advocating quantum computing as the Director of Collaboration and Partnerships at the Quantum Computing Society of the Philippines, as a frequent mentor at quantum hackathons in ASEAN, and as a lecturer at De La Salle University.",
+      "submissions": [
+        "AJHSH8"
+      ],
+      "avatar_url": "https://pretalx.com/media/avatars/TABDZE_LbegGDW.webp",
+      "answers": [
+        463922,
+        463921,
+        463923,
+        463924
+      ],
+      "email": "dylan.lopez@qcsp.ph",
+      "timezone": "Asia/Manila",
+      "locale": "en",
+      "has_arrived": false,
+      "internal_notes": ""
+    },
+    {
+      "code": "TVAVRQ",
+      "name": "Michel Onasis S. Ogbinar",
+      "biography": "Myk Ogbinar leads the Data & Analytics Group at San Miguel Corporation, which drives  enterprise-wide strategies in data, analytics, and AI. He recently earned his Master of Engineering in Artificial Intelligence from UP Diliman, College of Engineering and is now pursuing a PhD in AI, focusing on computer vision, foundation models, and agents.\r\n\r\nOutside of work, Myk pays it forward through Data Engineering Pilipinas, a community focused on open learning and data skills, and by mentoring women aspiring to data careers at For The Women Foundation. His cross-industry experience spans IT, retail, energy, telecom, banking, and manufacturing, where he has helped teams harness data and AI to solve real-world challenges.",
+      "submissions": [
+        "DVUQLM",
+        "JGU9EW"
+      ],
+      "avatar_url": "https://pretalx.com/media/avatars/TVAVRQ_5QUOtUE.webp",
+      "answers": [
+        463620,
+        463621,
+        463622,
+        463623
+      ],
+      "email": "myk.ogbinar@gmail.com",
+      "timezone": "Asia/Manila",
+      "locale": "en",
+      "has_arrived": false,
+      "internal_notes": ""
+    },
+    {
+      "code": "TX8FQG",
+      "name": "Auxten Wang",
+      "biography": "Auxten  \r\n- \ud83d\udc68\ud83c\udffb\u200d\ud83d\udcbb  Experience in RecSys, Database\r\n  - Technical Director of ClickHouse core team\r\n  - Principal Engineer in Shopee (ML Platform)\r\n\r\n- \u2764\ufe0f  Love Open Source!\r\n  - Contributed to ClickHouse, Jemalloc, K8s, Memcached, CockroachDB, Superset\r\n  - Creator of chDB(Acquired), CovenantSQL",
+      "submissions": [
+        "MVWLVZ"
+      ],
+      "avatar_url": "https://pretalx.com/media/avatars/TX8FQG_YrTa7jM.webp",
+      "answers": [
+        461858,
+        461857,
+        461859,
+        461860
+      ],
+      "email": "auxten@clickhouse.com",
+      "timezone": "Europe/Prague",
+      "locale": "en",
+      "has_arrived": false,
+      "internal_notes": ""
+    },
+    {
+      "code": "UM3CWP",
+      "name": "nikkie",
+      "biography": "Takuya FUTATSUGI a.k.a. **nikkie** is a Machine Learning Engineer specializing in Natural Language Processing (NLP) at [Uzabase, inc.](https://www.uzabase.com/en/) in Tokyo.\r\nStarting his career as a software engineer in 2016, he channeled his passion for Python into the NLP field beginning in 2019.\r\nHe is a contributor to the Japanese Python community, having served as a core staff member and Chair(2021) for PyCon Japan, and has also presented at PyCons outside of Japan (EuroPython, Africa and Taiwan).\r\nYou can connect with him and view his full contributions on [Twitter](https://x.com/ftnext) or [blog (Japanese)](https://nikkie-ftnext.hatenablog.com/).",
+      "submissions": [
+        "BYLKEA",
+        "FNMQY9"
+      ],
+      "avatar_url": "https://pretalx.com/media/avatars/UM3CWP_7MVjMTx.webp",
+      "answers": [
+        469835,
+        469836,
+        469837,
+        469838
+      ],
+      "email": "takuyafjp@gmail.com",
+      "timezone": "Australia/Adelaide",
+      "locale": "en",
+      "has_arrived": false,
+      "internal_notes": ""
+    },
+    {
+      "code": "V8YZ7S",
+      "name": "Yu Saito",
+      "biography": "Yu Saito is currently working as a Solution Engineer for Azure at Microsoft Japan. Prior to joining Microsoft, Yu was a graduate student specializing in bioinformatics. During this time, he developed machine learning models to accelerate molecular dynamics simulations. This experience sparked his interest in Python, which continues to be a key area of expertise.",
+      "submissions": [
+        "9HCXZW",
+        "G3WBUG",
+        "JZ3RHV"
+      ],
+      "avatar_url": "https://pretalx.com/media/avatars/V8YZ7S_mbJJTVz.webp",
+      "answers": [
+        469364,
+        469363,
+        469365,
+        469366
+      ],
+      "email": "y.saito192@outlook.jp",
+      "timezone": "Asia/Manila",
+      "locale": "en",
+      "has_arrived": false,
+      "internal_notes": ""
+    },
+    {
+      "code": "VDTNQV",
+      "name": "Daniel Roy Greenfeld",
+      "biography": "Daniel believes great code should be accessible to everyone. His Two Scoops of Django series became the definitive guide for tens of thousands of developers worldwide, and he's contributed code to hundreds of open source packages.\r\n\r\nFrom organizing the first PyCon Philippines to building django-crispy-forms, he's spent decades making Python development better for everyone. His work at NASA, Kraken Technologies, and AI research labs taught him that robust, maintainable code isn't just nice-to-have\u2014it's essential.\r\n\r\nWhen not coding, he's watching documentaries and Mark Rober videos with his daughter Uma, feeding their curiosity about how things work.",
+      "submissions": [
+        "JJZQBX"
+      ],
+      "avatar_url": "https://pretalx.com/media/avatars/VDTNQV_HU2swNW.webp",
+      "answers": [
+        495397,
+        495396,
+        495398,
+        495399
+      ],
+      "email": "daniel@feldroy.com",
+      "timezone": "UTC",
+      "locale": "en",
+      "has_arrived": false,
+      "internal_notes": ""
+    },
+    {
+      "code": "WJZANY",
+      "name": "Gertrude Abagale",
+      "biography": null,
+      "submissions": [
+        "GVHHGM"
+      ],
+      "avatar_url": "https://pretalx.com/media/avatars/WJZANY_DsONvhe.webp",
+      "answers": [
+        488981,
+        488982,
+        488983,
+        488984
+      ],
+      "email": "gertrude.kaneah.abagale@gmail.com",
+      "timezone": "US/Pacific",
+      "locale": "en",
+      "has_arrived": false,
+      "internal_notes": null
+    },
+    {
+      "code": "X9MAMX",
+      "name": "Drishti Jain",
+      "biography": "Drishti is a Software Engineer and a technology book author. She is based in the USA and believes in democratizing opportunities and brings knowledge of the latest developments in the fast-moving field of technology to early professionals, students, and keep them up to date and well-equipped for their professional careers. Her initiative \"SkillUp with Drishti\" enables students and professionals to grow in their career.  \r\n\r\nShe has spoken at conferences across the globe and is also a social entrepreneur. Her non-profit organisation - Samyak Drishti Foundation works in environment, education and healthcare sectors and operates in a number of cities across India.  \r\n\r\nIn her spare time, she likes to paint nature, explore new places and anchor live shows.",
+      "submissions": [
+        "DXEL7Z",
+        "WDDZG7",
+        "WU3FS8"
+      ],
+      "avatar_url": "https://pretalx.com/media/avatars/X9MAMX_1FmXeNY.webp",
+      "answers": [
+        461046,
+        461045,
+        461047,
+        461048
+      ],
+      "email": "drishtijjain@gmail.com",
+      "timezone": "Australia/Sydney",
+      "locale": "en",
+      "has_arrived": false,
+      "internal_notes": ""
+    },
+    {
+      "code": "XHT9ZV",
+      "name": "Hemangi Karchalkar",
+      "biography": "Hemangi is a passionate Python developer and community contributor. She enjoys simplifying complex topics like Pydantic, FastAPI, and testing, and has spoken at events such as GIDS, PyCon Italy, and PgCon Hong Kong. She believes in building strong developer communities and helping others grow through mentoring and knowledge-sharing.",
+      "submissions": [
+        "8AFLT9",
+        "9BJRA8",
+        "9PXBBJ",
+        "J8KJHD",
+        "UFAQDF",
+        "ZTNMPB"
+      ],
+      "avatar_url": "https://pretalx.com/media/avatars/XHT9ZV_jFYFMbW.webp",
+      "answers": [
+        469377,
+        469376,
+        469378,
+        469379
+      ],
+      "email": "hemangik13@gmail.com",
+      "timezone": "Asia/Hong_Kong",
+      "locale": "en",
+      "has_arrived": false,
+      "internal_notes": ""
+    },
+    {
+      "code": "XVM8TR",
+      "name": "Tarun Jain",
+      "biography": "Tarun Jain is a Founding Engineer, Google Developer Expert in AI, and Qdrant Distinguished Ambassador. Tarun has contributed to Google Summer of Code 2024 at Red Hen Lab and Google Summer of Code 2023 at caMicroscope. He is a content creator on YouTube with the channel name: AI with Tarun.",
+      "submissions": [
+        "8XCEQ8",
+        "AU3QRA",
+        "KCPENK"
+      ],
+      "avatar_url": "https://pretalx.com/media/avatars/XVM8TR_FTeacji.webp",
+      "answers": [
+        455097,
+        455096,
+        455098,
+        455099
+      ],
+      "email": "jain.tarun7501@gmail.com",
+      "timezone": "Asia/Tokyo",
+      "locale": "en",
+      "has_arrived": false,
+      "internal_notes": ""
+    },
+    {
+      "code": "YG99AS",
+      "name": "Allen Y",
+      "biography": "I\u2019m Allen, Associate Software Engineer at Red Hat, focused on building scalable, high-performance backend systems using Python, GraphQL, Kubernetes, and cloud native tooling. I work across distributed systems, payments, event-driven pipelines, and async architectures with experience in GCP, AWS, PostgreSQL, and MongoDB.\r\n\r\nI\u2019m an active speaker in the Python community, with talks delivered at\r\n\r\nPyCascades 2025 (Portland, USA) \u2014 Unlocking Concurrency in Python with AsyncIO and ASGI\r\n\r\nFOSSASIA Summit 2025 (Bangkok, Thailand) \u2014 Kubernetes Kung Fu: Mastering Containers and Microservices\r\n\r\nPyCon India 2025 (Banglore, India) \u2014 From Stress to Success: Load Testing Python Apps & Visualizing Performance",
+      "submissions": [
+        "3TLVGQ",
+        "BVMAMJ",
+        "EPPELW",
+        "GRYJJR",
+        "ML9NWV",
+        "U3CX9B"
+      ],
+      "avatar_url": "https://pretalx.com/media/avatars/YG99AS_mnkNrnN.webp",
+      "answers": [
+        468756,
+        468755,
+        468757,
+        468758
+      ],
+      "email": "alleny244@gmail.com",
+      "timezone": "Asia/Tokyo",
+      "locale": "en",
+      "has_arrived": false,
+      "internal_notes": ""
+    },
+    {
+      "code": "YU7YSY",
+      "name": "Vivek Keshore",
+      "biography": "Vivek Keshore is working with EPAM Systems as Software Architect. He is a Python engineer with 12+ years of experience building scalable systems, developer tools, and backend platforms. He has led teams across diverse domains, from data engineering to cloud-native applications, and is deeply involved in the Python open-source and community ecosystem. Vivek is a frequent speaker at various Python conferences and local meetups. Outside of work, he enjoys exploring how technology and creativity intersect from AI to developer experience tooling and contributing to the growth of the Python community with mutual learnings and sharing knowledge.",
+      "submissions": [
+        "DADSMZ"
+      ],
+      "avatar_url": "https://pretalx.com/media/avatars/YU7YSY_Pql03fV.webp",
+      "answers": [
+        454781,
+        454782,
+        454783,
+        454784
+      ],
+      "email": "vivek.keshore@gmail.com",
+      "timezone": "Asia/Manila",
+      "locale": "en",
+      "has_arrived": false,
+      "internal_notes": ""
+    },
+    {
+      "code": "YY9MKV",
+      "name": "Hayao Suzuki",
+      "biography": "A software engineer based in Japan.\r\nHolds a master's degree in engineering from the University of Electro-Communications.\r\nCurrently works as a software engineer at Tokyo Gas Co., Ltd. while also playing tuba in the Tokyo Gas Wind Orchestra.",
+      "submissions": [
+        "7CZJH9",
+        "HQPKCG"
+      ],
+      "avatar_url": "https://pretalx.com/media/avatars/YY9MKV_fR7oU3G.webp",
+      "answers": [
+        454771,
+        454772,
+        454773,
+        454774
+      ],
+      "email": "hayao.math@gmail.com",
+      "timezone": "Asia/Tokyo",
+      "locale": "ja-jp",
+      "has_arrived": false,
+      "internal_notes": ""
+    },
+    {
+      "code": "ZEVJHK",
+      "name": "Audrey Roy Greenfeld",
+      "biography": "Audrey sees repetitive developer work and builds tools to eliminate it. Her project templating tool Cookiecutter saves developers countless hours\u2014downloaded over 5 million times monthly with 24k GitHub stars. She is best known for co-authoring Two Scoops of Django, and is also a prolific fantasy and sci-fi fiction writer. She is a core developer of Air, the new AI-first Python web framework. As PyLadies' first president and cofounder in 2011, she built the organization from scratch\u2014handcrafting the first website to the logo to the chapter kit that helped launch a global movement. MIT-trained engineer, Two Scoops co-author, and devoted mother to Uma, who keeps her grounded between building the next generation of developer tools.",
+      "submissions": [
+        "JJZQBX"
+      ],
+      "avatar_url": "https://pretalx.com/media/avatars/ZEVJHK_3N2Otff.webp",
+      "answers": [
+        495393,
+        495392,
+        495394,
+        495395
+      ],
+      "email": "audrey@feldroy.com",
+      "timezone": "UTC",
+      "locale": "en",
+      "has_arrived": false,
+      "internal_notes": ""
+    }
+  ]
+}
