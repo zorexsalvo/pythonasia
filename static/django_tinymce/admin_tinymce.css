@@ -1,6 +1,6 @@
 /*
 Workaround for the following rule defined in
-django/contrib/admin/static/admin/css/responsive.css (which is
+django/contrib/adminstatic/admin/css/responsive.css (which is
 unsuitable for textareas used by TinyMCE internally):
 
 @media (max-width: 1024px) {
